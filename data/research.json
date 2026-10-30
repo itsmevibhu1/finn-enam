@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-10-30",
+  "research_mode": "Manually verified primary-source case study; no model-generated claims",
+  "companies": {
+    "INFY": {
+      "name": "Infosys",
+      "description": "IT services and consulting company. This research slice tracks management's FY25 growth and operating-margin guidance.",
+      "period": "FY2025",
+      "replay_date": "2025-04-17",
+      "sources": [
+        {"id": "q1", "title": "Q1 FY25 earnings call", "date": "2024-07-18", "kind": "transcript", "page": 5, "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q1/documents/transcripts/earningscall.pdf", "summary": "Management raised full-year constant-currency revenue growth guidance to 3–4%, with operating-margin guidance unchanged at 20–22%.", "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."},
+        {"id": "q2", "title": "Q2 FY25 earnings call", "date": "2024-10-17", "kind": "transcript", "page": 4, "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q2/documents/transcripts/earningscall.pdf", "summary": "Management increased FY25 constant-currency growth guidance to 3.75–4.5%. Operating-margin guidance remained 20–22%.", "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."},
+        {"id": "q3", "title": "Q3 FY25 earnings call", "date": "2025-01-16", "kind": "transcript", "page": 7, "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q3/documents/transcripts/earningscall.pdf", "summary": "Management revised FY25 constant-currency revenue growth guidance to 4.5–5%. The operating-margin range stayed at 20–22%.", "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."},
+        {"id": "q4", "title": "Q4 FY25 earnings call", "date": "2025-04-17", "kind": "transcript", "page": 3, "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q4/documents/transcripts/earningscall.pdf", "summary": "Infosys reported 4.2% full-year constant-currency revenue growth and a 21.1% operating margin for FY25.", "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."},
+        {"id": "ar25", "title": "FY25 integrated annual report", "date": null, "kind": "annual_report", "page": 73, "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-25.pdf", "summary": "The annual report corroborates FY25 constant-currency revenue growth of 4.2%. This later corroboration is excluded from the April 17 event replay.", "verification": "Manually checked using the web PDF reader. PDF page number differs from printed page numbering. Publication date not established."},
+        {"id": "q2fy27", "title": "Q2 FY27 earnings call", "date": "2026-10-23", "kind": "transcript", "page": 3, "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q2/documents/transcripts/earningscall.pdf", "summary": "Management guided FY27 constant-currency revenue growth to 1–2% and operating margin to 20–22%. Full-year delivery cannot yet be assessed.", "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."}
+      ],
+      "promises": [
+        {"id": "growth_q1", "metric": "revenue_growth", "label": "Revenue growth · Q1 guidance", "period": "FY2025", "period_end": "2025-03-31", "unit": "percent", "basis": "constant_currency", "scope": "consolidated", "low": 3, "high": 4, "source": "q1", "outcome_source": "q4", "actual": 4.2, "outcome_date": "2025-04-17", "revision": "Superseded by Q2 guidance"},
+        {"id": "growth_q2", "metric": "revenue_growth", "label": "Revenue growth · Q2 guidance", "period": "FY2025", "period_end": "2025-03-31", "unit": "percent", "basis": "constant_currency", "scope": "consolidated", "low": 3.75, "high": 4.5, "source": "q2", "outcome_source": "q4", "actual": 4.2, "outcome_date": "2025-04-17", "revision": "Superseded by Q3 guidance"},
+        {"id": "growth_q3", "metric": "revenue_growth", "label": "Revenue growth · latest FY25 guidance", "period": "FY2025", "period_end": "2025-03-31", "unit": "percent", "basis": "constant_currency", "scope": "consolidated", "low": 4.5, "high": 5, "source": "q3", "outcome_source": "q4", "actual": 4.2, "outcome_date": "2025-04-17", "revision": "Latest guidance before FY25 results"},
+        {"id": "margin_q3", "metric": "operating_margin", "label": "Operating margin · latest FY25 guidance", "period": "FY2025", "period_end": "2025-03-31", "unit": "percent", "basis": "reported", "scope": "consolidated", "low": 20, "high": 22, "source": "q3", "outcome_source": "q4", "actual": 21.1, "outcome_date": "2025-04-17", "revision": "Latest guidance before FY25 results"},
+        {"id": "growth_fy27", "metric": "revenue_growth", "label": "Revenue growth · FY27 guidance", "period": "FY2027", "period_end": "2027-03-31", "unit": "percent", "basis": "constant_currency", "scope": "consolidated", "low": 1, "high": 2, "source": "q2fy27", "outcome_source": null, "actual": null, "outcome_date": null, "revision": "Open guidance; full year ends March 2027"}
+      ]
+    }
+  }
+}

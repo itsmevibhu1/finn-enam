@@ -1,0 +1,146 @@
+[
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2025 Q1",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q1/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2025 Q1",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q1/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2025 Q2",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q2/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2025 Q2",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q2/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2025 Q3",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q3/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2025 Q3",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q3/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2025 Q4",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q4/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2025 Q4",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q4/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2026 Q3",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2025-2026/q3/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2026 Q3",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2025-2026/q3/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2026 Q4",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2025-2026/q4/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2026 Q4",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2025-2026/q4/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2027 Q1",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q1/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2027 Q1",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q1/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "transcript",
+    "period": "FY2027 Q2",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q2/documents/transcripts/earningscall.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "results",
+    "period": "FY2027 Q2",
+    "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q2/documents/ifrs-usd-press-release.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "annual_report",
+    "period": "FY2025",
+    "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-25.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "ticker": "INFY",
+    "kind": "annual_report",
+    "period": "FY2026",
+    "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "fetched_at": "2026-10-30T15:02:15.938868+00:00",
+  "source_url": "https://www.nseindia.com/api/corporate-announcements?index=equities&from_date=23-10-2026&to_date=30-10-2026",
+  "coverage_start": "2026-10-23",
+  "coverage_end": "2026-10-30",
+  "records": [],
+  "status": "failed",
+  "error": "HTTP Error 403: Forbidden",
+  "rss_error": "Invalid date value or format \"30-OCT-2026 20:28\""
+}

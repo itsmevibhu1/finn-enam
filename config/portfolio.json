@@ -1,0 +1,24 @@
+{
+  "description": "Proposed mock portfolio for product coverage, not investment advice. Validate ticker availability during ingestion.",
+  "exchange": "NSE",
+  "companies": [
+    {"ticker": "RELIANCE", "sector": "Diversified"},
+    {"ticker": "TCS", "sector": "IT services"},
+    {"ticker": "INFY", "sector": "IT services"},
+    {"ticker": "HDFCBANK", "sector": "Banking"},
+    {"ticker": "ICICIBANK", "sector": "Banking"},
+    {"ticker": "ITC", "sector": "Consumer and diversified"},
+    {"ticker": "HINDUNILVR", "sector": "Consumer goods"},
+    {"ticker": "SUNPHARMA", "sector": "Pharmaceuticals"},
+    {"ticker": "CIPLA", "sector": "Pharmaceuticals"},
+    {"ticker": "MARUTI", "sector": "Automobiles"},
+    {"ticker": "EICHERMOT", "sector": "Automobiles"},
+    {"ticker": "LT", "sector": "Engineering and construction"},
+    {"ticker": "TITAN", "sector": "Consumer discretionary"},
+    {"ticker": "PIDILITIND", "sector": "Specialty chemicals"},
+    {"ticker": "POLYCAB", "sector": "Electrical equipment"},
+    {"ticker": "APLAPOLLO", "sector": "Steel products"},
+    {"ticker": "CERA", "sector": "Building products"},
+    {"ticker": "VSTIND", "sector": "Consumer goods"}
+  ]
+}

@@ -1,0 +1,2545 @@
+{
+  "as_of": "2026-10-30",
+  "research_mode": "Manually verified primary-source case study; no model-generated claims",
+  "companies": {
+    "INFY": {
+      "name": "Infosys",
+      "description": "IT services and consulting company. This research slice tracks management's FY25 growth and operating-margin guidance.",
+      "period": "FY2025",
+      "replay_date": "2025-04-17",
+      "sources": [
+        {
+          "id": "q1",
+          "title": "Q1 FY25 earnings call",
+          "date": "2024-07-18",
+          "kind": "transcript",
+          "page": 5,
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q1/documents/transcripts/earningscall.pdf",
+          "summary": "Management raised full-year constant-currency revenue growth guidance to 3\u20134%, with operating-margin guidance unchanged at 20\u201322%.",
+          "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."
+        },
+        {
+          "id": "q2",
+          "title": "Q2 FY25 earnings call",
+          "date": "2024-10-17",
+          "kind": "transcript",
+          "page": 4,
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q2/documents/transcripts/earningscall.pdf",
+          "summary": "Management increased FY25 constant-currency growth guidance to 3.75\u20134.5%. Operating-margin guidance remained 20\u201322%.",
+          "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."
+        },
+        {
+          "id": "q3",
+          "title": "Q3 FY25 earnings call",
+          "date": "2025-01-16",
+          "kind": "transcript",
+          "page": 7,
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q3/documents/transcripts/earningscall.pdf",
+          "summary": "Management revised FY25 constant-currency revenue growth guidance to 4.5\u20135%. The operating-margin range stayed at 20\u201322%.",
+          "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."
+        },
+        {
+          "id": "q4",
+          "title": "Q4 FY25 earnings call",
+          "date": "2025-04-17",
+          "kind": "transcript",
+          "page": 3,
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2024-2025/q4/documents/transcripts/earningscall.pdf",
+          "summary": "Infosys reported 4.2% full-year constant-currency revenue growth and a 21.1% operating margin for FY25.",
+          "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."
+        },
+        {
+          "id": "ar25",
+          "title": "FY25 integrated annual report",
+          "date": null,
+          "kind": "annual_report",
+          "page": 73,
+          "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-25.pdf",
+          "summary": "The annual report corroborates FY25 constant-currency revenue growth of 4.2%. This later corroboration is excluded from the April 17 event replay.",
+          "verification": "Manually checked using the web PDF reader. PDF page number differs from printed page numbering. Publication date not established."
+        },
+        {
+          "id": "q2fy27",
+          "title": "Q2 FY27 earnings call",
+          "date": "2026-10-23",
+          "kind": "transcript",
+          "page": 3,
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q2/documents/transcripts/earningscall.pdf",
+          "summary": "Management guided FY27 constant-currency revenue growth to 1\u20132% and operating margin to 20\u201322%. Full-year delivery cannot yet be assessed.",
+          "verification": "Manually checked using the web PDF reader. Direct PDF download returned HTTP 403."
+        }
+      ],
+      "promises": [
+        {
+          "id": "growth_q1",
+          "metric": "revenue_growth",
+          "label": "Revenue growth \u00b7 Q1 guidance",
+          "period": "FY2025",
+          "period_end": "2025-03-31",
+          "unit": "percent",
+          "basis": "constant_currency",
+          "scope": "consolidated",
+          "low": 3,
+          "high": 4,
+          "source": "q1",
+          "outcome_source": "q4",
+          "actual": 4.2,
+          "outcome_date": "2025-04-17",
+          "revision": "Superseded by Q2 guidance",
+          "assessment": {
+            "status": "exceeded",
+            "reason": "Above the upper end of guidance.",
+            "delta_pp": 0.2
+          }
+        },
+        {
+          "id": "growth_q2",
+          "metric": "revenue_growth",
+          "label": "Revenue growth \u00b7 Q2 guidance",
+          "period": "FY2025",
+          "period_end": "2025-03-31",
+          "unit": "percent",
+          "basis": "constant_currency",
+          "scope": "consolidated",
+          "low": 3.75,
+          "high": 4.5,
+          "source": "q2",
+          "outcome_source": "q4",
+          "actual": 4.2,
+          "outcome_date": "2025-04-17",
+          "revision": "Superseded by Q3 guidance",
+          "assessment": {
+            "status": "met",
+            "reason": "Within the guided range.",
+            "delta_pp": 0
+          }
+        },
+        {
+          "id": "growth_q3",
+          "metric": "revenue_growth",
+          "label": "Revenue growth \u00b7 latest FY25 guidance",
+          "period": "FY2025",
+          "period_end": "2025-03-31",
+          "unit": "percent",
+          "basis": "constant_currency",
+          "scope": "consolidated",
+          "low": 4.5,
+          "high": 5,
+          "source": "q3",
+          "outcome_source": "q4",
+          "actual": 4.2,
+          "outcome_date": "2025-04-17",
+          "revision": "Latest guidance before FY25 results",
+          "assessment": {
+            "status": "missed",
+            "reason": "Below the lower end of guidance.",
+            "delta_pp": -0.3
+          }
+        },
+        {
+          "id": "margin_q3",
+          "metric": "operating_margin",
+          "label": "Operating margin \u00b7 latest FY25 guidance",
+          "period": "FY2025",
+          "period_end": "2025-03-31",
+          "unit": "percent",
+          "basis": "reported",
+          "scope": "consolidated",
+          "low": 20,
+          "high": 22,
+          "source": "q3",
+          "outcome_source": "q4",
+          "actual": 21.1,
+          "outcome_date": "2025-04-17",
+          "revision": "Latest guidance before FY25 results",
+          "assessment": {
+            "status": "met",
+            "reason": "Within the guided range.",
+            "delta_pp": 0
+          }
+        },
+        {
+          "id": "growth_fy27",
+          "metric": "revenue_growth",
+          "label": "Revenue growth \u00b7 FY27 guidance",
+          "period": "FY2027",
+          "period_end": "2027-03-31",
+          "unit": "percent",
+          "basis": "constant_currency",
+          "scope": "consolidated",
+          "low": 1,
+          "high": 2,
+          "source": "q2fy27",
+          "outcome_source": null,
+          "actual": null,
+          "outcome_date": null,
+          "revision": "Open guidance; full year ends March 2027",
+          "assessment": {
+            "status": "pending",
+            "reason": "The guided reporting period has not ended.",
+            "delta_pp": null
+          }
+        }
+      ]
+    }
+  },
+  "portfolio": [
+    {
+      "ticker": "RELIANCE",
+      "sector": "Diversified"
+    },
+    {
+      "ticker": "TCS",
+      "sector": "IT services"
+    },
+    {
+      "ticker": "INFY",
+      "sector": "IT services"
+    },
+    {
+      "ticker": "HDFCBANK",
+      "sector": "Banking"
+    },
+    {
+      "ticker": "ICICIBANK",
+      "sector": "Banking"
+    },
+    {
+      "ticker": "ITC",
+      "sector": "Consumer and diversified"
+    },
+    {
+      "ticker": "HINDUNILVR",
+      "sector": "Consumer goods"
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "CIPLA",
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "MARUTI",
+      "sector": "Automobiles"
+    },
+    {
+      "ticker": "EICHERMOT",
+      "sector": "Automobiles"
+    },
+    {
+      "ticker": "LT",
+      "sector": "Engineering and construction"
+    },
+    {
+      "ticker": "TITAN",
+      "sector": "Consumer discretionary"
+    },
+    {
+      "ticker": "PIDILITIND",
+      "sector": "Specialty chemicals"
+    },
+    {
+      "ticker": "POLYCAB",
+      "sector": "Electrical equipment"
+    },
+    {
+      "ticker": "APLAPOLLO",
+      "sector": "Steel products"
+    },
+    {
+      "ticker": "CERA",
+      "sector": "Building products"
+    },
+    {
+      "ticker": "VSTIND",
+      "sector": "Consumer goods"
+    }
+  ],
+  "built_at": "2026-10-30T15:16:43.936997+00:00",
+  "market": {
+    "refreshed_at": "2026-10-30T14:27:12.291957+00:00",
+    "note": "Completed daily sessions; price change uses close-to-close prices. Corporate actions may cause mechanical price alerts.",
+    "records": [
+      {
+        "ticker": "RELIANCE",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:07.409082+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RELIANCE.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1164.9,
+        "volume": 14722247,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1187.0,
+            "volume": 16376789
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1167.699951171875,
+            "volume": 16771221
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1186.4000244140625,
+            "volume": 14254907
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1218.0,
+            "volume": 18003127
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1207.699951171875,
+            "volume": 11880731
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1178.0,
+            "volume": 13965493
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1170.300048828125,
+            "volume": 12086708
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1158.9000244140625,
+            "volume": 11338332
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1166.699951171875,
+            "volume": 10988483
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1174.5999755859375,
+            "volume": 10938195
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1215.0,
+            "volume": 23456219
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1211.199951171875,
+            "volume": 17225283
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1202.0,
+            "volume": 15572554
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1209.0,
+            "volume": 17607823
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1184.5,
+            "volume": 14957042
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1190.0,
+            "volume": 14905641
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1201.800048828125,
+            "volume": 7490515
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1196.199951171875,
+            "volume": 13067787
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1158.0,
+            "volume": 21866598
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1167.4000244140625,
+            "volume": 20939623
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1164.9000244140625,
+            "volume": 14722247
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -0.2142,
+          "volume_multiple": 0.9695,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "TCS",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:07.410064+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TCS.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 2502.6,
+        "volume": 3016270,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 2050.60009765625,
+            "volume": 3656425
+          },
+          {
+            "date": "2026-10-01",
+            "close": 2075.0,
+            "volume": 3428501
+          },
+          {
+            "date": "2026-10-05",
+            "close": 2114.39990234375,
+            "volume": 5270768
+          },
+          {
+            "date": "2026-10-06",
+            "close": 2100.0,
+            "volume": 2382510
+          },
+          {
+            "date": "2026-10-07",
+            "close": 2080.300048828125,
+            "volume": 1349758
+          },
+          {
+            "date": "2026-10-08",
+            "close": 2076.0,
+            "volume": 4288031
+          },
+          {
+            "date": "2026-10-09",
+            "close": 2156.0,
+            "volume": 11692314
+          },
+          {
+            "date": "2026-10-12",
+            "close": 2125.0,
+            "volume": 3540523
+          },
+          {
+            "date": "2026-10-13",
+            "close": 2269.300048828125,
+            "volume": 11048193
+          },
+          {
+            "date": "2026-10-14",
+            "close": 2304.89990234375,
+            "volume": 12145767
+          },
+          {
+            "date": "2026-10-15",
+            "close": 2350.0,
+            "volume": 9150523
+          },
+          {
+            "date": "2026-10-16",
+            "close": 2465.0,
+            "volume": 12166634
+          },
+          {
+            "date": "2026-10-19",
+            "close": 2460.89990234375,
+            "volume": 8676373
+          },
+          {
+            "date": "2026-10-21",
+            "close": 2529.0,
+            "volume": 5707347
+          },
+          {
+            "date": "2026-10-22",
+            "close": 2506.89990234375,
+            "volume": 4174671
+          },
+          {
+            "date": "2026-10-23",
+            "close": 2530.0,
+            "volume": 6857942
+          },
+          {
+            "date": "2026-10-26",
+            "close": 2535.0,
+            "volume": 4326029
+          },
+          {
+            "date": "2026-10-27",
+            "close": 2496.89990234375,
+            "volume": 4337081
+          },
+          {
+            "date": "2026-10-28",
+            "close": 2460.0,
+            "volume": 2540047
+          },
+          {
+            "date": "2026-10-29",
+            "close": 2478.0,
+            "volume": 3427569
+          },
+          {
+            "date": "2026-10-30",
+            "close": 2502.60009765625,
+            "volume": 3016270
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.9927,
+          "volume_multiple": 0.502,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "INFY",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:07.410825+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/INFY.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1185.0,
+        "volume": 13029753,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 994.0999755859375,
+            "volume": 13508984
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1035.0,
+            "volume": 15166446
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1020.5,
+            "volume": 12126808
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1013.8499755859375,
+            "volume": 8252213
+          },
+          {
+            "date": "2026-10-07",
+            "close": 992.0,
+            "volume": 7493993
+          },
+          {
+            "date": "2026-10-08",
+            "close": 997.0,
+            "volume": 14847874
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1023.4000244140625,
+            "volume": 14094234
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1020.0,
+            "volume": 8429312
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1062.0999755859375,
+            "volume": 21781113
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1088.0,
+            "volume": 22113407
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1110.0,
+            "volume": 16012759
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1161.199951171875,
+            "volume": 25566304
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1130.699951171875,
+            "volume": 13258477
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1168.0,
+            "volume": 18597997
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1153.3499755859375,
+            "volume": 17007168
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1153.800048828125,
+            "volume": 33044499
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1166.0,
+            "volume": 25964569
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1163.0,
+            "volume": 20117848
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1123.1500244140625,
+            "volume": 15636449
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1146.5,
+            "volume": 14048472
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1185.0,
+            "volume": 13029753
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 3.358,
+          "volume_multiple": 0.7731,
+          "price_triggered": true,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "HDFCBANK",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:07.412116+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HDFCBANK.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 692.8,
+        "volume": 21292736,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 708.7000122070312,
+            "volume": 39365496
+          },
+          {
+            "date": "2026-10-01",
+            "close": 721.2000122070312,
+            "volume": 37389857
+          },
+          {
+            "date": "2026-10-05",
+            "close": 704.7999877929688,
+            "volume": 66056690
+          },
+          {
+            "date": "2026-10-06",
+            "close": 711.4500122070312,
+            "volume": 26568270
+          },
+          {
+            "date": "2026-10-07",
+            "close": 702.75,
+            "volume": 29944008
+          },
+          {
+            "date": "2026-10-08",
+            "close": 692.25,
+            "volume": 26808765
+          },
+          {
+            "date": "2026-10-09",
+            "close": 707.25,
+            "volume": 18397972
+          },
+          {
+            "date": "2026-10-12",
+            "close": 704.9000244140625,
+            "volume": 18197879
+          },
+          {
+            "date": "2026-10-13",
+            "close": 714.0,
+            "volume": 18838639
+          },
+          {
+            "date": "2026-10-14",
+            "close": 710.7000122070312,
+            "volume": 23945373
+          },
+          {
+            "date": "2026-10-15",
+            "close": 726.8499755859375,
+            "volume": 37365177
+          },
+          {
+            "date": "2026-10-16",
+            "close": 728.8499755859375,
+            "volume": 28936902
+          },
+          {
+            "date": "2026-10-19",
+            "close": 712.0,
+            "volume": 33524133
+          },
+          {
+            "date": "2026-10-21",
+            "close": 706.9500122070312,
+            "volume": 26573703
+          },
+          {
+            "date": "2026-10-22",
+            "close": 694.0499877929688,
+            "volume": 60280576
+          },
+          {
+            "date": "2026-10-23",
+            "close": 692.7999877929688,
+            "volume": 18989022
+          },
+          {
+            "date": "2026-10-26",
+            "close": 688.0499877929688,
+            "volume": 23489755
+          },
+          {
+            "date": "2026-10-27",
+            "close": 680.2000122070312,
+            "volume": 40614930
+          },
+          {
+            "date": "2026-10-28",
+            "close": 685.2999877929688,
+            "volume": 28534206
+          },
+          {
+            "date": "2026-10-29",
+            "close": 683.2999877929688,
+            "volume": 31422790
+          },
+          {
+            "date": "2026-10-30",
+            "close": 692.7999877929688,
+            "volume": 21292736
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 1.3903,
+          "volume_multiple": 0.6704,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "ICICIBANK",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.131031+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ICICIBANK.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1398.0,
+        "volume": 10522673,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1321.699951171875,
+            "volume": 14095232
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1310.5999755859375,
+            "volume": 13163495
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1332.0,
+            "volume": 13223493
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1342.800048828125,
+            "volume": 12201451
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1357.5,
+            "volume": 14774121
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1349.0,
+            "volume": 11277755
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1355.0,
+            "volume": 5507667
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1340.0,
+            "volume": 8605258
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1360.199951171875,
+            "volume": 5765182
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1338.5999755859375,
+            "volume": 8253235
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1389.4000244140625,
+            "volume": 17551899
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1397.0,
+            "volume": 14925887
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1381.0,
+            "volume": 25149396
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1385.0,
+            "volume": 17537734
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1398.5,
+            "volume": 16108318
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1394.199951171875,
+            "volume": 11573221
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1403.0,
+            "volume": 7936076
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1386.9000244140625,
+            "volume": 16183741
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1377.5999755859375,
+            "volume": 9519327
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1386.5999755859375,
+            "volume": 11553461
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1398.0,
+            "volume": 10522673
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.8222,
+          "volume_multiple": 0.8256,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "ITC",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.188234+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ITC.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 265.6,
+        "volume": 16292770,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 262.75,
+            "volume": 14079098
+          },
+          {
+            "date": "2026-10-01",
+            "close": 255.89999389648438,
+            "volume": 16447266
+          },
+          {
+            "date": "2026-10-05",
+            "close": 268.8999938964844,
+            "volume": 49020716
+          },
+          {
+            "date": "2026-10-06",
+            "close": 266.70001220703125,
+            "volume": 22132738
+          },
+          {
+            "date": "2026-10-07",
+            "close": 265.70001220703125,
+            "volume": 50025295
+          },
+          {
+            "date": "2026-10-08",
+            "close": 255.0,
+            "volume": 53680318
+          },
+          {
+            "date": "2026-10-09",
+            "close": 266.0,
+            "volume": 31030528
+          },
+          {
+            "date": "2026-10-12",
+            "close": 257.8999938964844,
+            "volume": 14895734
+          },
+          {
+            "date": "2026-10-13",
+            "close": 261.0,
+            "volume": 13435481
+          },
+          {
+            "date": "2026-10-14",
+            "close": 261.5,
+            "volume": 19299265
+          },
+          {
+            "date": "2026-10-15",
+            "close": 263.8999938964844,
+            "volume": 22784367
+          },
+          {
+            "date": "2026-10-16",
+            "close": 263.5,
+            "volume": 12994056
+          },
+          {
+            "date": "2026-10-19",
+            "close": 260.79998779296875,
+            "volume": 11528925
+          },
+          {
+            "date": "2026-10-21",
+            "close": 262.0,
+            "volume": 21000241
+          },
+          {
+            "date": "2026-10-22",
+            "close": 258.8999938964844,
+            "volume": 15306749
+          },
+          {
+            "date": "2026-10-23",
+            "close": 257.8999938964844,
+            "volume": 17560075
+          },
+          {
+            "date": "2026-10-26",
+            "close": 260.5,
+            "volume": 15094338
+          },
+          {
+            "date": "2026-10-27",
+            "close": 260.0,
+            "volume": 27659894
+          },
+          {
+            "date": "2026-10-28",
+            "close": 259.5,
+            "volume": 15160025
+          },
+          {
+            "date": "2026-10-29",
+            "close": 265.0,
+            "volume": 23257133
+          },
+          {
+            "date": "2026-10-30",
+            "close": 265.6000061035156,
+            "volume": 16292770
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.2264,
+          "volume_multiple": 0.6987,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "HINDUNILVR",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.255829+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HINDUNILVR.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1864.6,
+        "volume": 1597099,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1879.0999755859375,
+            "volume": 1430335
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1836.0,
+            "volume": 1331680
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1838.4000244140625,
+            "volume": 975071
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1895.199951171875,
+            "volume": 1576062
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1865.4000244140625,
+            "volume": 620459
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1844.5,
+            "volume": 2027849
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1856.699951171875,
+            "volume": 1300930
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1820.699951171875,
+            "volume": 1479326
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1875.5,
+            "volume": 2155611
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1895.5,
+            "volume": 3647300
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1897.0999755859375,
+            "volume": 1308283
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1893.800048828125,
+            "volume": 1258552
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1853.199951171875,
+            "volume": 1226363
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1850.199951171875,
+            "volume": 664074
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1828.300048828125,
+            "volume": 1012306
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1814.699951171875,
+            "volume": 1192732
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1818.5999755859375,
+            "volume": 672093
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1818.0,
+            "volume": 3796225
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1815.800048828125,
+            "volume": 3364735
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1858.199951171875,
+            "volume": 2653805
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1864.5999755859375,
+            "volume": 1597099
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.3444,
+          "volume_multiple": 0.948,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "SUNPHARMA",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.335996+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SUNPHARMA.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1777.7,
+        "volume": 5125487,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1816.5999755859375,
+            "volume": 2401495
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1801.0,
+            "volume": 2314700
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1779.699951171875,
+            "volume": 1290843
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1804.0999755859375,
+            "volume": 1478310
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1781.0,
+            "volume": 1150689
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1759.800048828125,
+            "volume": 1605236
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1760.0,
+            "volume": 1346107
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1760.0,
+            "volume": 1141685
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1770.699951171875,
+            "volume": 1191057
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1746.4000244140625,
+            "volume": 1808782
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1764.0,
+            "volume": 1376380
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1758.800048828125,
+            "volume": 1522459
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1743.0,
+            "volume": 829445
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1745.0999755859375,
+            "volume": 2316342
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1758.0,
+            "volume": 1778519
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1748.0,
+            "volume": 1064528
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1740.0,
+            "volume": 1622698
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1751.199951171875,
+            "volume": 1547898
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1757.5,
+            "volume": 1056767
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1761.0,
+            "volume": 1107854
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1777.699951171875,
+            "volume": 5125487
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.9483,
+          "volume_multiple": 3.4225,
+          "price_triggered": false,
+          "volume_triggered": true,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "CIPLA",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.837600+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CIPLA.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1378.9,
+        "volume": 1436439,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1346.0,
+            "volume": 1063964
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1344.0,
+            "volume": 921789
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1335.5,
+            "volume": 1084209
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1340.199951171875,
+            "volume": 575696
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1327.199951171875,
+            "volume": 847901
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1306.800048828125,
+            "volume": 551708
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1301.0,
+            "volume": 653621
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1311.300048828125,
+            "volume": 666122
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1329.5999755859375,
+            "volume": 478066
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1314.5999755859375,
+            "volume": 994166
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1328.0,
+            "volume": 1371747
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1325.0999755859375,
+            "volume": 850284
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1324.0999755859375,
+            "volume": 1387215
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1314.0,
+            "volume": 1238869
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1330.9000244140625,
+            "volume": 638943
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1338.0,
+            "volume": 1323900
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1355.0,
+            "volume": 1548428
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1350.0,
+            "volume": 4078811
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1365.5999755859375,
+            "volume": 997121
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1358.0,
+            "volume": 1141230
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1378.9000244140625,
+            "volume": 1436439
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 1.539,
+          "volume_multiple": 1.2817,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "MARUTI",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:08.862282+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MARUTI.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 11397.0,
+        "volume": 280426,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 11967.0,
+            "volume": 430286
+          },
+          {
+            "date": "2026-10-01",
+            "close": 11386.0,
+            "volume": 885820
+          },
+          {
+            "date": "2026-10-05",
+            "close": 11532.0,
+            "volume": 757171
+          },
+          {
+            "date": "2026-10-06",
+            "close": 11625.0,
+            "volume": 263958
+          },
+          {
+            "date": "2026-10-07",
+            "close": 11450.0,
+            "volume": 628155
+          },
+          {
+            "date": "2026-10-08",
+            "close": 11228.0,
+            "volume": 431962
+          },
+          {
+            "date": "2026-10-09",
+            "close": 11420.0,
+            "volume": 353177
+          },
+          {
+            "date": "2026-10-12",
+            "close": 11315.0,
+            "volume": 323997
+          },
+          {
+            "date": "2026-10-13",
+            "close": 11245.0,
+            "volume": 761548
+          },
+          {
+            "date": "2026-10-14",
+            "close": 11178.0,
+            "volume": 463850
+          },
+          {
+            "date": "2026-10-15",
+            "close": 11445.0,
+            "volume": 513644
+          },
+          {
+            "date": "2026-10-16",
+            "close": 11489.0,
+            "volume": 408961
+          },
+          {
+            "date": "2026-10-19",
+            "close": 11475.0,
+            "volume": 453832
+          },
+          {
+            "date": "2026-10-21",
+            "close": 11200.0,
+            "volume": 393314
+          },
+          {
+            "date": "2026-10-22",
+            "close": 11170.0,
+            "volume": 407490
+          },
+          {
+            "date": "2026-10-23",
+            "close": 11230.0,
+            "volume": 333253
+          },
+          {
+            "date": "2026-10-26",
+            "close": 11220.0,
+            "volume": 489223
+          },
+          {
+            "date": "2026-10-27",
+            "close": 11450.0,
+            "volume": 426915
+          },
+          {
+            "date": "2026-10-28",
+            "close": 11579.0,
+            "volume": 938032
+          },
+          {
+            "date": "2026-10-29",
+            "close": 11426.0,
+            "volume": 317248
+          },
+          {
+            "date": "2026-10-30",
+            "close": 11397.0,
+            "volume": 280426
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -0.2538,
+          "volume_multiple": 0.5619,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "EICHERMOT",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:09.060298+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EICHERMOT.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 7220.0,
+        "volume": 387656,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 7150.0,
+            "volume": 418141
+          },
+          {
+            "date": "2026-10-01",
+            "close": 6920.0,
+            "volume": 817452
+          },
+          {
+            "date": "2026-10-05",
+            "close": 7021.5,
+            "volume": 381658
+          },
+          {
+            "date": "2026-10-06",
+            "close": 7051.0,
+            "volume": 233372
+          },
+          {
+            "date": "2026-10-07",
+            "close": 6960.0,
+            "volume": 272452
+          },
+          {
+            "date": "2026-10-08",
+            "close": 6767.5,
+            "volume": 361283
+          },
+          {
+            "date": "2026-10-09",
+            "close": 7050.0,
+            "volume": 551231
+          },
+          {
+            "date": "2026-10-12",
+            "close": 7119.0,
+            "volume": 377241
+          },
+          {
+            "date": "2026-10-13",
+            "close": 7163.0,
+            "volume": 346905
+          },
+          {
+            "date": "2026-10-14",
+            "close": 7082.5,
+            "volume": 460500
+          },
+          {
+            "date": "2026-10-15",
+            "close": 7225.0,
+            "volume": 418885
+          },
+          {
+            "date": "2026-10-16",
+            "close": 7284.5,
+            "volume": 368563
+          },
+          {
+            "date": "2026-10-19",
+            "close": 7349.0,
+            "volume": 490129
+          },
+          {
+            "date": "2026-10-21",
+            "close": 7170.5,
+            "volume": 570831
+          },
+          {
+            "date": "2026-10-22",
+            "close": 7084.5,
+            "volume": 406738
+          },
+          {
+            "date": "2026-10-23",
+            "close": 7066.0,
+            "volume": 369072
+          },
+          {
+            "date": "2026-10-26",
+            "close": 7099.5,
+            "volume": 331591
+          },
+          {
+            "date": "2026-10-27",
+            "close": 7165.0,
+            "volume": 333270
+          },
+          {
+            "date": "2026-10-28",
+            "close": 7300.0,
+            "volume": 377246
+          },
+          {
+            "date": "2026-10-29",
+            "close": 7238.0,
+            "volume": 303706
+          },
+          {
+            "date": "2026-10-30",
+            "close": 7220.0,
+            "volume": 387656
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -0.2487,
+          "volume_multiple": 0.9466,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "LT",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:10.032711+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LT.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 3871.7,
+        "volume": 1761610,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 3760.0,
+            "volume": 2396040
+          },
+          {
+            "date": "2026-10-01",
+            "close": 3693.39990234375,
+            "volume": 2220932
+          },
+          {
+            "date": "2026-10-05",
+            "close": 3750.0,
+            "volume": 2323437
+          },
+          {
+            "date": "2026-10-06",
+            "close": 3770.0,
+            "volume": 1994276
+          },
+          {
+            "date": "2026-10-07",
+            "close": 3701.5,
+            "volume": 1609969
+          },
+          {
+            "date": "2026-10-08",
+            "close": 3625.10009765625,
+            "volume": 1690918
+          },
+          {
+            "date": "2026-10-09",
+            "close": 3703.300048828125,
+            "volume": 1339156
+          },
+          {
+            "date": "2026-10-12",
+            "close": 3627.5,
+            "volume": 1177475
+          },
+          {
+            "date": "2026-10-13",
+            "close": 3675.0,
+            "volume": 2254840
+          },
+          {
+            "date": "2026-10-14",
+            "close": 3642.0,
+            "volume": 1826165
+          },
+          {
+            "date": "2026-10-15",
+            "close": 3632.0,
+            "volume": 2452067
+          },
+          {
+            "date": "2026-10-16",
+            "close": 3627.10009765625,
+            "volume": 1875108
+          },
+          {
+            "date": "2026-10-19",
+            "close": 3661.89990234375,
+            "volume": 2331147
+          },
+          {
+            "date": "2026-10-21",
+            "close": 3636.0,
+            "volume": 1902623
+          },
+          {
+            "date": "2026-10-22",
+            "close": 3638.300048828125,
+            "volume": 2668020
+          },
+          {
+            "date": "2026-10-23",
+            "close": 3647.0,
+            "volume": 2021973
+          },
+          {
+            "date": "2026-10-26",
+            "close": 3680.0,
+            "volume": 1144515
+          },
+          {
+            "date": "2026-10-27",
+            "close": 3665.10009765625,
+            "volume": 1471485
+          },
+          {
+            "date": "2026-10-28",
+            "close": 3801.300048828125,
+            "volume": 6174490
+          },
+          {
+            "date": "2026-10-29",
+            "close": 3837.10009765625,
+            "volume": 1754505
+          },
+          {
+            "date": "2026-10-30",
+            "close": 3871.699951171875,
+            "volume": 1761610
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.9017,
+          "volume_multiple": 0.8265,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "TITAN",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:10.374852+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TITAN.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 4436.5,
+        "volume": 1137347,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 4587.0,
+            "volume": 927060
+          },
+          {
+            "date": "2026-10-01",
+            "close": 4515.7001953125,
+            "volume": 694098
+          },
+          {
+            "date": "2026-10-05",
+            "close": 4580.0,
+            "volume": 731987
+          },
+          {
+            "date": "2026-10-06",
+            "close": 4550.0,
+            "volume": 800113
+          },
+          {
+            "date": "2026-10-07",
+            "close": 4377.0,
+            "volume": 2951280
+          },
+          {
+            "date": "2026-10-08",
+            "close": 4359.5,
+            "volume": 1490894
+          },
+          {
+            "date": "2026-10-09",
+            "close": 4410.0,
+            "volume": 591677
+          },
+          {
+            "date": "2026-10-12",
+            "close": 4400.0,
+            "volume": 724353
+          },
+          {
+            "date": "2026-10-13",
+            "close": 4487.0,
+            "volume": 550356
+          },
+          {
+            "date": "2026-10-14",
+            "close": 4444.0,
+            "volume": 552204
+          },
+          {
+            "date": "2026-10-15",
+            "close": 4455.7998046875,
+            "volume": 533115
+          },
+          {
+            "date": "2026-10-16",
+            "close": 4444.7998046875,
+            "volume": 577590
+          },
+          {
+            "date": "2026-10-19",
+            "close": 4424.2001953125,
+            "volume": 651506
+          },
+          {
+            "date": "2026-10-21",
+            "close": 4380.89990234375,
+            "volume": 448729
+          },
+          {
+            "date": "2026-10-22",
+            "close": 4350.0,
+            "volume": 426321
+          },
+          {
+            "date": "2026-10-23",
+            "close": 4299.7001953125,
+            "volume": 633220
+          },
+          {
+            "date": "2026-10-26",
+            "close": 4323.0,
+            "volume": 382563
+          },
+          {
+            "date": "2026-10-27",
+            "close": 4365.89990234375,
+            "volume": 749496
+          },
+          {
+            "date": "2026-10-28",
+            "close": 4337.89990234375,
+            "volume": 527965
+          },
+          {
+            "date": "2026-10-29",
+            "close": 4434.0,
+            "volume": 958380
+          },
+          {
+            "date": "2026-10-30",
+            "close": 4436.5,
+            "volume": 1137347
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.0564,
+          "volume_multiple": 1.4304,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "PIDILITIND",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:10.552383+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PIDILITIND.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 1461.6,
+        "volume": 795990,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 1465.0999755859375,
+            "volume": 940925
+          },
+          {
+            "date": "2026-10-01",
+            "close": 1464.0,
+            "volume": 867267
+          },
+          {
+            "date": "2026-10-05",
+            "close": 1487.699951171875,
+            "volume": 843401
+          },
+          {
+            "date": "2026-10-06",
+            "close": 1520.5,
+            "volume": 608466
+          },
+          {
+            "date": "2026-10-07",
+            "close": 1488.5,
+            "volume": 537272
+          },
+          {
+            "date": "2026-10-08",
+            "close": 1460.0999755859375,
+            "volume": 985340
+          },
+          {
+            "date": "2026-10-09",
+            "close": 1482.0,
+            "volume": 312874
+          },
+          {
+            "date": "2026-10-12",
+            "close": 1477.699951171875,
+            "volume": 533424
+          },
+          {
+            "date": "2026-10-13",
+            "close": 1497.5999755859375,
+            "volume": 529990
+          },
+          {
+            "date": "2026-10-14",
+            "close": 1499.5,
+            "volume": 836589
+          },
+          {
+            "date": "2026-10-15",
+            "close": 1505.0,
+            "volume": 640097
+          },
+          {
+            "date": "2026-10-16",
+            "close": 1502.800048828125,
+            "volume": 547518
+          },
+          {
+            "date": "2026-10-19",
+            "close": 1482.5999755859375,
+            "volume": 413687
+          },
+          {
+            "date": "2026-10-21",
+            "close": 1484.9000244140625,
+            "volume": 520740
+          },
+          {
+            "date": "2026-10-22",
+            "close": 1481.199951171875,
+            "volume": 483066
+          },
+          {
+            "date": "2026-10-23",
+            "close": 1487.699951171875,
+            "volume": 308196
+          },
+          {
+            "date": "2026-10-26",
+            "close": 1478.0,
+            "volume": 754341
+          },
+          {
+            "date": "2026-10-27",
+            "close": 1450.0,
+            "volume": 630241
+          },
+          {
+            "date": "2026-10-28",
+            "close": 1389.5999755859375,
+            "volume": 1205751
+          },
+          {
+            "date": "2026-10-29",
+            "close": 1422.0,
+            "volume": 3136525
+          },
+          {
+            "date": "2026-10-30",
+            "close": 1461.5999755859375,
+            "volume": 795990
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 2.7848,
+          "volume_multiple": 1.0182,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "POLYCAB",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:10.710072+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/POLYCAB.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 7787.0,
+        "volume": 346328,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 8026.0,
+            "volume": 494724
+          },
+          {
+            "date": "2026-10-01",
+            "close": 7990.0,
+            "volume": 463691
+          },
+          {
+            "date": "2026-10-05",
+            "close": 8080.0,
+            "volume": 424158
+          },
+          {
+            "date": "2026-10-06",
+            "close": 8147.0,
+            "volume": 301660
+          },
+          {
+            "date": "2026-10-07",
+            "close": 8310.0,
+            "volume": 531310
+          },
+          {
+            "date": "2026-10-08",
+            "close": 8151.0,
+            "volume": 367261
+          },
+          {
+            "date": "2026-10-09",
+            "close": 8255.0,
+            "volume": 335752
+          },
+          {
+            "date": "2026-10-12",
+            "close": 8405.0,
+            "volume": 456246
+          },
+          {
+            "date": "2026-10-13",
+            "close": 8290.0,
+            "volume": 802263
+          },
+          {
+            "date": "2026-10-14",
+            "close": 8335.0,
+            "volume": 1146595
+          },
+          {
+            "date": "2026-10-15",
+            "close": 8207.0,
+            "volume": 853479
+          },
+          {
+            "date": "2026-10-16",
+            "close": 8219.0,
+            "volume": 597786
+          },
+          {
+            "date": "2026-10-19",
+            "close": 8025.0,
+            "volume": 294308
+          },
+          {
+            "date": "2026-10-21",
+            "close": 7770.5,
+            "volume": 308749
+          },
+          {
+            "date": "2026-10-22",
+            "close": 7671.0,
+            "volume": 335530
+          },
+          {
+            "date": "2026-10-23",
+            "close": 7440.0,
+            "volume": 325551
+          },
+          {
+            "date": "2026-10-26",
+            "close": 7739.0,
+            "volume": 225323
+          },
+          {
+            "date": "2026-10-27",
+            "close": 7718.0,
+            "volume": 350924
+          },
+          {
+            "date": "2026-10-28",
+            "close": 7680.0,
+            "volume": 298745
+          },
+          {
+            "date": "2026-10-29",
+            "close": 7745.0,
+            "volume": 325369
+          },
+          {
+            "date": "2026-10-30",
+            "close": 7787.0,
+            "volume": 346328
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": 0.5423,
+          "volume_multiple": 0.7497,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "APLAPOLLO",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:11.010613+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APLAPOLLO.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 2165.1,
+        "volume": 1101722,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 2190.10009765625,
+            "volume": 587352
+          },
+          {
+            "date": "2026-10-01",
+            "close": 2115.699951171875,
+            "volume": 1615913
+          },
+          {
+            "date": "2026-10-05",
+            "close": 2099.800048828125,
+            "volume": 678442
+          },
+          {
+            "date": "2026-10-06",
+            "close": 2152.0,
+            "volume": 320327
+          },
+          {
+            "date": "2026-10-07",
+            "close": 2135.0,
+            "volume": 613418
+          },
+          {
+            "date": "2026-10-08",
+            "close": 2040.0,
+            "volume": 253118
+          },
+          {
+            "date": "2026-10-09",
+            "close": 2114.10009765625,
+            "volume": 397189
+          },
+          {
+            "date": "2026-10-12",
+            "close": 2157.39990234375,
+            "volume": 286344
+          },
+          {
+            "date": "2026-10-13",
+            "close": 2185.0,
+            "volume": 305085
+          },
+          {
+            "date": "2026-10-14",
+            "close": 2160.0,
+            "volume": 696558
+          },
+          {
+            "date": "2026-10-15",
+            "close": 2139.0,
+            "volume": 156879
+          },
+          {
+            "date": "2026-10-16",
+            "close": 2152.699951171875,
+            "volume": 236375
+          },
+          {
+            "date": "2026-10-19",
+            "close": 2144.60009765625,
+            "volume": 381848
+          },
+          {
+            "date": "2026-10-21",
+            "close": 2066.800048828125,
+            "volume": 562176
+          },
+          {
+            "date": "2026-10-22",
+            "close": 2052.39990234375,
+            "volume": 648903
+          },
+          {
+            "date": "2026-10-23",
+            "close": 2033.699951171875,
+            "volume": 777580
+          },
+          {
+            "date": "2026-10-26",
+            "close": 2077.89990234375,
+            "volume": 987700
+          },
+          {
+            "date": "2026-10-27",
+            "close": 2213.89990234375,
+            "volume": 2074071
+          },
+          {
+            "date": "2026-10-28",
+            "close": 2165.300048828125,
+            "volume": 889278
+          },
+          {
+            "date": "2026-10-29",
+            "close": 2195.0,
+            "volume": 1214686
+          },
+          {
+            "date": "2026-10-30",
+            "close": 2165.10009765625,
+            "volume": 1101722
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -1.3622,
+          "volume_multiple": 1.6103,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "CERA",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:11.179221+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CERA.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 4406.0,
+        "volume": 7485,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 5088.0,
+            "volume": 25540
+          },
+          {
+            "date": "2026-10-01",
+            "close": 5096.5,
+            "volume": 5282
+          },
+          {
+            "date": "2026-10-05",
+            "close": 5056.5,
+            "volume": 7444
+          },
+          {
+            "date": "2026-10-06",
+            "close": 5122.5,
+            "volume": 2628
+          },
+          {
+            "date": "2026-10-07",
+            "close": 5038.5,
+            "volume": 4104
+          },
+          {
+            "date": "2026-10-08",
+            "close": 4949.5,
+            "volume": 4494
+          },
+          {
+            "date": "2026-10-09",
+            "close": 5002.5,
+            "volume": 3249
+          },
+          {
+            "date": "2026-10-12",
+            "close": 4970.5,
+            "volume": 6602
+          },
+          {
+            "date": "2026-10-13",
+            "close": 5055.5,
+            "volume": 4281
+          },
+          {
+            "date": "2026-10-14",
+            "close": 5053.0,
+            "volume": 3366
+          },
+          {
+            "date": "2026-10-15",
+            "close": 5046.0,
+            "volume": 3306
+          },
+          {
+            "date": "2026-10-16",
+            "close": 5097.0,
+            "volume": 3339
+          },
+          {
+            "date": "2026-10-19",
+            "close": 4970.5,
+            "volume": 2667
+          },
+          {
+            "date": "2026-10-21",
+            "close": 4779.5,
+            "volume": 8748
+          },
+          {
+            "date": "2026-10-22",
+            "close": 4674.0,
+            "volume": 15601
+          },
+          {
+            "date": "2026-10-23",
+            "close": 4530.0,
+            "volume": 27224
+          },
+          {
+            "date": "2026-10-26",
+            "close": 4542.5,
+            "volume": 6774
+          },
+          {
+            "date": "2026-10-27",
+            "close": 4498.0,
+            "volume": 17671
+          },
+          {
+            "date": "2026-10-28",
+            "close": 4449.0,
+            "volume": 24609
+          },
+          {
+            "date": "2026-10-29",
+            "close": 4439.0,
+            "volume": 15684
+          },
+          {
+            "date": "2026-10-30",
+            "close": 4406.0,
+            "volume": 7485
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -0.7434,
+          "volume_multiple": 0.7772,
+          "price_triggered": false,
+          "volume_triggered": false,
+          "lookback": 20
+        }
+      },
+      {
+        "ticker": "VSTIND",
+        "status": "ok",
+        "fetched_at": "2026-10-30T14:27:11.503827+00:00",
+        "provider": "Yahoo Finance",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/VSTIND.NS?range=3mo&interval=1d",
+        "session_date": "2026-10-30",
+        "close": 185.5,
+        "volume": 273799,
+        "currency": "INR",
+        "history": [
+          {
+            "date": "2026-09-30",
+            "close": 203.16000366210938,
+            "volume": 81303
+          },
+          {
+            "date": "2026-10-01",
+            "close": 201.13999938964844,
+            "volume": 142755
+          },
+          {
+            "date": "2026-10-05",
+            "close": 200.9199981689453,
+            "volume": 101204
+          },
+          {
+            "date": "2026-10-06",
+            "close": 202.63999938964844,
+            "volume": 100176
+          },
+          {
+            "date": "2026-10-07",
+            "close": 201.3300018310547,
+            "volume": 67992
+          },
+          {
+            "date": "2026-10-08",
+            "close": 200.86000061035156,
+            "volume": 108251
+          },
+          {
+            "date": "2026-10-09",
+            "close": 201.5800018310547,
+            "volume": 89035
+          },
+          {
+            "date": "2026-10-12",
+            "close": 201.5,
+            "volume": 72242
+          },
+          {
+            "date": "2026-10-13",
+            "close": 201.50999450683594,
+            "volume": 87194
+          },
+          {
+            "date": "2026-10-14",
+            "close": 201.74000549316406,
+            "volume": 107341
+          },
+          {
+            "date": "2026-10-15",
+            "close": 201.8699951171875,
+            "volume": 73450
+          },
+          {
+            "date": "2026-10-16",
+            "close": 201.86000061035156,
+            "volume": 54554
+          },
+          {
+            "date": "2026-10-19",
+            "close": 200.77999877929688,
+            "volume": 62658
+          },
+          {
+            "date": "2026-10-21",
+            "close": 200.27999877929688,
+            "volume": 119859
+          },
+          {
+            "date": "2026-10-22",
+            "close": 199.02000427246094,
+            "volume": 161116
+          },
+          {
+            "date": "2026-10-23",
+            "close": 197.14999389648438,
+            "volume": 194563
+          },
+          {
+            "date": "2026-10-26",
+            "close": 195.39999389648438,
+            "volume": 138578
+          },
+          {
+            "date": "2026-10-27",
+            "close": 194.38999938964844,
+            "volume": 172163
+          },
+          {
+            "date": "2026-10-28",
+            "close": 192.4499969482422,
+            "volume": 150024
+          },
+          {
+            "date": "2026-10-29",
+            "close": 189.41000366210938,
+            "volume": 306047
+          },
+          {
+            "date": "2026-10-30",
+            "close": 185.5,
+            "volume": 273799
+          }
+        ],
+        "alert": {
+          "status": "ok",
+          "price_change_pct": -2.0643,
+          "volume_multiple": 2.2907,
+          "price_triggered": false,
+          "volume_triggered": true,
+          "lookback": 20
+        }
+      }
+    ]
+  },
+  "announcements": {
+    "fetched_at": "2026-10-30T15:02:15.938868+00:00",
+    "source_url": "https://www.nseindia.com/api/corporate-announcements?index=equities&from_date=23-10-2026&to_date=30-10-2026",
+    "coverage_start": "2026-10-23",
+    "coverage_end": "2026-10-30",
+    "records": [],
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden",
+    "rss_error": "Invalid date value or format \"30-OCT-2026 20:28\""
+  }
+}
