@@ -42,6 +42,10 @@ The active provider choice is now Gemini's free tier, replacing the local-model 
 
 See `docs/ITERATION_2_REPORT.md` for the earlier deployed results and `docs/PROGRESS_REPORT.md` for the first iteration.
 
+## Hosted backend
+
+Deploy the Python UI/API service with the included free-plan `render.yaml` and Dockerfile. See [Render deployment](docs/RENDER_DEPLOY.md). Configure `GEMINI_API_KEY` in Render, never in the repository. Free instances sleep on inactivity and discard runtime documents, jobs and caches on restart; bundled indexes remain available. A successful cloud deployment and its public URL must be verified separately.
+
 ## Run the prototype
 
 From the original assignment workspace:

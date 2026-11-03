@@ -1,0 +1,17 @@
+.git
+.env
+.env.*
+.tools
+.models
+__pycache__
+**/__pycache__
+*.pyc
+data/documents
+data/cache
+data/model_cache
+data/model_runs
+artifacts
+tests
+docs
+.openai/*
+!.openai/hosting.json

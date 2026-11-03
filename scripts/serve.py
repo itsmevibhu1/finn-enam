@@ -4,6 +4,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
+import os
 from pathlib import Path
 import re
 from threading import Lock
@@ -69,6 +70,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path=urlsplit(self.path).path
+        if path=='/healthz':
+            return self.json({'status':'ok'})
         if path=='/api/capabilities':
             return self.json({'on_demand_ingestion':True,'model_generation':available()})
         if path.startswith('/api/jobs/'):
@@ -136,11 +139,12 @@ class Handler(SimpleHTTPRequestHandler):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--port',type=int,default=8000)
+    parser.add_argument('--port',type=int,default=int(os.environ.get('PORT','8000')))
+    parser.add_argument('--host',choices=['127.0.0.1','0.0.0.0'],default='127.0.0.1')
     args=parser.parse_args()
-    print(f'FINN local research: http://127.0.0.1:{args.port}',flush=True)
+    print(f'FINN research server: http://{args.host}:{args.port}',flush=True)
     try:
-        ThreadingHTTPServer(('127.0.0.1',args.port),Handler).serve_forever()
+        ThreadingHTTPServer((args.host,args.port),Handler).serve_forever()
     except KeyboardInterrupt:
         pass
     finally:

@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import tempfile
@@ -21,6 +22,7 @@ from import_document import import_document
 from source_metadata import transcript_metadata, quarter_coverage, reporting_period, period_sort_key
 
 ROOT=Path(__file__).resolve().parents[1]
+DOWNLOAD_WORKERS=max(1,min(3,int(os.environ.get('FINN_DOWNLOAD_WORKERS','3'))))
 
 
 class DirectoryParser(HTMLParser):
@@ -237,7 +239,7 @@ def collect(ticker,transcripts=4,annual_reports=1,max_candidates=12):
         raise ValueError('Collection limits out of range')
     result=discover(ticker)
     selected=[dict(c,website_host=result['website_host']) for c in result['candidates'] if c['kind']=='annual_report' and c['primary_host_approved']][:annual_reports]
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    with ThreadPoolExecutor(max_workers=DOWNLOAD_WORKERS) as pool:
         result['documents']=list(pool.map(download,selected))
     evidence=[]
     for document in result['documents']:
@@ -266,7 +268,7 @@ def collect(ticker,transcripts=4,annual_reports=1,max_candidates=12):
                 break
             continue
         batch=eligible[attempted:attempted+min(3,transcripts-len(set(periods)) if len(set(periods))<transcripts else 1)]
-        with ThreadPoolExecutor(max_workers=3) as pool:
+        with ThreadPoolExecutor(max_workers=DOWNLOAD_WORKERS) as pool:
             documents=list(pool.map(download,batch))
         for document in documents:
             document['quality']=document_quality(document,result['name'])

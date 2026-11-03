@@ -138,7 +138,7 @@ async function collectCompany(){
   const response=await fetch('/api/collect',{method:'POST',headers:{'Content-Type':'application/json','X-FINN-Request':'local'},body:JSON.stringify({ticker})});
   const job=await response.json();
   if(!response.ok)throw Error(job.error||'Could not start source collection');
-  for(let attempt=0;attempt<180;attempt++){
+  for(let attempt=0;attempt<600;attempt++){
    await new Promise(resolve=>setTimeout(resolve,1000));
    const poll=await fetch('/api/jobs/'+job.job_id,{cache:'no-store'});
    if(!poll.ok)throw Error('Source-collection status unavailable');
@@ -258,6 +258,6 @@ function bind(){
 $('#close-evidence').onclick=()=>$('#evidence').close();
 $('#evidence').addEventListener('click',e=>{if(e.target===$('#evidence')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
 window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0)});
-try{const response=await fetch('snapshot.json');if(!response.ok)throw Error('Research snapshot unavailable');data=await response.json();if(['127.0.0.1','localhost'].includes(location.hostname)){try{const capabilities=await fetch('/api/capabilities');if(capabilities.ok){const caps=await capabilities.json();canCollect=!!caps.on_demand_ingestion;canGenerate=!!caps.model_generation}}catch{}}render()}catch(e){$('#content').innerHTML='<div class="empty"><strong>Research could not load.</strong>Please reload this page. Serve the app over HTTP rather than opening the HTML file directly.</div>';console.error(e)}
+try{const response=await fetch('snapshot.json');if(!response.ok)throw Error('Research snapshot unavailable');data=await response.json();{try{const capabilities=await fetch('/api/capabilities');if(capabilities.ok){const caps=await capabilities.json();canCollect=!!caps.on_demand_ingestion;canGenerate=!!caps.model_generation}}catch{}}render()}catch(e){$('#content').innerHTML='<div class="empty"><strong>Research could not load.</strong>Please reload this page. Serve the app over HTTP rather than opening the HTML file directly.</div>';console.error(e)}
 
 setInterval(()=>{const view=location.hash.slice(1)||'briefing';if(data&&['briefing','portfolio'].includes(view)&&!document.hidden&&!document.activeElement?.matches('input,select,textarea'))render()},60000);

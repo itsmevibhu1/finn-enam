@@ -35,6 +35,21 @@ class ResearchAPITest(unittest.TestCase):
     def payload(self,**changes):
         return {'ticker':'HCLTECH','question':'What changed in growth guidance?','scope':'earnings','period':'latest4',**changes}
 
+    def test_health_endpoint_does_not_call_model(self):
+        connection=HTTPConnection('127.0.0.1',self.server.server_port)
+        with patch.object(serve,'generate') as generate:
+            connection.request('GET','/healthz')
+            response=connection.getresponse()
+            self.assertEqual(response.status,200)
+            self.assertEqual(json.loads(response.read()),{'status':'ok'})
+        connection.close();generate.assert_not_called()
+
+    def test_server_credentials_are_not_served_as_static_files(self):
+        connection=HTTPConnection('127.0.0.1',self.server.server_port)
+        connection.request('GET','/.env.local')
+        response=connection.getresponse();response.read();connection.close()
+        self.assertEqual(response.status,404)
+
     def test_cross_origin_submission_is_rejected(self):
         with patch.object(serve.MODEL_POOL,'submit') as submit:
             status,_=self.request(self.payload(),{'X-FINN-Request':'local','Origin':'https://another.example'})
