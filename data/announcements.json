@@ -1,13 +1,86 @@
 {
-  "fetched_at": "2026-11-03T01:32:16.256868+00:00",
+  "fetched_at": "2026-11-03T12:46:11.841524+00:00",
   "source_url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
   "coverage_start": "2026-11-03T00:00:02+05:30",
-  "coverage_end": "2026-11-03T07:00:00+05:30",
-  "records": [],
+  "coverage_end": "2026-11-03T18:15:19+05:30",
+  "records": [
+    {
+      "id": "5b79cabd3a3fe779b214",
+      "ticker": "CIPLA",
+      "subject": "Cipla Limited",
+      "details": "Cipla Limited has informed the Exchange about Newspaper Publication regarding opening of special window for re-lodgement of transfer and dematerialisation of physical shares |SUBJECT: Copy of Newspaper Publication",
+      "published_at": "2026-11-03T17:39:42+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CIPLA_03112026173812_Stock_Exchange_intimation_for_Special_window_for_re-lodgement_signed.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "a76c25189c4c5a987d43",
+      "ticker": "POLYCAB",
+      "subject": "Polycab India Limited",
+      "details": "Polycab India Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+      "published_at": "2026-11-03T16:03:20+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17413_WebXMLFile_20261103_160319916.xml",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "24af62c4bb75a0b6e1f0",
+      "ticker": "POLYCAB",
+      "subject": "Polycab India Limited",
+      "details": "Polycab India Limited has informed the Exchange regarding Allotment of 3403  Shares. |SUBJECT: ESOP/ESOS/ESPS",
+      "published_at": "2026-11-03T16:01:15+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_03112026160106_IntimationtoStockexchange.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "51774485f9b518850995",
+      "ticker": "ICICIBANK",
+      "subject": "ICICI Bank Limited",
+      "details": "ICICI BANK LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+      "published_at": "2026-11-03T14:22:16+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_1606_WebXMLFile_20261103_142216083.xml",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "0016c5f789c83406f090",
+      "ticker": "EICHERMOT",
+      "subject": "Eicher Motors Limited",
+      "details": "Eicher Motors Limited has informed the Exchange regarding a press release dated November 03, 2026, titled \"Royal Enfield at EICMA 2026: The new frontier of Pure Motorcycling and Launch of Royal Enfield Himalayan 750\". |SUBJECT: Press Release",
+      "published_at": "2026-11-03T13:45:09+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/rahulrathore_royalenfield_com_03112026133859_Press_Release_03-11-2026_EICMA_Himalayan_750_Signed.pdf",
+      "category": "press_release",
+      "priority": 40,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "f67993b337e3eb0a103b",
+      "ticker": "ICICIBANK",
+      "subject": "ICICI Bank Limited",
+      "details": "ICICI Bank Limited has informed the Exchange regarding Allotment of 62879  Shares. |SUBJECT: ESOP/ESOS/ESPS",
+      "published_at": "2026-11-03T10:24:40+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ICICIBANK1_03112026102424_Lettertoexchange.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    }
+  ],
   "status": "ok",
   "provider": "NSE RSS",
   "coverage_note": "Observed filings accumulated from rolling snapshots; gaps between refreshes may be missing.",
   "api_error": "HTTP Error 403: Forbidden",
   "skipped_dates": 0,
-  "total_exchange_rows": 185
+  "total_exchange_rows": 1625
 }

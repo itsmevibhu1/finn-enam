@@ -58,7 +58,7 @@ class SourcePipelineTest(unittest.TestCase):
         self.assertIsNone(result['reporting_period'])
 
     def test_fiscal_quarter_from_primary_statement(self):
-        result=transcript_metadata([{'text':'Financial results for the quarter ended September 30, 2026'}])
+        result=transcript_metadata([{'text':'Conference call on financial results for the quarter ended September 30, 2026'}])
         self.assertEqual(result['reporting_period'],'Q2 FY2027')
 
     def test_chunking_terminates_and_covers_source_end(self):

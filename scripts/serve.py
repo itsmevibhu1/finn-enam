@@ -10,14 +10,31 @@ from threading import Lock
 from urllib.parse import urlsplit
 import uuid
 
-from research_pipeline import collect
+from research_pipeline import collect,retain_collection
 from build_snapshot import build
+from model_research import available,generate
 
 ROOT=Path(__file__).resolve().parents[1]
 STATIC=ROOT/'dist' if (ROOT/'.openai/hosting.json').exists() else ROOT/'finn-site/dist'
 LOCK=Lock()
 JOBS={}
 POOL=ThreadPoolExecutor(max_workers=1)
+MODEL_POOL=ThreadPoolExecutor(max_workers=1)
+
+
+def run_research(job_id,payload):
+    with LOCK:
+        JOBS[job_id]['status']='running'
+    try:
+        result=generate(**payload)
+        with LOCK:
+            JOBS[job_id].update(status='complete',result=result)
+    except (ValueError,FileNotFoundError) as exc:
+        with LOCK:
+            JOBS[job_id].update(status='failed',error=str(exc) if isinstance(exc,ValueError) else 'No primary-document corpus indexed for this company.')
+    except Exception:
+        with LOCK:
+            JOBS[job_id].update(status='failed',error='Research could not complete. No draft was published.')
 
 
 def run_job(job_id,ticker):
@@ -28,7 +45,7 @@ def run_job(job_id,ticker):
         with LOCK:
             path=ROOT/'data/company_discovery.json'
             existing=json.loads(path.read_text()) if path.exists() else {'companies':{}}
-            existing['companies'][ticker]=company
+            retain_collection(existing,ticker,company)
             path.write_text(json.dumps(existing,indent=2)+'\n')
             build()
             JOBS[job_id].update(status='complete' if company['status']=='ok' else 'failed',result=company['status'])
@@ -53,7 +70,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         path=urlsplit(self.path).path
         if path=='/api/capabilities':
-            return self.json({'on_demand_ingestion':True,'model_generation':False})
+            return self.json({'on_demand_ingestion':True,'model_generation':available()})
         if path.startswith('/api/jobs/'):
             with LOCK:
                 job=JOBS.get(path.rsplit('/',1)[-1])
@@ -63,7 +80,8 @@ class Handler(SimpleHTTPRequestHandler):
         return super().do_GET()
 
     def do_POST(self):
-        if urlsplit(self.path).path!='/api/collect':
+        endpoint=urlsplit(self.path).path
+        if endpoint not in {'/api/collect','/api/research'}:
             return self.json({'error':'Unknown endpoint'},404)
         # A custom same-origin header prevents another website from submitting jobs.
         origin=self.headers.get('Origin')
@@ -80,18 +98,39 @@ class Handler(SimpleHTTPRequestHandler):
             ticker=str(payload.get('ticker','')).strip().upper()
             if not re.fullmatch(r'[A-Z0-9][A-Z0-9&_.-]{0,39}',ticker):
                 raise ValueError('Invalid NSE ticker')
+            if endpoint=='/api/research':
+                question=payload.get('question','')
+                scope=payload.get('scope','auto')
+                period=payload.get('period','all')
+                if not isinstance(question,str) or not 3<=len(question.strip())<=300:
+                    raise ValueError('Question must contain between three and three hundred characters')
+                if scope not in ('auto','all','earnings','annual'):
+                    raise ValueError('Invalid document scope')
+                if not isinstance(period,str) or not re.fullmatch(r'all|latest4|Q[1-4] FY[0-9]{4}',period):
+                    raise ValueError('Invalid reporting period')
+                payload={'ticker':ticker,'question':question.strip(),'scope':scope,'period':period}
         except (ValueError,TypeError) as exc:
             return self.json({'error':str(exc)},400)
         with LOCK:
+            kind='research' if endpoint=='/api/research' else 'collect'
             active=[(key,job) for key,job in JOBS.items() if job['status'] in ('queued','running')]
             for key,job in active:
-                if job['ticker']==ticker:
+                if job.get('kind','collect')==kind and (job.get('request')==payload if kind=='research' else job['ticker']==ticker):
                     return self.json({'job_id':key,**job},202)
             if len(active)>=3:
                 return self.json({'error':'Three jobs are already active; retry after one finishes.'},429)
             job_id=uuid.uuid4().hex
-            JOBS[job_id]={'ticker':ticker,'status':'queued'}
-            POOL.submit(run_job,job_id,ticker)
+            # Retain a bounded set of completed jobs for polling clients.
+            for key in list(JOBS):
+                if len(JOBS)<60:
+                    break
+                if JOBS[key]['status'] not in ('queued','running'):
+                    del JOBS[key]
+            JOBS[job_id]={'ticker':ticker,'kind':kind,'status':'queued','request':payload if kind=='research' else {'ticker':ticker}}
+            if kind=='research':
+                MODEL_POOL.submit(run_research,job_id,payload)
+            else:
+                POOL.submit(run_job,job_id,ticker)
             return self.json({'job_id':job_id,**JOBS[job_id]},202)
 
 
@@ -106,6 +145,7 @@ def main():
         pass
     finally:
         POOL.shutdown(wait=False,cancel_futures=True)
+        MODEL_POOL.shutdown(wait=False,cancel_futures=True)
 
 
 if __name__=='__main__':

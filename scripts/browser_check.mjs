@@ -45,6 +45,11 @@ try{
  check(await evaluate(`document.querySelector('.notice').textContent.includes('Historical replay')`),'Historical replay is explicitly labelled');
  check(await evaluate(`document.querySelectorAll('.event').length===1`),'Historical replay shows the dated FY25 results event');
  await evaluate(`location.hash='research'`);await until(`document.querySelectorAll('.comparison').length===3`);
+ check(await evaluate(`document.querySelector('#quarter-coverage').textContent.includes('Four consecutive earnings quarters indexed')`),'Infosys coverage counts distinct earnings quarters in combined PDFs');
+ await evaluate(`document.querySelector('#research-scope').value='earnings';document.querySelector('#research-scope').dispatchEvent(new Event('change'));document.querySelector('#research-period').value='Q2 FY2027';document.querySelector('#research-period').dispatchEvent(new Event('change'))`);
+ await until(`document.querySelectorAll('#retrieval-results .source-row').length>0`);
+ check(await evaluate(`Array.from(document.querySelectorAll('#retrieval-results .source-row')).every(row=>row.textContent.includes('earnings call')&&Number(row.textContent.match(/PDF PAGE ([0-9]+)/)?.[1])>=24)`),'Earnings-only quarter search excludes the earlier media pages');
+ await evaluate(`document.querySelector('#research-scope').value='all';document.querySelector('#research-period').value='all';document.querySelector('#research-period').dispatchEvent(new Event('change'));document.querySelector('#research-scope').dispatchEvent(new Event('change'))`);
  check(await evaluate(`document.querySelector('.status.missed')?.textContent==='missed'`),'Latest guidance miss is visible');
  await evaluate(`document.querySelector('#comparison-filter').value='all';document.querySelector('#comparison-filter').dispatchEvent(new Event('change'))`);
  check(await evaluate(`document.querySelectorAll('.comparison').length===5`),'Earlier guidance revisions and pending FY27 outcome are accessible');
@@ -65,8 +70,27 @@ try{
  await evaluate(`document.querySelector('[data-topic="growth guidance"]').click()`);
  await until(`document.querySelectorAll('#retrieval-results .source-row').length>0`);
  check(await evaluate(`document.querySelector('#document-research').textContent.includes('Coforge')`),'An extra ticker outside the original demo set uses the same retrieval flow');
+ await evaluate(`document.querySelector('[data-ticker="ASTRAL"]').click()`);
+ await until(`document.querySelector('#quarter-coverage')?.textContent.includes('partial')`);
+ check(await evaluate(`document.querySelector('#quarter-coverage').textContent.includes('Q4 FY2026')`),'Astral explicitly shows the missing earnings quarter instead of counting an analyst meet');
+ if(process.env.FINN_TEST_LIVE_RESEARCH==='1'){
+  await evaluate(`document.querySelector('[data-ticker="HCLTECH"]').click()`);
+  await until(`document.querySelector('#ai-question-form')`);
+  await evaluate(`document.querySelector('#research-scope').value='earnings';document.querySelector('#research-scope').dispatchEvent(new Event('change'));document.querySelector('#research-period').value='latest4';document.querySelector('#research-period').dispatchEvent(new Event('change'));document.querySelector('#ai-question-form').requestSubmit()`);
+  check(await evaluate(`document.querySelector('#generate-research').disabled && document.querySelector('#ai-answer').textContent.includes('Reading retrieved evidence')`),'Research submission shows a pending state and prevents duplicate clicks');
+  for(let i=0;i<240;i++){
+   if(await evaluate(`!document.querySelector('#generate-research').disabled`))break;
+   await sleep(1000);
+  }
+  check(await evaluate(`document.querySelector('#ai-answer').textContent.includes('AI draft') && document.querySelectorAll('#ai-answer .source-row').length>0`),'Live Gemini research renders a checked draft from the interface');
+  check(await evaluate(`Array.from(document.querySelectorAll('#ai-answer .source-row a')).every(a=>a.href.startsWith('https://')&&a.href.includes('#page='))`),'AI observations link to primary PDF pages');
+  await evaluate(`document.querySelector('#ai-question-form').requestSubmit()`);
+  await until(`document.querySelector('#ai-answer').textContent.includes('cached result')`);
+  check(true,'Repeated research is served from the validated cache');
+ }
  await evaluate(`location.hash='portfolio'`);await until(`document.querySelectorAll('tbody tr').length===18`);
  check(await evaluate(`document.querySelector('main').textContent.includes('18/18 price sources available')`),'All 18 fetched portfolio prices are displayed');
+ check(await evaluate(`Array.from(document.querySelectorAll('tr[data-freshness="stale"]')).every(row=>row.textContent.includes('alerts withheld'))`),'Stale portfolio rows are labelled and excluded from live alerts');
  await evaluate(`document.querySelector('#price-threshold').value='5';document.querySelector('#price-threshold').dispatchEvent(new Event('change'))`);
  check(await evaluate(`JSON.parse(localStorage.getItem('finn-thresholds')).price===5`),'Configurable price threshold persists on the device');
  await evaluate(`document.querySelector('#portfolio-search').value='INFY';document.querySelector('#portfolio-search').dispatchEvent(new Event('input'))`);

@@ -1,28 +1,18 @@
 {
-  "refreshed_at": "2026-11-03T01:55:47.326519+00:00",
+  "refreshed_at": "2026-11-03T11:54:42.144016+00:00",
   "note": "Completed daily sessions; price change uses close-to-close prices. Corporate actions may cause mechanical price alerts.",
   "records": [
     {
       "ticker": "RELIANCE",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.049665+00:00",
+      "fetched_at": "2026-11-03T11:54:37.549286+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RELIANCE.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1164.9,
-      "volume": 14753650,
+      "session_date": "2026-11-03",
+      "close": 1307.9,
+      "volume": 42318217,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1187.0,
-          "volume": 16376789
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1167.699951171875,
-          "volume": 16771221
-        },
         {
           "date": "2026-10-05",
           "close": 1186.4000244140625,
@@ -117,38 +107,51 @@
           "date": "2026-10-30",
           "close": 1164.9000244140625,
           "volume": 14753650
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1300.0,
+          "volume": 88121121
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1307.9000244140625,
+          "volume": 42318217
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -0.2142,
-        "volume_multiple": 0.9716,
+        "price_change_pct": 0.6077,
+        "volume_multiple": 2.2665,
         "price_triggered": false,
-        "volume_triggered": false,
+        "volume_triggered": true,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/RELIANCE.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "TCS",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.050632+00:00",
+      "fetched_at": "2026-11-03T11:54:37.549979+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TCS.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 2502.6,
-      "volume": 3016983,
+      "session_date": "2026-11-03",
+      "close": 2499.1,
+      "volume": 3485800,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 2050.60009765625,
-          "volume": 3656425
-        },
-        {
-          "date": "2026-10-01",
-          "close": 2075.0,
-          "volume": 3428501
-        },
         {
           "date": "2026-10-05",
           "close": 2114.39990234375,
@@ -243,38 +246,51 @@
           "date": "2026-10-30",
           "close": 2502.60009765625,
           "volume": 3016983
+        },
+        {
+          "date": "2026-11-02",
+          "close": 2501.699951171875,
+          "volume": 2817192
+        },
+        {
+          "date": "2026-11-03",
+          "close": 2499.10009765625,
+          "volume": 3485800
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.9927,
-        "volume_multiple": 0.5021,
+        "price_change_pct": -0.1039,
+        "volume_multiple": 0.5863,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TCS.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "INFY",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.051209+00:00",
+      "fetched_at": "2026-11-03T11:54:37.550127+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/INFY.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1185.0,
-      "volume": 13030713,
+      "session_date": "2026-11-03",
+      "close": 1148.1,
+      "volume": 10494010,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 994.0999755859375,
-          "volume": 13508984
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1035.0,
-          "volume": 15166446
-        },
         {
           "date": "2026-10-05",
           "close": 1020.5,
@@ -369,38 +385,51 @@
           "date": "2026-10-30",
           "close": 1185.0,
           "volume": 13030713
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1161.0,
+          "volume": 12918064
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1148.0999755859375,
+          "volume": 10494010
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 3.358,
-        "volume_multiple": 0.7732,
-        "price_triggered": true,
+        "price_change_pct": -1.1111,
+        "volume_multiple": 0.6277,
+        "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/INFY.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "HDFCBANK",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.051707+00:00",
+      "fetched_at": "2026-11-03T11:54:37.550608+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HDFCBANK.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 692.8,
-      "volume": 21296902,
+      "session_date": "2026-11-03",
+      "close": 725.5,
+      "volume": 42738372,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 708.7000122070312,
-          "volume": 39365496
-        },
-        {
-          "date": "2026-10-01",
-          "close": 721.2000122070312,
-          "volume": 37389857
-        },
         {
           "date": "2026-10-05",
           "close": 704.7999877929688,
@@ -495,38 +524,51 @@
           "date": "2026-10-30",
           "close": 692.7999877929688,
           "volume": 21296902
+        },
+        {
+          "date": "2026-11-02",
+          "close": 700.0,
+          "volume": 21480587
+        },
+        {
+          "date": "2026-11-03",
+          "close": 725.5,
+          "volume": 42738372
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 1.3903,
-        "volume_multiple": 0.6705,
-        "price_triggered": false,
+        "price_change_pct": 3.6429,
+        "volume_multiple": 1.4216,
+        "price_triggered": true,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/HDFCBANK.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "ICICIBANK",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.808916+00:00",
+      "fetched_at": "2026-11-03T11:54:38.435443+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ICICIBANK.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1398.0,
-      "volume": 10523907,
+      "session_date": "2026-11-03",
+      "close": 1424.5,
+      "volume": 17496481,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1321.699951171875,
-          "volume": 14095232
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1310.5999755859375,
-          "volume": 13163495
-        },
         {
           "date": "2026-10-05",
           "close": 1332.0,
@@ -621,38 +663,51 @@
           "date": "2026-10-30",
           "close": 1398.0,
           "volume": 10523907
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1387.4000244140625,
+          "volume": 9043608
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1424.5,
+          "volume": 17496481
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.8222,
-        "volume_multiple": 0.8257,
+        "price_change_pct": 2.6741,
+        "volume_multiple": 1.4155,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICICIBANK.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "ITC",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.809718+00:00",
+      "fetched_at": "2026-11-03T11:54:38.436136+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ITC.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 265.6,
-      "volume": 16297263,
+      "session_date": "2026-11-03",
+      "close": 273.9,
+      "volume": 31520030,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 262.75,
-          "volume": 14079098
-        },
-        {
-          "date": "2026-10-01",
-          "close": 255.89999389648438,
-          "volume": 16447266
-        },
         {
           "date": "2026-10-05",
           "close": 268.8999938964844,
@@ -747,38 +802,51 @@
           "date": "2026-10-30",
           "close": 265.6000061035156,
           "volume": 16297263
+        },
+        {
+          "date": "2026-11-02",
+          "close": 266.3999938964844,
+          "volume": 13139384
+        },
+        {
+          "date": "2026-11-03",
+          "close": 273.8999938964844,
+          "volume": 31520030
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.2264,
-        "volume_multiple": 0.6989,
+        "price_change_pct": 2.8153,
+        "volume_multiple": 1.3548,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ITC.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "HINDUNILVR",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.810774+00:00",
+      "fetched_at": "2026-11-03T11:54:38.437329+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HINDUNILVR.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1864.6,
-      "volume": 1597400,
+      "session_date": "2026-11-03",
+      "close": 1962.8,
+      "volume": 1722676,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1879.0999755859375,
-          "volume": 1430335
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1836.0,
-          "volume": 1331680
-        },
         {
           "date": "2026-10-05",
           "close": 1838.4000244140625,
@@ -873,38 +941,51 @@
           "date": "2026-10-30",
           "close": 1864.5999755859375,
           "volume": 1597400
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1898.300048828125,
+          "volume": 990685
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1962.800048828125,
+          "volume": 1722676
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.3444,
-        "volume_multiple": 0.9482,
-        "price_triggered": false,
+        "price_change_pct": 3.3978,
+        "volume_multiple": 1.0279,
+        "price_triggered": true,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/HINDUNILVR.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "SUNPHARMA",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:44.811847+00:00",
+      "fetched_at": "2026-11-03T11:54:38.438104+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SUNPHARMA.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1777.7,
-      "volume": 5130218,
+      "session_date": "2026-11-03",
+      "close": 1769.9,
+      "volume": 2646614,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1816.5999755859375,
-          "volume": 2401495
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1801.0,
-          "volume": 2314700
-        },
         {
           "date": "2026-10-05",
           "close": 1779.699951171875,
@@ -999,38 +1080,51 @@
           "date": "2026-10-30",
           "close": 1777.699951171875,
           "volume": 5130218
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1770.0,
+          "volume": 3457791
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1769.9000244140625,
+          "volume": 2646614
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.9483,
-        "volume_multiple": 3.4256,
+        "price_change_pct": -0.0056,
+        "volume_multiple": 1.565,
         "price_triggered": false,
-        "volume_triggered": true,
+        "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SUNPHARMA.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "CIPLA",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:45.450661+00:00",
+      "fetched_at": "2026-11-03T11:54:39.382148+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CIPLA.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1378.9,
-      "volume": 1436661,
+      "session_date": "2026-11-03",
+      "close": 1396.9,
+      "volume": 1723151,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1346.0,
-          "volume": 1063964
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1344.0,
-          "volume": 921789
-        },
         {
           "date": "2026-10-05",
           "close": 1335.5,
@@ -1125,38 +1219,51 @@
           "date": "2026-10-30",
           "close": 1378.9000244140625,
           "volume": 1436661
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1387.0,
+          "volume": 1377336
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1396.9000244140625,
+          "volume": 1723151
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 1.539,
-        "volume_multiple": 1.2819,
+        "price_change_pct": 0.7138,
+        "volume_multiple": 1.4828,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIPLA.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "MARUTI",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:45.457720+00:00",
+      "fetched_at": "2026-11-03T11:54:39.387590+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MARUTI.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 11397.0,
-      "volume": 280448,
+      "session_date": "2026-11-03",
+      "close": 11869.0,
+      "volume": 363540,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 11967.0,
-          "volume": 430286
-        },
-        {
-          "date": "2026-10-01",
-          "close": 11386.0,
-          "volume": 885820
-        },
         {
           "date": "2026-10-05",
           "close": 11532.0,
@@ -1251,38 +1358,51 @@
           "date": "2026-10-30",
           "close": 11397.0,
           "volume": 280448
+        },
+        {
+          "date": "2026-11-02",
+          "close": 11672.0,
+          "volume": 414092
+        },
+        {
+          "date": "2026-11-03",
+          "close": 11869.0,
+          "volume": 363540
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -0.2538,
-        "volume_multiple": 0.5619,
+        "price_change_pct": 1.6878,
+        "volume_multiple": 0.7768,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MARUTI.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "EICHERMOT",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:45.464371+00:00",
+      "fetched_at": "2026-11-03T11:54:40.070866+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EICHERMOT.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 7220.0,
-      "volume": 387958,
+      "session_date": "2026-11-03",
+      "close": 7440.0,
+      "volume": 409109,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 7150.0,
-          "volume": 418141
-        },
-        {
-          "date": "2026-10-01",
-          "close": 6920.0,
-          "volume": 817452
-        },
         {
           "date": "2026-10-05",
           "close": 7021.5,
@@ -1377,38 +1497,51 @@
           "date": "2026-10-30",
           "close": 7220.0,
           "volume": 387958
+        },
+        {
+          "date": "2026-11-02",
+          "close": 7213.0,
+          "volume": 355990
+        },
+        {
+          "date": "2026-11-03",
+          "close": 7440.0,
+          "volume": 409109
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -0.2487,
-        "volume_multiple": 0.9474,
-        "price_triggered": false,
+        "price_change_pct": 3.1471,
+        "volume_multiple": 1.0628,
+        "price_triggered": true,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/EICHERMOT.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "LT",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:45.473983+00:00",
+      "fetched_at": "2026-11-03T11:54:40.078987+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LT.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 3871.7,
-      "volume": 1765873,
+      "session_date": "2026-11-03",
+      "close": 3948.2,
+      "volume": 2152853,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 3760.0,
-          "volume": 2396040
-        },
-        {
-          "date": "2026-10-01",
-          "close": 3693.39990234375,
-          "volume": 2220932
-        },
         {
           "date": "2026-10-05",
           "close": 3750.0,
@@ -1503,38 +1636,51 @@
           "date": "2026-10-30",
           "close": 3871.699951171875,
           "volume": 1765873
+        },
+        {
+          "date": "2026-11-02",
+          "close": 3939.89990234375,
+          "volume": 2056829
+        },
+        {
+          "date": "2026-11-03",
+          "close": 3948.199951171875,
+          "volume": 2152853
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.9017,
-        "volume_multiple": 0.8285,
+        "price_change_pct": 0.2107,
+        "volume_multiple": 1.0292,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/LT.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "TITAN",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.057127+00:00",
+      "fetched_at": "2026-11-03T11:54:40.173335+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TITAN.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 4436.5,
-      "volume": 1143254,
+      "session_date": "2026-11-03",
+      "close": 4562.0,
+      "volume": 773149,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 4587.0,
-          "volume": 927060
-        },
-        {
-          "date": "2026-10-01",
-          "close": 4515.7001953125,
-          "volume": 694098
-        },
         {
           "date": "2026-10-05",
           "close": 4580.0,
@@ -1629,38 +1775,51 @@
           "date": "2026-10-30",
           "close": 4436.5,
           "volume": 1143254
+        },
+        {
+          "date": "2026-11-02",
+          "close": 4476.2998046875,
+          "volume": 603203
+        },
+        {
+          "date": "2026-11-03",
+          "close": 4562.0,
+          "volume": 773149
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.0564,
-        "volume_multiple": 1.4378,
+        "price_change_pct": 1.9145,
+        "volume_multiple": 0.9647,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TITAN.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "PIDILITIND",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.070283+00:00",
+      "fetched_at": "2026-11-03T11:54:40.733613+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PIDILITIND.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 1461.6,
-      "volume": 796221,
+      "session_date": "2026-11-03",
+      "close": 1510.9,
+      "volume": 1126347,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 1465.0999755859375,
-          "volume": 940925
-        },
-        {
-          "date": "2026-10-01",
-          "close": 1464.0,
-          "volume": 867267
-        },
         {
           "date": "2026-10-05",
           "close": 1487.699951171875,
@@ -1755,38 +1914,51 @@
           "date": "2026-10-30",
           "close": 1461.5999755859375,
           "volume": 796221
+        },
+        {
+          "date": "2026-11-02",
+          "close": 1488.0,
+          "volume": 565926
+        },
+        {
+          "date": "2026-11-03",
+          "close": 1510.9000244140625,
+          "volume": 1126347
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 2.7848,
-        "volume_multiple": 1.0185,
+        "price_change_pct": 1.539,
+        "volume_multiple": 1.483,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/PIDILITIND.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "POLYCAB",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.127444+00:00",
+      "fetched_at": "2026-11-03T11:54:40.801246+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/POLYCAB.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 7787.0,
-      "volume": 346386,
+      "session_date": "2026-11-03",
+      "close": 7837.0,
+      "volume": 241172,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 8026.0,
-          "volume": 494724
-        },
-        {
-          "date": "2026-10-01",
-          "close": 7990.0,
-          "volume": 463691
-        },
         {
           "date": "2026-10-05",
           "close": 8080.0,
@@ -1881,38 +2053,51 @@
           "date": "2026-10-30",
           "close": 7787.0,
           "volume": 346386
+        },
+        {
+          "date": "2026-11-02",
+          "close": 7920.0,
+          "volume": 310317
+        },
+        {
+          "date": "2026-11-03",
+          "close": 7837.0,
+          "volume": 241172
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": 0.5423,
-        "volume_multiple": 0.7498,
+        "price_change_pct": -1.048,
+        "volume_multiple": 0.5397,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/POLYCAB.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "APLAPOLLO",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.169646+00:00",
+      "fetched_at": "2026-11-03T11:54:40.830378+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APLAPOLLO.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 2165.1,
-      "volume": 1101756,
+      "session_date": "2026-11-03",
+      "close": 2152.8,
+      "volume": 393159,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 2190.10009765625,
-          "volume": 587352
-        },
-        {
-          "date": "2026-10-01",
-          "close": 2115.699951171875,
-          "volume": 1615913
-        },
         {
           "date": "2026-10-05",
           "close": 2099.800048828125,
@@ -2007,38 +2192,51 @@
           "date": "2026-10-30",
           "close": 2165.10009765625,
           "volume": 1101756
+        },
+        {
+          "date": "2026-11-02",
+          "close": 2163.699951171875,
+          "volume": 441409
+        },
+        {
+          "date": "2026-11-03",
+          "close": 2152.800048828125,
+          "volume": 393159
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -1.3622,
-        "volume_multiple": 1.6104,
+        "price_change_pct": -0.5038,
+        "volume_multiple": 0.6038,
         "price_triggered": false,
         "volume_triggered": false,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/APLAPOLLO.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "CERA",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.617244+00:00",
+      "fetched_at": "2026-11-03T11:54:41.219881+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CERA.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 4406.0,
-      "volume": 7486,
+      "session_date": "2026-11-03",
+      "close": 4663.0,
+      "volume": 20353,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 5088.0,
-          "volume": 25540
-        },
-        {
-          "date": "2026-10-01",
-          "close": 5096.5,
-          "volume": 5282
-        },
         {
           "date": "2026-10-05",
           "close": 5056.5,
@@ -2133,38 +2331,51 @@
           "date": "2026-10-30",
           "close": 4406.0,
           "volume": 7486
+        },
+        {
+          "date": "2026-11-02",
+          "close": 4497.0,
+          "volume": 7992
+        },
+        {
+          "date": "2026-11-03",
+          "close": 4663.0,
+          "volume": 20353
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -0.7434,
-        "volume_multiple": 0.7773,
-        "price_triggered": false,
-        "volume_triggered": false,
+        "price_change_pct": 3.6913,
+        "volume_multiple": 2.2963,
+        "price_triggered": true,
+        "volume_triggered": true,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CERA.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     },
     {
       "ticker": "VSTIND",
       "status": "ok",
-      "fetched_at": "2026-11-03T01:55:46.677150+00:00",
+      "fetched_at": "2026-11-03T11:54:41.405225+00:00",
       "provider": "Yahoo Finance",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/VSTIND.NS?range=3mo&interval=1d",
-      "session_date": "2026-10-30",
-      "close": 185.5,
-      "volume": 273988,
+      "session_date": "2026-11-03",
+      "close": 187.27,
+      "volume": 270826,
       "currency": "INR",
       "history": [
-        {
-          "date": "2026-09-30",
-          "close": 203.16000366210938,
-          "volume": 81303
-        },
-        {
-          "date": "2026-10-01",
-          "close": 201.13999938964844,
-          "volume": 142755
-        },
         {
           "date": "2026-10-05",
           "close": 200.9199981689453,
@@ -2259,16 +2470,39 @@
           "date": "2026-10-30",
           "close": 185.5,
           "volume": 273988
+        },
+        {
+          "date": "2026-11-02",
+          "close": 186.72000122070312,
+          "volume": 167838
+        },
+        {
+          "date": "2026-11-03",
+          "close": 187.27000427246094,
+          "volume": 270826
         }
       ],
       "alert": {
         "status": "ok",
-        "price_change_pct": -2.0643,
-        "volume_multiple": 2.2923,
+        "price_change_pct": 0.2946,
+        "volume_multiple": 2.0767,
         "price_triggered": false,
         "volume_triggered": true,
         "lookback": 20
-      }
+      },
+      "freshness": {
+        "status": "current",
+        "expected_session": "2026-11-03",
+        "reason": "Returned session matches the configured completed-session calendar."
+      },
+      "calendar_source": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+      "attempts": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/VSTIND.NS?range=3mo&interval=1d",
+          "status": "ok",
+          "session_date": "2026-11-03"
+        }
+      ]
     }
   ]
 }

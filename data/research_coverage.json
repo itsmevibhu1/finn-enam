@@ -8,24 +8,60 @@
     "page_count": 587,
     "passage_count": 1531,
     "corpus_url": "corpora/HCLTECH.json",
-    "corpus_sha256": "e3a9ce70e8755dc1873565b69c74db06109f49ee9cbc9b9dc3ebbabb54eac883",
+    "corpus_sha256": "6be4ce97bfe77b615618b7c5e7088acdaca084f771554d0ee5b1480ce506eedc",
     "rejected": [],
     "discovery_url": "https://www.screener.in/company/HCLTECH/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "missing": [],
+      "complete": true
+    },
+    "archive_document_count": 0
   },
   "PERSISTENT": {
     "ticker": "PERSISTENT",
     "name": "Persistent Systems Ltd",
-    "document_count": 5,
-    "transcripts": 4,
+    "document_count": 7,
+    "transcripts": 6,
     "annual_reports": 1,
-    "page_count": 609,
-    "passage_count": 1481,
+    "page_count": 660,
+    "passage_count": 1583,
     "corpus_url": "corpora/PERSISTENT.json",
-    "corpus_sha256": "021426ac6a63ddc058f2ef020338d62443d4f47e9b39b34a30ef2791b6a70750",
+    "corpus_sha256": "f46b10f9c8d7da6685dbb71a2878c86524a0888dae427e090268e426463bc6d0",
     "rejected": [],
     "discovery_url": "https://www.screener.in/company/PERSISTENT/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "missing": [],
+      "complete": true
+    },
+    "archive_document_count": 7
   },
   "DIXON": {
     "ticker": "DIXON",
@@ -36,21 +72,39 @@
     "page_count": 604,
     "passage_count": 1565,
     "corpus_url": "corpora/DIXON.json",
-    "corpus_sha256": "2a4595b9e6c473975e46b480bcd62e0eb5301003582a6b39f43d4bbb44ad524c",
+    "corpus_sha256": "0954d6276622f0507dd50057cb64fa4df052b6014961c5ddc0f3e04ecdcdaf19",
     "rejected": [],
     "discovery_url": "https://www.screener.in/company/DIXON/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026",
+        "Q2 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026",
+        "Q2 FY2026"
+      ],
+      "missing": [],
+      "complete": true
+    },
+    "archive_document_count": 0
   },
   "ASTRAL": {
     "ticker": "ASTRAL",
     "name": "Astral Ltd",
-    "document_count": 1,
-    "transcripts": 0,
+    "document_count": 7,
+    "transcripts": 6,
     "annual_reports": 1,
-    "page_count": 247,
-    "passage_count": 747,
+    "page_count": 387,
+    "passage_count": 1118,
     "corpus_url": "corpora/ASTRAL.json",
-    "corpus_sha256": "fca312d8147af0e59713d61e9a75d00445eac213294f2343ad8d8ab6fffc8041",
+    "corpus_sha256": "051eca407eef51a3cb763c516d498e0a1d33bb9c425a1f21365ee5f930d8a70e",
     "rejected": [
       {
         "kind": "transcript",
@@ -59,36 +113,78 @@
       },
       {
         "kind": "transcript",
-        "period": "Feb 2023",
-        "reason": "HTTP Error 404: Not Found"
+        "period": "Issuer directory link",
+        "reason": "Document already imported with different metadata; review the existing manifest"
       },
       {
         "kind": "transcript",
-        "period": "Nov 2022",
-        "reason": "HTTP Error 404: Not Found"
+        "period": "Issuer directory link",
+        "reason": "Document already imported with different metadata; review the existing manifest"
       },
       {
         "kind": "transcript",
-        "period": "Aug 2022",
-        "reason": "HTTP Error 404: Not Found"
+        "period": "Issuer directory link",
+        "reason": "Document already imported with different metadata; review the existing manifest"
+      },
+      {
+        "kind": "transcript",
+        "period": "Issuer directory link",
+        "reason": "Document already imported with different metadata; review the existing manifest"
       }
     ],
     "discovery_url": "https://www.screener.in/company/ASTRAL/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q1 FY2027",
+        "Q3 FY2026",
+        "Q2 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026",
+        "Q2 FY2026"
+      ],
+      "missing": [
+        "Q4 FY2026"
+      ],
+      "complete": false
+    },
+    "archive_document_count": 1
   },
   "INFY": {
     "ticker": "INFY",
     "name": "Infosys Ltd",
-    "document_count": 5,
-    "transcripts": 4,
+    "document_count": 6,
+    "transcripts": 5,
     "annual_reports": 1,
-    "page_count": 589,
-    "passage_count": 1627,
+    "page_count": 628,
+    "passage_count": 1703,
     "corpus_url": "corpora/INFY.json",
-    "corpus_sha256": "6bd96bf18b07357abcf75297d4907f001b8893a028732c2594a5c7ec98710805",
+    "corpus_sha256": "54bd05d0b9a8adfe22b61ee86dd081cf513effaa0e9891fce5211380ff400593",
     "rejected": [],
     "discovery_url": "https://www.screener.in/company/INFY/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "missing": [],
+      "complete": true
+    },
+    "archive_document_count": 0
   },
   "COFORGE": {
     "ticker": "COFORGE",
@@ -99,9 +195,27 @@
     "page_count": 278,
     "passage_count": 1354,
     "corpus_url": "corpora/COFORGE.json",
-    "corpus_sha256": "465edc7c1bb74c8b375a557cc185cef1a87494d512fa246857b623e2e419a68f",
+    "corpus_sha256": "1ce8538d34d65923fd753b078ab006cb5c084d8c53498249a94b8c1c6ac5aec6",
     "rejected": [],
     "discovery_url": "https://www.screener.in/company/COFORGE/consolidated/",
-    "status": "indexed"
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "missing": [],
+      "complete": true
+    },
+    "archive_document_count": 0
   }
 }

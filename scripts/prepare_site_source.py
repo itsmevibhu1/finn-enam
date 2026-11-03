@@ -23,6 +23,6 @@ for name in ('research.json','market.json','announcements.json','announcement_ar
             (site/'data'/name).write_text(json.dumps(discovery,indent=2)+'\n')
         else:
             shutil.copyfile(root/'data'/name,site/'data'/name)
-for name in ('README.md','.gitignore'):
+for name in ('README.md','.gitignore','.env.example'):
     shutil.copyfile(root/name,site/name)
 print('Prepared source checkout with UI, pipeline, records, tests, and documentation. No credentials or raw assignment PDFs included.')

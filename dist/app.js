@@ -1,5 +1,6 @@
-import {searchCorpus} from './retrieval.mjs';
+import {searchCorpus,filterCorpus} from './retrieval.mjs';
 import {prepareFilings} from './filings.mjs';
+import {priceSignal,effectiveFreshness} from './signals.mjs';
 let data;
 const $ = s => document.querySelector(s);
 const escape = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -14,10 +15,15 @@ let comparisonFilter = 'latest';
 let search = '';
 let sourceQuery = '';
 let researchQuery = 'growth guidance';
+let researchScope = 'all';
+let researchPeriod = 'all';
 const corpusCache = new Map();
 let retrievalResults = [];
 let retrievalVersion = 0;
 let canCollect = false;
+let canGenerate = false;
+let aiQuestion = 'What changed in management guidance and operating performance?';
+const aiDrafts = new Map();
 let settings = {price:3,volume:2};
 try { settings = {...settings,...JSON.parse(localStorage.getItem('finn-thresholds') || '{}')}; } catch {}
 if (!(settings.price >= 1 && settings.price <= 10)) settings.price = 3;
@@ -25,12 +31,61 @@ if (!(settings.volume >= 1 && settings.volume <= 5)) settings.volume = 2;
 const source = id => data.companies.INFY.sources.find(s => s.id === id);
 const sourceButton = (id, label='View evidence ↗') => `<button class="text-button" data-source="${escape(id)}">${label}</button>`;
 const head = (eyebrow,title,intro,button='') => `<div class="page-head"><div><div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p class="intro">${intro}</p></div>${button}</div>`;
-const note = `<div class="notice"><span><strong>Verified case study.</strong> Figures were manually checked against company documents. Comparison verdicts are calculated in code. AI extraction is not connected.</span><a href="#sources">Inspect sources ↗</a></div>`;
+const note = `<div class="notice"><span><strong>Verified case study.</strong> Figures were manually checked against company documents. Comparison verdicts are calculated in code. These curated comparisons are separate from AI research drafts.</span><a href="#sources">Inspect sources ↗</a></div>`;
 
 function documentSearchMarkup(){
  const coverage=data.research_coverage?.[selectedTicker];
  const choices=Object.values(data.research_coverage||{}).filter(c=>c.document_count>0);
- return `<div class="controls" style="margin-bottom:18px">${choices.map(c=>`<button class="button secondary" data-ticker="${escape(c.ticker)}" ${c.ticker===selectedTicker?'aria-current="true"':''}>${escape(c.ticker)}</button>`).join('')}</div>`+(coverage?.document_count?`<section class="card" id="document-research"><div class="section-head" style="margin-top:0"><div><div class="eyebrow">PRIMARY-DOCUMENT SEARCH / ${escape(selectedTicker)}</div><h2 style="margin-top:10px">${escape(coverage.name)}</h2><p class="small-copy">${coverage.document_count} PDFs · ${coverage.transcripts} transcripts · ${coverage.annual_reports} annual reports · ${coverage.page_count} PDF pages</p></div><span class="badge">NO API KEY NEEDED</span></div><form class="search-form" id="research-query-form"><input type="search" id="research-query" placeholder="Ask the documents: growth guidance, margins, cash flow…" aria-label="Search primary documents" value="${escape(researchQuery)}" maxlength="250" required><button class="button">Find evidence →</button></form><div class="controls">${['growth guidance','operating margin','cash flow','debt working capital','risk'].map(q=>`<button class="text-button" data-topic="${q}">${q}</button>`).join('')}</div><p class="small-copy">Keyword-ranked source passages, not an AI-written answer. A mention of guidance may be an analyst’s question or refer to a different period. Check the source before drawing a conclusion.</p><div id="retrieval-results" aria-live="polite"><p class="small-copy">Loading document index…</p></div>${coverage.rejected.length?`<details class="small-copy"><summary>${coverage.rejected.length} source candidates excluded</summary>${coverage.rejected.map(r=>`<p>${escape(r.kind.replaceAll('_',' '))} · ${escape(r.period)}: ${escape(r.reason)}</p>`).join('')}</details>`:''}</section>`:'');
+ const quarters=coverage?.quarter_coverage;
+ const picker=`<div class="controls" style="margin-bottom:18px">${choices.map(c=>`<button class="button secondary" data-ticker="${escape(c.ticker)}" ${c.ticker===selectedTicker?'aria-current="true"':''}>${escape(c.ticker)}</button>`).join('')}</div>`;
+ if(!coverage?.document_count)return picker;
+ if(!['all','latest4',...(quarters?.periods||[])].includes(researchPeriod))researchPeriod='all';
+ const coverageMarkup=quarters?`<div class="notice ${quarters.complete?'':'warn'}" id="quarter-coverage"><span><strong>${quarters.complete?'Four consecutive earnings quarters indexed':'Earnings-quarter coverage is partial'}</strong><br>Window ending ${escape(quarters.periods[0]||'not established')}. ${quarters.missing.length?'Missing: '+escape(quarters.missing.join(', '))+'.':'Each reporting period has a primary transcript.'} This window is based on the latest quarter found, not proof that no newer filing exists.</span></div><details class="small-copy"><summary>Inspect reporting-period coverage</summary>${quarters.expected_from_latest_available.map(p=>`<p>${escape(p)} · ${quarters.periods.includes(p)?'indexed':'no earnings transcript indexed'}</p>`).join('')}<p>Media calls, notices, and investor events do not fill an earnings-quarter gap.</p></details>`:'';
+ return picker+`<section class="card" id="document-research">
+ <div class="section-head" style="margin-top:0"><div><div class="eyebrow">PRIMARY-DOCUMENT SEARCH / ${escape(selectedTicker)}</div><h2 style="margin-top:10px">${escape(coverage.name)}</h2><p class="small-copy">${coverage.document_count} PDFs · ${coverage.transcripts} transcripts · ${coverage.annual_reports} annual reports · ${coverage.page_count} PDF pages</p></div><span class="badge">PRIMARY SOURCES</span></div>
+ ${coverageMarkup}
+ <form class="search-form" id="research-query-form"><input type="search" id="research-query" placeholder="Ask the documents: growth guidance, margins, cash flow…" aria-label="Search primary documents" value="${escape(researchQuery)}" maxlength="250" required><button class="button">Find evidence →</button></form>
+ <div class="controls" style="margin:14px 0"><select id="research-scope" aria-label="Research document type"><option value="all" ${researchScope==='all'?'selected':''}>All primary documents</option><option value="earnings" ${researchScope==='earnings'?'selected':''}>Earnings calls only</option><option value="annual" ${researchScope==='annual'?'selected':''}>Annual reports only</option></select><select id="research-period" aria-label="Research reporting period"><option value="all">All reporting periods</option><option value="latest4" ${researchPeriod==='latest4'?'selected':''}>Latest four-quarter window</option>${(quarters?.periods||[]).map(p=>`<option value="${escape(p)}" ${researchPeriod===p?'selected':''}>${escape(p)}</option>`).join('')}</select></div>
+ <div class="controls">${['growth guidance','operating margin','cash flow','debt working capital','risk'].map(q=>`<button class="text-button" data-topic="${q}">${q}</button>`).join('')}</div><p class="small-copy">Keyword-ranked source passages, not an AI-written answer. A mention of guidance may be an analyst’s question or refer to a different period. Check the source before drawing a conclusion.</p>
+ ${aiResearchMarkup()}<div id="retrieval-results" aria-live="polite"><p class="small-copy">Loading document index…</p></div>${coverage.rejected.length?`<details class="small-copy"><summary>${coverage.rejected.length} source candidates excluded</summary>${coverage.rejected.map(r=>`<p>${escape(r.kind.replaceAll('_',' '))} · ${escape(r.period)}: ${escape(r.reason)}</p>`).join('')}</details>`:''}</section>`;
+}
+
+function aiKey(){return JSON.stringify([selectedTicker,aiQuestion,researchScope,researchPeriod])}
+function aiResearchMarkup(){
+ if(!canGenerate)return '<p class="small-copy">AI drafts are unavailable in this deployment. Primary-document search remains available.</p>';
+ return `<section style="margin:24px 0;padding-top:20px;border-top:1px solid var(--line)"><div class="eyebrow">AI RESEARCH / PRIMARY EVIDENCE</div><h3>Ask a research question</h3><p class="small-copy">Uses the document and period filters above. Quotes are checked against retrieved passages; interpretations remain AI drafts.</p><form id="ai-question-form" class="search-form"><input id="ai-question" aria-label="AI research question" value="${escape(aiQuestion)}" minlength="3" maxlength="300" required><button class="button" id="generate-research">Draft answer →</button></form><div id="ai-answer" aria-live="polite"></div></section>`;
+}
+function paintAI(){
+ const target=$('#ai-answer');if(!target)return;
+ const state=aiDrafts.get(aiKey());
+ const button=$('#generate-research');if(button)button.disabled=state?.status==='pending';
+ if(!state){target.innerHTML='';return}
+ if(state.status==='pending'){target.innerHTML='<p role="status" class="small-copy">Reading retrieved evidence… This may take up to a few minutes. Repeated requests for this question share the same job.</p>';return}
+ if(state.status==='failed'){target.innerHTML=`<div class="empty"><strong>Research unavailable.</strong>${escape(state.error)}</div>`;return}
+ const answer=state.answer;
+ target.innerHTML=`<div class="notice"><span><strong>AI draft · ${answer.cache_hit?'cached result':'new result'}</strong> Quotes and source references checked in code. Interpretations need review.</span></div><h3>${escape(answer.headline)}</h3>`+(answer.observations.length?answer.observations.map(o=>{
+  let url;try{url=new URL(o.source.url);if(url.protocol!=='https:')return ''}catch{return ''}
+  url.hash='page='+o.source.pdf_page;
+  return `<article class="source-row"><div class="eyebrow">${escape(o.source.title)} · PDF PAGE ${escape(o.source.pdf_page)}</div><p class="source-excerpt">“${escape(o.quote)}”</p><p>${escape(o.interpretation)}</p><a class="text-button" href="${escape(url.href)}" target="_blank" rel="noopener noreferrer">Inspect primary source ↗</a></article>`;
+ }).join(''):'<p class="small-copy">The retrieved evidence does not support an answer. Try another question or inspect the source documents.</p>')+`<p class="small-copy">Next question: ${escape(answer.next_question)}</p><button class="text-button" id="export-ai">Export cited draft ↓</button>`;
+ $('#export-ai').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(answer,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='FINN-'+answer.ticker+'-AI-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+}
+async function generateResearch(event){
+ event.preventDefault();aiQuestion=$('#ai-question').value.trim();
+ const key=aiKey();if(aiDrafts.get(key)?.status==='pending')return;
+ const payload={ticker:selectedTicker,question:aiQuestion,scope:researchScope,period:researchPeriod};
+ aiDrafts.set(key,{status:'pending'});paintAI();
+ try{
+  const response=await fetch('/api/research',{method:'POST',headers:{'Content-Type':'application/json','X-FINN-Request':'local'},body:JSON.stringify(payload)});
+  const job=await response.json();if(!response.ok)throw Error(job.error||'Could not start research');
+  for(let attempt=0;attempt<240;attempt++){
+   await new Promise(resolve=>setTimeout(resolve,1000));
+   const poll=await fetch('/api/jobs/'+job.job_id,{cache:'no-store'});
+   const state=await poll.json();if(!poll.ok||state.status==='failed')throw Error(state.error||'Research could not complete');
+   if(state.status==='complete'){aiDrafts.set(key,{status:'complete',answer:state.result});if(aiKey()===key)paintAI();return}
+  }
+  throw Error('Research is taking longer than expected. Submit this question again to check the existing job or cached result.');
+ }catch(error){aiDrafts.set(key,{status:'failed',error:error.message});if(aiKey()===key)paintAI()}
 }
 
 async function loadCorpus(ticker){
@@ -54,11 +109,13 @@ async function runRetrieval(){
  try{
   const corpus=await loadCorpus(ticker);
   if(version!==retrievalVersion||selectedTicker!==ticker||!target.isConnected)return;
-  retrievalResults=searchCorpus(corpus,researchQuery);
-  target.innerHTML=retrievalResults.length?`<div class="section-head"><h3>${retrievalResults.length} matching documents</h3><button class="text-button" id="export-search">Export evidence pack ↓</button></div>`+retrievalResults.map((r,i)=>`<article class="source-row"><div class="eyebrow">${escape(r.document.title)} · PDF PAGE ${r.page}</div><p class="source-excerpt">“${escape(r.snippet)}…”</p><div class="controls"><button class="text-button" data-result="${i}">Inspect evidence ↗</button><span class="small-copy">Matched: ${escape(r.matched.join(', '))}</span></div></article>`).join(''):'<div class="empty"><strong>No matching source passage found.</strong>This does not prove the company never discussed the topic. Try specific terms or inspect the original documents.</div>';
+  const coverage=data.research_coverage[ticker];
+  const subset=filterCorpus(corpus,{scope:researchScope,period:researchPeriod,window:coverage.quarter_coverage?.expected_from_latest_available||[]});
+  retrievalResults=searchCorpus(subset,researchQuery);
+  target.innerHTML=retrievalResults.length?`<div class="section-head"><h3>${retrievalResults.length} matching documents</h3><button class="text-button" id="export-search">Export evidence pack ↓</button></div>`+retrievalResults.map((r,i)=>`<article class="source-row"><div class="eyebrow">${escape(r.document.title)} · PDF PAGE ${r.page}</div><div class="eyebrow">${escape((r.event_type||'source').replaceAll('_',' '))}${r.reporting_period?' · '+escape(r.reporting_period):' · reporting period not established'}</div><p class="source-excerpt">“${escape(r.snippet)}…”</p><div class="controls"><button class="text-button" data-result="${i}">Inspect evidence ↗</button><span class="small-copy">Matched: ${escape(r.matched.join(', '))}</span></div></article>`).join(''):'<div class="empty"><strong>No matching source passage found.</strong>This does not prove the company never discussed the topic. Try specific terms, change the document filters, or inspect the originals.</div>';
   target.querySelectorAll('[data-result]').forEach(button=>button.onclick=()=>retrievedEvidence(retrievalResults[Number(button.dataset.result)]));
   if($('#export-search'))$('#export-search').onclick=()=>{
-   const pack={ticker,question:researchQuery,method:'Keyword retrieval; no generated financial conclusion',instruction:'Use only this evidence. Distinguish questions from management statements. Check reporting periods and accounting scope. If these short excerpts do not support an answer, say what is missing and inspect the linked primary PDFs.',sources:retrievalResults.map(r=>({title:r.document.title,url:r.document.url+'#page='+r.page,pdf_page:r.page,sha256:r.document.sha256,excerpt:r.snippet}))};
+   const pack={ticker,question:researchQuery,filters:{scope:researchScope,period:researchPeriod},method:'Keyword retrieval; no generated financial conclusion',instruction:'Use only this evidence. Distinguish questions from management statements. Check reporting periods and accounting scope. If these short excerpts do not support an answer, say what is missing and inspect the linked primary PDFs.',sources:retrievalResults.map(r=>({title:r.document.title,event_type:r.event_type,reporting_period:r.reporting_period,url:r.document.url+'#page='+r.page,pdf_page:r.page,sha256:r.document.sha256,excerpt:r.snippet}))};
    const url=URL.createObjectURL(new Blob([JSON.stringify(pack,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='FINN-'+ticker+'-research-pack.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
  }catch(error){if(target.isConnected)target.innerHTML=`<div class="empty"><strong>Document search is unavailable.</strong>${escape(error.message)}</div>`}
@@ -114,7 +171,8 @@ function briefing(){
  const events = company.sources.filter(s=>s.kind==='transcript' && s.date && new Date(s.date+'T12:00:00Z')>=start && new Date(s.date+'T12:00:00Z')<=end);
  events.sort((a,b)=>b.date.localeCompare(a.date));
  const alerts=(data.market.records||[]).filter(r=>r.status==='ok').map(r=>({record:r,calc:marketRule(r)})).filter(r=>r.calc?.trigger);
- const marketSignals=`<div class="section-head"><div><h2>Market signals</h2><div class="eyebrow">EOD SNAPSHOT · SEPARATE FROM THE EVENT REPLAY</div></div><a class="text-button" href="#portfolio">Configure thresholds →</a></div><div class="library">${alerts.length?alerts.map(({record:r,calc:c})=>`<article class="card"><div class="eyebrow">${escape(r.ticker)} · ${dateLabel(r.session_date)}</div><h3>${Math.abs(c.change)>=settings.price?'Price threshold crossed':'Unusual volume'}</h3><div class="mini-metrics" style="width:100%"><div><b class="${c.change<0?'down':'up'}">${c.change>0?'+':''}${c.change.toFixed(2)}%</b><span>Close-to-close change</span></div><div><b>${c.volume.toFixed(2)}×</b><span>Prior 20-session volume</span></div></div><p>Triggered by your rules: ±${settings.price}% price or ${settings.volume}× volume. A threshold crossing does not explain its cause.</p><a href="#portfolio" class="text-button">Inspect portfolio →</a></article>`).join(''):'<div class="empty">No configured thresholds crossed in the available price snapshot.</div>'}</div>`;
+ const withheld=(data.market.records||[]).filter(r=>r.status==='ok'&&effectiveFreshness(r,data.market_calendar).status!=='current').length;
+ const marketSignals=`<div class="section-head"><div><h2>Market signals</h2><div class="eyebrow">CURRENT COMPLETED SESSIONS · ${withheld} RECORDS WITHHELD</div></div><a class="text-button" href="#portfolio">Configure thresholds →</a></div><div class="library">${alerts.length?alerts.map(({record:r,calc:c})=>`<article class="card"><div class="eyebrow">${escape(r.ticker)} · ${dateLabel(r.session_date)}</div><h3>${Math.abs(c.change)>=settings.price?'Price threshold crossed':'Unusual volume'}</h3><div class="mini-metrics" style="width:100%"><div><b class="${c.change<0?'down':'up'}">${c.change>0?'+':''}${c.change.toFixed(2)}%</b><span>Close-to-close change</span></div><div><b>${c.volume.toFixed(2)}×</b><span>Prior 20-session volume</span></div></div><p>Triggered by your rules: ±${settings.price}% price or ${settings.volume}× volume. A threshold crossing does not explain its cause.</p><a href="#portfolio" class="text-button">Inspect portfolio →</a></article>`).join(''):`<div class="empty">No current price/volume alerts in the available snapshot.${withheld?' '+withheld+' records lack a verified current session and are withheld from alerts.':''}</div>`}</div>`;
  return head('A LITTLE LESS NOISE','Your attention, directed.','A focused view of what changed, what matters, and the evidence behind it.')+
  `<div class="notice ${replay?'warn':''}"><span><strong>${replay?'Historical replay · '+dateLabel(endDate):'Current snapshot · '+dateLabel(data.as_of)}</strong> · ${replay?'Real historical company disclosures; this is not a live exchange feed.':'Saved source snapshot. Exchange coverage and freshness are stated below.'}</span><button class="text-button" id="toggle-replay">${replay?'Use current date':'Open historical replay'} ↗</button></div>`+
  `<section class="hero" aria-label="Featured research"><div class="hero-copy"><div class="eyebrow">THE SIGNAL / INFOSYS / FY25</div><h2>Growth delivered.<br>The latest promise didn’t.</h2><p>FY25 revenue growth beat the earlier Q1 range, met the Q2 range, and fell below the final Q3 range. The reference point changes the conclusion.</p><a class="text-button" href="#research">Follow the promise →</a></div><div class="hero-figure"><div class="big-number">−0.3<small> pp</small></div><div class="figure-label">Below latest guidance’s lower bound<br>4.2% actual vs. 4.5–5% guided<br>Full-year constant-currency growth</div></div></section>`+
@@ -139,24 +197,18 @@ function research(){
 }
 
 function marketRule(record){
- const rows = record.history;
- if(!rows||rows.length<21) return null;
- const average=rows.slice(-21,-1).reduce((a,r)=>a+r.volume,0)/20;
- const prior=rows.at(-2).close;
- if(!(average>0&&prior>0))return null;
- const change=(rows.at(-1).close/prior-1)*100;
- const volume=rows.at(-1).volume/average;
- return {change,volume,trigger:Math.abs(change)>=settings.price||volume>=settings.volume};
+ return priceSignal(record,settings,data.market_calendar);
 }
 
 function portfolio(){
  const records=data.market.records||[];
  const ok=records.filter(r=>r.status==='ok');
+ const current=ok.filter(r=>effectiveFreshness(r,data.market_calendar).status==='current');
  const sessionDates=[...new Set(ok.map(r=>r.session_date))].sort();
  const filtered=data.portfolio.filter(c=>(c.ticker+' '+c.sector).toLowerCase().includes(search.toLowerCase()));
  return head('PORTFOLIO / END OF DAY','Watch what matters.','Your mock portfolio and configurable unusual-move rules. Daily prices are snapshots, with their trading date shown.')+
- `<div class="notice ${ok.length?'':'warn'}"><span><strong>${ok.length}/18 price sources available.</strong> Latest returned session: ${sessionDates.length?dateLabel(sessionDates.at(-1)):'unavailable'}. ${data.market.refreshed_at?'Last refresh attempt: '+escape(new Date(data.market.refreshed_at).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}))+' IST.':''} Availability does not guarantee freshness. This deployed view does not refresh automatically.</span><button class="text-button" id="reload">Reload saved snapshot ↻</button></div>`+
- `<section class="card"><div class="section-head" style="margin-top:0"><h2>What counts as unusual?</h2><span class="tag">SAVED ON THIS DEVICE</span></div><div class="settings"><label>Daily price move: <output id="price-output">±${settings.price}%</output><input type="range" id="price-threshold" min="1" max="10" step="0.5" value="${settings.price}" aria-label="Daily price move threshold"></label><label>Volume vs. prior 20-session average: <output id="volume-output">${settings.volume}×</output><input type="range" id="volume-threshold" min="1" max="5" step="0.25" value="${settings.volume}" aria-label="Volume multiple threshold"></label></div><p class="small-copy">The current session is excluded from the average. Alerts use completed sessions. Splits and other corporate actions can cause mechanical price moves.</p></section><div class="section-head"><h2>The watchlist <span class="muted">/ 18</span></h2><input id="portfolio-search" type="search" placeholder="Filter companies or sectors" aria-label="Filter portfolio" value="${escape(search)}" style="width:240px;padding:10px;font-size:12px"></div><div class="card table-wrap" style="padding:0"><table class="portfolio-table"><thead><tr><th>COMPANY / SECTOR</th><th>CLOSE</th><th>DAILY MOVE</th><th>VOLUME</th><th>SESSION / STATUS</th></tr></thead><tbody>${filtered.map(c=>{const r=records.find(r=>r.ticker===c.ticker);const calc=r?.status==='ok'?marketRule(r):null;return `<tr><td><button data-ticker="${escape(c.ticker)}">${escape(c.ticker)} ↗</button><div class="small-copy" style="font-size:10px;margin:2px 0">${escape(c.sector)}</div></td><td>${r?.status==='ok'?escape(r.currency)+' '+r.close.toLocaleString('en-IN'):'—'}</td><td class="${calc?.change<0?'down':'up'}">${calc?(calc.change>0?'+':'')+calc.change.toFixed(2)+'%':'—'}</td><td>${calc?calc.volume.toFixed(2)+'×':'—'}</td><td>${r?.status==='ok'?dateLabel(r.session_date)+`<div class="small-copy">${calc?.trigger?'Threshold crossed':'No configured trigger'}</div>`:`<span class="muted">Data unavailable</span>`}</td></tr>`}).join('')}</tbody></table>${!filtered.length?'<p class="empty">No matching companies.</p>':''}</div>`;
+ `<div class="notice ${ok.length?'':'warn'}"><span><strong>${ok.length}/18 price sources available.</strong> ${current.length} current; ${ok.length-current.length} stale or unverified. Latest returned session: ${sessionDates.length?dateLabel(sessionDates.at(-1)):'unavailable'}. ${data.market.refreshed_at?'Last refresh attempt: '+escape(new Date(data.market.refreshed_at).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}))+' IST.':''} Availability does not guarantee freshness. This deployed view does not refresh automatically.</span><button class="text-button" id="reload">Reload saved snapshot ↻</button></div>`+
+ `<section class="card"><div class="section-head" style="margin-top:0"><h2>What counts as unusual?</h2><span class="tag">SAVED ON THIS DEVICE</span></div><div class="settings"><label>Daily price move: <output id="price-output">±${settings.price}%</output><input type="range" id="price-threshold" min="1" max="10" step="0.5" value="${settings.price}" aria-label="Daily price move threshold"></label><label>Volume vs. prior 20-session average: <output id="volume-output">${settings.volume}×</output><input type="range" id="volume-threshold" min="1" max="5" step="0.25" value="${settings.volume}" aria-label="Volume multiple threshold"></label></div><p class="small-copy">The current session is excluded from the average. Alerts use completed sessions. Splits and other corporate actions can cause mechanical price moves.</p></section><div class="section-head"><h2>The watchlist <span class="muted">/ 18</span></h2><input id="portfolio-search" type="search" placeholder="Filter companies or sectors" aria-label="Filter portfolio" value="${escape(search)}" style="width:240px;padding:10px;font-size:12px"></div><div class="card table-wrap" style="padding:0"><table class="portfolio-table"><thead><tr><th>COMPANY / SECTOR</th><th>CLOSE</th><th>DAILY MOVE</th><th>VOLUME</th><th>SESSION / STATUS</th></tr></thead><tbody>${filtered.map(c=>{const r=records.find(r=>r.ticker===c.ticker);const state=r?effectiveFreshness(r,data.market_calendar):{status:'unavailable'};const calc=r?.status==='ok'?marketRule(r):null;return `<tr data-freshness="${escape(state.status)}"><td><button data-ticker="${escape(c.ticker)}">${escape(c.ticker)} ↗</button><div class="small-copy" style="font-size:10px;margin:2px 0">${escape(c.sector)}</div></td><td>${r?.status==='ok'?escape(r.currency)+' '+r.close.toLocaleString('en-IN'):'—'}</td><td class="${calc?.change<0?'down':'up'}">${calc?(calc.change>0?'+':'')+calc.change.toFixed(2)+'%':'—'}</td><td>${calc?calc.volume.toFixed(2)+'×':'—'}</td><td>${r?.status==='ok'?dateLabel(r.session_date)+`<div class="small-copy">${calc?.eligible?(calc.trigger?'Threshold crossed':'Current · no configured trigger'):'Stale or unverified · alerts withheld'}${state.expected_session&&state.status!=='current'?' · expected '+dateLabel(state.expected_session):''}</div>`:`<span class="muted">Data unavailable</span>`}</td></tr>`}).join('')}</tbody></table>${!filtered.length?'<p class="empty">No matching companies.</p>':''}</div>`;
 }
 
 function sources(){
@@ -188,6 +240,11 @@ function bind(){
  if($('#ticker-form'))$('#ticker-form').onsubmit=e=>{e.preventDefault();selectedTicker=$('#ticker').value.trim().toUpperCase();render()};
  if($('#collect-company'))$('#collect-company').onclick=collectCompany;
  if($('#research-query-form'))$('#research-query-form').onsubmit=e=>{e.preventDefault();researchQuery=$('#research-query').value.trim();runRetrieval()};
+ if($('#ai-question-form'))$('#ai-question-form').onsubmit=generateResearch;
+ if($('#ai-question'))$('#ai-question').oninput=e=>{aiQuestion=e.target.value.trim();paintAI()};
+ paintAI();
+ if($('#research-scope'))$('#research-scope').onchange=e=>{researchScope=e.target.value;if(researchScope==='annual'){researchPeriod='all';$('#research-period').value='all'}paintAI();runRetrieval()};
+ if($('#research-period'))$('#research-period').onchange=e=>{researchPeriod=e.target.value;if(researchPeriod!=='all'){researchScope='earnings';$('#research-scope').value='earnings'}paintAI();runRetrieval()};
  document.querySelectorAll('[data-topic]').forEach(b=>b.onclick=()=>{researchQuery=b.dataset.topic;$('#research-query').value=researchQuery;runRetrieval()});
  if($('#retrieval-results'))runRetrieval();
  if($('#reset-ticker'))$('#reset-ticker').onclick=()=>{selectedTicker='INFY';render()};
@@ -201,4 +258,6 @@ function bind(){
 $('#close-evidence').onclick=()=>$('#evidence').close();
 $('#evidence').addEventListener('click',e=>{if(e.target===$('#evidence')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
 window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0)});
-try{const response=await fetch('snapshot.json');if(!response.ok)throw Error('Research snapshot unavailable');data=await response.json();if(['127.0.0.1','localhost'].includes(location.hostname)){try{const capabilities=await fetch('/api/capabilities');if(capabilities.ok)canCollect=!!(await capabilities.json()).on_demand_ingestion}catch{}}render()}catch(e){$('#content').innerHTML='<div class="empty"><strong>Research could not load.</strong>Please reload this page. Serve the app over HTTP rather than opening the HTML file directly.</div>';console.error(e)}
+try{const response=await fetch('snapshot.json');if(!response.ok)throw Error('Research snapshot unavailable');data=await response.json();if(['127.0.0.1','localhost'].includes(location.hostname)){try{const capabilities=await fetch('/api/capabilities');if(capabilities.ok){const caps=await capabilities.json();canCollect=!!caps.on_demand_ingestion;canGenerate=!!caps.model_generation}}catch{}}render()}catch(e){$('#content').innerHTML='<div class="empty"><strong>Research could not load.</strong>Please reload this page. Serve the app over HTTP rather than opening the HTML file directly.</div>';console.error(e)}
+
+setInterval(()=>{const view=location.hash.slice(1)||'briefing';if(data&&['briefing','portfolio'].includes(view)&&!document.hidden&&!document.activeElement?.matches('input,select,textarea'))render()},60000);

@@ -2,6 +2,15 @@
 const stop = new Set('a an and are as at be been by can company did do does for from had has have how i in is it its management of on or our say said should that the their them these this to us was we were what when where which who why will with would you your'.split(' '));
 const canonical = term => /^(guide|guided|guidance|outlook)$/.test(term)?'guidance':term.replace(/s$/,'');
 export const tokenize = text => text.toLowerCase().match(/[a-z0-9]+/g) || [];
+export function filterCorpus(corpus,{scope='all',period='all',window=[]}={}){
+ return {...corpus,passages:corpus.passages.filter(p=>{
+  if(scope==='earnings'&&p.event_type!=='earnings_call')return false;
+  if(scope==='annual'&&p.event_type!=='annual_report')return false;
+  if(period==='latest4'&&!window.includes(p.reporting_period))return false;
+  if(period!=='all'&&period!=='latest4'&&p.reporting_period!==period)return false;
+  return true;
+ })};
+}
 function queryTerms(query){
  const terms=[...new Set(tokenize(query).filter(t=>!stop.has(t)&&t.length>2))];
  const variants=new Set(terms);
@@ -47,7 +56,7 @@ export function searchCorpus(corpus,query,limit=5){
    if(score>bestScore){bestScore=score;bestStart=start}
   }
   const snippet=words.slice(bestStart,bestStart+25).join(' ');
-  results.push({document:corpus.documents.find(d=>d.id===entry.passage.document),page:entry.passage.page,snippet,matched:entry.matched,score:entry.score,passage_id:entry.passage.id});
+  results.push({document:corpus.documents.find(d=>d.id===entry.passage.document),page:entry.passage.page,snippet,matched:entry.matched,score:entry.score,passage_id:entry.passage.id,event_type:entry.passage.event_type,reporting_period:entry.passage.reporting_period});
   if(results.length>=limit)break;
  }
  return results;

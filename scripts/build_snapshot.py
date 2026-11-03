@@ -6,6 +6,7 @@ import shutil
 from zoneinfo import ZoneInfo
 from engine import assess
 from build_corpus import build as build_corpus
+from market_freshness import freshness
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -28,6 +29,12 @@ def build():
     research['built_at'] = datetime.now(timezone.utc).isoformat()
     market_path = ROOT / 'data/market.json'
     research['market'] = json.loads(market_path.read_text()) if market_path.exists() else {'records': [], 'note': 'Market ingestion has not run.'}
+    calendar_path=ROOT/'config/nse_calendar.json'
+    if calendar_path.exists():
+        research['market_calendar']=json.loads(calendar_path.read_text())
+        for record in research['market'].get('records',[]):
+            if record.get('status')=='ok':
+                record['freshness']=freshness(record['session_date'],datetime.now(timezone.utc),research['market_calendar'])
     announcement_path = ROOT / 'data/announcements.json'
     research['announcements'] = json.loads(announcement_path.read_text()) if announcement_path.exists() else {'status':'not_connected', 'records':[]}
     dest = ROOT / 'dist' if (ROOT / '.openai/hosting.json').exists() else ROOT / 'finn-site/dist'

@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
 const local=new URL('../dist/retrieval.mjs',import.meta.url);
-const {searchCorpus}=await import(existsSync(local)?local:new URL('../finn-site/dist/retrieval.mjs',import.meta.url));
+const {searchCorpus,filterCorpus}=await import(existsSync(local)?local:new URL('../finn-site/dist/retrieval.mjs',import.meta.url));
 
 const corpus={documents:[{id:'a',url:'https://example.com/a.pdf'},{id:'b',url:'https://example.com/b.pdf'}],passages:[
  {id:'a1',document:'a',page:7,text:'The company revised its revenue growth guidance to reflect its outlook for the full financial year.'},
@@ -33,4 +33,13 @@ test('guidance search does not match unrelated industry forecasts',()=>{
 });
 test('guide and guided retrieve a source that says guidance',()=>{
  assert(searchCorpus(corpus,'what did management guide').length>0);
+});
+test('earnings scope excludes earlier media pages in a combined PDF',()=>{
+ const mixed={documents:[{id:'combined'}],passages:[{document:'combined',page:3,event_type:'media_conference',text:'growth guidance'},{document:'combined',page:24,event_type:'earnings_call',reporting_period:'Q2 FY2027',text:'growth guidance'}]};
+ const result=searchCorpus(filterCorpus(mixed,{scope:'earnings'}),'growth guidance');
+ assert.equal(result.length,1);assert.equal(result[0].page,24);
+});
+test('a missing reporting period cannot return another quarter',()=>{
+ const one={documents:[{id:'a'}],passages:[{document:'a',page:1,event_type:'earnings_call',reporting_period:'Q1 FY2027',text:'growth guidance'}]};
+ assert.equal(filterCorpus(one,{period:'Q4 FY2026'}).passages.length,0);
 });

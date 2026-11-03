@@ -1,0 +1,10 @@
+{
+  "timezone": "Asia/Kolkata",
+  "years": [2026],
+  "verified_on": "2026-11-03",
+  "source_url": "https://www.nseindia.com/resources/exchange-communication-holidays?apiversion=v2",
+  "regular_eod_available_after": "16:00",
+  "cutoff_note": "A conservative data-availability buffer after the regular close, not a statement of exchange trading hours.",
+  "holidays": ["2026-01-15", "2026-01-26", "2026-03-03", "2026-03-26", "2026-03-31", "2026-04-03", "2026-04-14", "2026-05-01", "2026-05-28", "2026-06-26", "2026-09-14", "2026-10-02", "2026-10-20", "2026-11-10", "2026-11-24", "2026-12-25"],
+  "special_sessions": {"2026-11-08": {"name": "Muhurat trading", "eod_available_after": "23:59:59", "note": "Use the end of the calendar day as a conservative publication cutoff; actual session times are not configured."}}
+}

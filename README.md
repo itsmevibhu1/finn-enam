@@ -19,7 +19,7 @@ Both workflows will distinguish source facts, computed values, and AI interpreta
 
 ## Repository status
 
-The second interactive prototype is implemented. Present now:
+The working prototype is implemented, with further local improvements awaiting publication. Present now:
 
 - Responsive briefing, research, portfolio, and source-library screens.
 - EOD prices and volumes fetched for all 18 mock-portfolio companies; configurable, device-local price/volume thresholds.
@@ -27,16 +27,20 @@ The second interactive prototype is implemented. Present now:
 - Five deterministic comparisons: exceeded earlier guidance, met an intermediate range, missed the latest growth range, met margin guidance, and pending FY27 delivery.
 - Source-page links, revision history, evidence export, a historical digest window, and searchable verified summaries.
 - A reusable ticker pipeline that discovers primary-document links through Screener, downloads exchange/company PDFs, validates basic document identity, and retains page-level text.
-- 26 usable PDFs across INFY, HCLTECH, PERSISTENT, DIXON, ASTRAL, and COFORGE: 2,914 PDF pages. Audio notices and failed links are excluded from the search corpus.
+- 35 usable PDFs across INFY, HCLTECH, PERSISTENT, DIXON, ASTRAL, and COFORGE: 3,144 PDF pages. Audio notices and failed links are excluded from the search corpus. Five companies have four consecutive earnings quarters indexed; Astral's Q4 FY2026 gap remains explicit.
 - Browser-based keyword retrieval over those primary PDFs, one short passage per matching document, with PDF-page links, document hashes, and an exportable evidence pack.
 - Corrected NSE RSS ingestion with persistent observed-filings history, category filters, priority rules, routine-item collapsing, and attachment grouping. The first successful morning snapshot had zero matched portfolio filings; it is not a full historical archive.
 - A local server that can index an unfamiliar ticker on demand, with bounded jobs and visible status.
 - A local PDF importer preserving original bytes, a SHA-256 hash, source metadata, and page-level text.
 - Automated financial-rule tests and browser interaction/mobile-layout checks.
 
-Important limits: generated financial conclusions and curated promise comparisons still cover INFY only. There is no runtime LLM, semantic/vector retrieval, automatic scheduling, or complete filing history. The hosted site searches the six prebuilt corpora; new-ticker downloads run through the local server/CLI. Direct Infosys downloads returned HTTP 403, but exchange-hosted copies were successfully imported. The NSE API remains blocked; RSS works after fixing its non-RFC date format. All available price responses still ended at October 30 despite a November 3 refresh; the interface states returned-session date separately from refresh date. No model API calls have been made.
+Important limits: curated promise comparisons cover INFY only. Gemini research is connected to the local interface through bounded background jobs. The hosted static site does not yet expose model generation. There is no semantic/vector retrieval, automatic scheduling, or complete filing history. The hosted site searches prebuilt corpora; new-ticker downloads run through the local server/CLI. Direct Infosys downloads returned HTTP 403, but exchange-hosted copies were successfully imported. The NSE API remains blocked; RSS works after fixing its date format and issuer matching. The latest successful local price refresh includes November 3 for all 18 companies. Availability and freshness are checked separately. A live Gemini request has produced a draft with source quotes validated against the indexed passages.
 
-See `docs/ITERATION_2_REPORT.md` for the current results and `docs/PROGRESS_REPORT.md` for the first iteration.
+## Hosted model API setup
+
+The active provider choice is now Gemini's free tier, replacing the local-model experiment. See [Gemini setup](docs/GEMINI_SETUP.md). Put your own key in the ignored `.env.local` file. The adapter uses a free-tier-eligible model, cached drafts, bounded requests, checked source quotes, and no paid-model fallback. The configured API key has been verified with a live research request. Other users must supply their own key. The application cannot determine your Google project's billing tier from the key; keep that project on the free tier.
+
+See `docs/ITERATION_2_REPORT.md` for the earlier deployed results and `docs/PROGRESS_REPORT.md` for the first iteration.
 
 ## Run the prototype
 
@@ -54,7 +58,7 @@ For local on-demand research, use this server instead of the static server:
 python3 scripts/serve.py --port 8000
 ```
 
-Open `http://127.0.0.1:8000`. Enter an unindexed ticker in Research and choose **Find company documents**. This downloads primary files and rebuilds the local index. The server binds to loopback only; the private hosted snapshot does not expose the collection endpoint.
+Open `http://127.0.0.1:8000`. With `.env.local` configured, Research offers **Draft answer** for indexed companies. Drafts run in the background, preserve source-page citations, and use a validated cache for repeated questions. The key stays on the server. Enter an unindexed ticker in Research and choose **Find company documents**. This downloads primary files and rebuilds the local index. The server binds to loopback only; the private hosted snapshot does not expose the collection endpoint.
 
 To index any NSE ticker from the command line:
 

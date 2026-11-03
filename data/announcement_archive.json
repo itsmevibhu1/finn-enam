@@ -1,4 +1,199 @@
 {
-  "records": [],
-  "updated_at": "2026-11-03T01:32:16.256868+00:00"
+  "records": [
+    {
+      "id": "5b79cabd3a3fe779b214",
+      "ticker": "CIPLA",
+      "subject": "Cipla Limited",
+      "details": "Cipla Limited has informed the Exchange about Newspaper Publication regarding opening of special window for re-lodgement of transfer and dematerialisation of physical shares |SUBJECT: Copy of Newspaper Publication",
+      "published_at": "2026-11-03T17:39:42+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CIPLA_03112026173812_Stock_Exchange_intimation_for_Special_window_for_re-lodgement_signed.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "a76c25189c4c5a987d43",
+      "ticker": "POLYCAB",
+      "subject": "Polycab India Limited",
+      "details": "Polycab India Limited has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+      "published_at": "2026-11-03T16:03:20+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_17413_WebXMLFile_20261103_160319916.xml",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "24af62c4bb75a0b6e1f0",
+      "ticker": "POLYCAB",
+      "subject": "Polycab India Limited",
+      "details": "Polycab India Limited has informed the Exchange regarding Allotment of 3403  Shares. |SUBJECT: ESOP/ESOS/ESPS",
+      "published_at": "2026-11-03T16:01:15+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/POLYCAB_03112026160106_IntimationtoStockexchange.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "51774485f9b518850995",
+      "ticker": "ICICIBANK",
+      "subject": "ICICI Bank Limited",
+      "details": "ICICI BANK LIMITED has informed the Exchange regarding Allotment of Securities |SUBJECT: Alteration Of Capital and Fund Raising-XBRL",
+      "published_at": "2026-11-03T14:22:16+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/ALTERATION_OF_CAPITAL_AND_FUND_RAISING_1606_WebXMLFile_20261103_142216083.xml",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "0016c5f789c83406f090",
+      "ticker": "EICHERMOT",
+      "subject": "Eicher Motors Limited",
+      "details": "Eicher Motors Limited has informed the Exchange regarding a press release dated November 03, 2026, titled \"Royal Enfield at EICMA 2026: The new frontier of Pure Motorcycling and Launch of Royal Enfield Himalayan 750\". |SUBJECT: Press Release",
+      "published_at": "2026-11-03T13:45:09+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/rahulrathore_royalenfield_com_03112026133859_Press_Release_03-11-2026_EICMA_Himalayan_750_Signed.pdf",
+      "category": "press_release",
+      "priority": 40,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    },
+    {
+      "id": "f67993b337e3eb0a103b",
+      "ticker": "ICICIBANK",
+      "subject": "ICICI Bank Limited",
+      "details": "ICICI Bank Limited has informed the Exchange regarding Allotment of 62879  Shares. |SUBJECT: ESOP/ESOS/ESPS",
+      "published_at": "2026-11-03T10:24:40+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ICICIBANK1_03112026102424_Lettertoexchange.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "issuer_match": "Exact normalized issuer name or explicit exchange symbol"
+    }
+  ],
+  "updated_at": "2026-11-03T12:46:11.841524+00:00",
+  "rejected_issuer_matches": [
+    {
+      "id": "512ae7645ba5925b2292",
+      "ticker": "INFY",
+      "subject": "Slone Infosystems Limited",
+      "details": "Slone Infosystems Limited has informed the Exchange about Bagging/Receiving of orders/contracts |SUBJECT: Bagging/Receiving of orders/contracts",
+      "published_at": "2026-11-03T11:39:34+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/sloneinfo_03112026113827_Order_Intimation.pdf",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "c77f1e9dcb71cfbec2b0",
+      "ticker": "INFY",
+      "subject": "Slone Infosystems Limited",
+      "details": "Slone Infosystems Limited has informed the Exchange about Bagging/Receiving of orders/contracts  (Sub-para 4-Para B) |SUBJECT: Bagging/Receiving of orders/contracts  (Sub-para 4-Para B)",
+      "published_at": "2026-11-03T11:29:51+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/REG30_PARA_B_23336_WebXMLFile_20261103_112950679.xml",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "6956c7d917b61347ae2a",
+      "ticker": "MARUTI",
+      "subject": "Jay Bharat Maruti Limited",
+      "details": "Jay Bharat Maruti Limited has informed the Exchange about Copy of Newspaper Publication for Un-audited Financial Results (Standalone & Consolidated) for the Second Quarter and half year ended September 30, 2026. |SUBJECT: Copy of Newspaper Publication",
+      "published_at": "2026-11-03T11:12:48+05:30",
+      "source_url": "https://nsearchives.nseindia.com/corporate/JAYBARMARUT_03112026111153_Submission.pdf",
+      "category": "routine",
+      "priority": 5,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "3e2e57d878bd945cf8ce",
+      "ticker": "LT",
+      "subject": "LIC MF - LIC MF G-sec LT ETF - GO",
+      "details": "LIC Mutual Fund Asset Management Limited  has informed the Exchange that the Net Asset Value (per unit) of LIC MF - LIC MF G-sec LT ETF - GO as on November 02, 2026 is Rs. 28.9616. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T10:17:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "f863336c2c390ab55ad3",
+      "ticker": "RELIANCE",
+      "subject": "Reliance MF - Reliance Interval Fund - QIF- Dir-Div-DPO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance MF - Reliance Interval Fund - QIF- Dir-Div-DPO as on November 02, 2026 is Rs. 13.6713. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "5e0c8fd86b3de1e66c42",
+      "ticker": "RELIANCE",
+      "subject": "Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- DP - DPO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- DP - DPO as on November 02, 2026 is Rs. 13.6188. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "6814c93cb3498dae3377",
+      "ticker": "RELIANCE",
+      "subject": "Reliance MF - Reliance IF - Quarterly Interval Fund Series II - DP-GO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance MF - Reliance IF - Quarterly Interval Fund Series II - DP-GO as on November 02, 2026 is Rs. 39.4519. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "a2f4da84b57ca07117d4",
+      "ticker": "RELIANCE",
+      "subject": "Reliance MF - Reliance IF - Quarterly Interval Fund Series II - DP-DRO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance MF - Reliance IF - Quarterly Interval Fund Series II - DP-DRO as on November 02, 2026 is Rs. 13.6713. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "f313c0bf7f3a25e74cd3",
+      "ticker": "RELIANCE",
+      "subject": "Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- DP - RO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- DP - RO as on November 02, 2026 is Rs. 13.6188. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    },
+    {
+      "id": "b9279c7c0e71934534cd",
+      "ticker": "RELIANCE",
+      "subject": "Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- GP - GO",
+      "details": "Nippon Life India Asset Management Limited has informed the Exchange that the Net Asset Value (per unit) of Reliance Mutual Fund - Reliance Int. Fund - QIF - SII - RP- GP - GO as on November 02, 2026 is Rs. 38.839. |SUBJECT: Declaration of NAV",
+      "published_at": "2026-11-03T07:00:00+05:30",
+      "source_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+      "category": "unclassified",
+      "priority": 30,
+      "classification_method": "Keyword rules on exchange RSS description",
+      "rejection_reason": "Legacy substring match did not identify the exact portfolio issuer"
+    }
+  ]
 }
