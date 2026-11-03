@@ -17,12 +17,12 @@ The Render service runs the same UI, Gemini research jobs and primary-PDF collec
 - `/api/capabilities` reports `on_demand_ingestion:true` and `model_generation:true` when the server key is set. This configuration check alone does not prove successful model authentication.
 - Research displays **Draft answer** for indexed companies. Choose HCLTECH, earnings calls, latest four-quarter window, and submit the default question.
 - Confirm the draft's primary-source page links and cached repeat.
-- Enter a company outside the six prebuilt indexes and choose **Find company documents**. Primary websites may block cloud-hosted downloads; failures must stay visible. An attempted request is not verified company coverage.
+- Enter a company outside the seven bundled indexes and choose **Find company documents**. Primary websites may block cloud-hosted downloads; failures must stay visible. An attempted request is not verified company coverage.
 - Confirm an external reviewer can open the service URL without your account. The GitHub source repository remains private until explicitly shared or made public.
 
 ## Free-plan limits
 
-Render free services sleep after fifteen minutes without traffic; waking takes about a minute. Runtime files are ephemeral: newly collected documents, generated caches, the local request counter and in-memory jobs are lost on restart, redeploy or spin-down. The six bundled indexes survive as deployment assets. The eight-attempt UTC-day application cap is therefore per retained runtime filesystem, not a durable cross-restart billing control. Google's account quota remains the authoritative vendor limit. Keep Google billing disabled if using only the free tier.
+Render free services sleep after fifteen minutes without traffic; waking takes about a minute. Runtime files are ephemeral: newly collected documents, generated caches, the local request counter and in-memory jobs are lost on restart, redeploy or spin-down. The seven bundled indexes survive as deployment assets. The eight-attempt UTC-day application cap is therefore per retained runtime filesystem, not a durable cross-restart billing control. Google's account quota remains the authoritative vendor limit. Keep Google billing disabled if using only the free tier.
 
 Downloads run one at a time on this service to reduce peak memory. Research is separately serialized, jobs are bounded, and identical concurrent research requests share a job. Live collection does not run automatically at startup. Price and filing data remain dated snapshots until refreshed and redeployed; no automatic scheduler is claimed.
 

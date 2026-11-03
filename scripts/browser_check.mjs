@@ -84,6 +84,8 @@ try{
    if(await evaluate(`!document.querySelector('#generate-research').disabled`))break;
    await sleep(1000);
   }
+  const draftText=await evaluate(`document.querySelector('#ai-answer').textContent`);
+  if(!draftText.includes('AI draft'))console.log(JSON.stringify({research_error:draftText}));
   check(await evaluate(`document.querySelector('#ai-answer').textContent.includes('AI draft') && document.querySelectorAll('#ai-answer .source-row').length>0`),'Live Gemini research renders a checked draft from the interface');
   check(await evaluate(`Array.from(document.querySelectorAll('#ai-answer .source-row a')).every(a=>a.href.startsWith('https://')&&a.href.includes('#page='))`),'AI observations link to primary PDF pages');
   await evaluate(`document.querySelector('#ai-question-form').requestSubmit()`);
