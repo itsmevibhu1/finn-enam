@@ -25,6 +25,7 @@ class DemoQualityTest(unittest.TestCase):
     def test_recording_of_results_is_not_an_actual_results_release(self):
         self.assertEqual(classify('Audio recording of the financial results earnings call'),('earnings_call',50))
         self.assertEqual(classify('Unaudited quarterly financial results'),('results',90))
+        self.assertEqual(classify('Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL'),('unclassified',30))
 
     def test_actual_exchange_description_calibration_set(self):
         for case in json.loads((ROOT/'data/announcement_eval.json').read_text())['cases']:

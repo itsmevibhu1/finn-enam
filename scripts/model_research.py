@@ -165,6 +165,16 @@ def generate(ticker,question=DEFAULT_QUESTION,scope='auto',period='all',force=Fa
     if cache.exists() and not force:
         answer=json.loads(cache.read_text())
         return {**answer,'cache_hit':True}
+    bundle=ROOT/'data/demo_answers.json'
+    if bundle.exists() and not force:
+        candidate=json.loads(bundle.read_text()).get(key)
+        if candidate:
+            try:
+                checked=check_bundled_answer(candidate,corpus)
+            except (ValueError,TypeError,KeyError):
+                pass
+            else:
+                return {**candidate,**checked,'cache_hit':True,'cache_source':'bundled_verified_demo'}
     if not evidence:
         return {**provenance,'cache_key':key,'status':'insufficient_evidence','headline':'No matching primary-source evidence','observations':[],'next_question':'Which primary documents would establish the missing evidence?','cache_hit':False}
     source_text='\n\n'.join(json.dumps(e,ensure_ascii=False) for e in evidence)
@@ -197,6 +207,20 @@ def generate(ticker,question=DEFAULT_QUESTION,scope='auto',period='all',force=Fa
         (run_dir/f'{key}.json').write_text(json.dumps({'messages':messages,'response':completion,'validation_errors':errors,'answer':answer},indent=2)+'\n')
         return answer
     raise ValueError('Model output failed evidence validation: '+'; '.join(errors))
+
+
+def check_bundled_answer(candidate,corpus):
+    """Recheck recorded quotes and rebuild source metadata from this exact corpus."""
+    documents={d['id']:d for d in corpus['documents']}
+    evidence=[];findings=[]
+    for observation in candidate['observations']:
+        source=observation['source'];document=documents[source['document_id']]
+        passage=next((p for p in corpus['passages'] if p['document']==document['id'] and p['page']==source['pdf_page'] and normalized(observation['quote']) in normalized(p['text'])),None)
+        if not passage:
+            raise ValueError('Bundled quote no longer matches its primary-source page')
+        evidence.append({'source_id':source['source_id'],'document_id':document['id'],'title':document['title'],'url':document['url'],'pdf_page':passage['page'],'event_type':passage.get('event_type'),'call_reporting_period':passage.get('reporting_period'),'text':passage['text']})
+        findings.append({'source_id':source['source_id'],'quote':observation['quote'],'interpretation':observation['interpretation']})
+    return validate_draft({'answerable':bool(findings),'headline':candidate['headline'],'observations':findings,'next_question':candidate['next_question']},evidence)
 
 
 def main():

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T18:06:53.468068+00:00",
+  "generated_at": "2026-11-03T18:21:20.074943+00:00",
   "model_calls": 0,
   "limitations": [
     "Small manually inspected primary-text calibration set, not an independent accuracy benchmark. A pass means the expected source passage is in the four passages supplied to the model, not that its generated interpretation is correct.",
-    "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate.",
+    "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate. Generic recordings without explicit earnings/conference-call identity remain unclassified rather than assuming a quarterly call.",
     "Comparison checks reproduce the curated case in code; they are not automatic financial extraction."
   ],
   "summary": {
@@ -208,8 +208,8 @@
     {
       "issuer": "Studds Accessories Limited",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_25886_WebXMLFile_20261103_181506041.xml",
-      "expected": "earnings_call",
-      "actual": "earnings_call",
+      "expected": "unclassified",
+      "actual": "unclassified",
       "baseline": "investor_meetings"
     },
     {
@@ -229,8 +229,8 @@
     {
       "issuer": "Global Surfaces Limited",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_20828_WebXMLFile_20261103_181414272.xml",
-      "expected": "earnings_call",
-      "actual": "earnings_call",
+      "expected": "unclassified",
+      "actual": "unclassified",
       "baseline": "investor_meetings"
     },
     {
@@ -250,8 +250,8 @@
     {
       "issuer": "Eureka Forbes Limited",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_23900_WebXMLFile_20261103_181346152.xml",
-      "expected": "earnings_call",
-      "actual": "earnings_call",
+      "expected": "unclassified",
+      "actual": "unclassified",
       "baseline": "investor_meetings"
     },
     {
@@ -327,8 +327,8 @@
     {
       "issuer": "Captain Polyplast Limited",
       "source_url": "https://nsearchives.nseindia.com/corporate/CPL_03112026181106_CAPTAINPOLYPLAST03112026.pdf",
-      "expected": "earnings_call",
-      "actual": "earnings_call",
+      "expected": "unclassified",
+      "actual": "unclassified",
       "baseline": "investor_meetings"
     }
   ],

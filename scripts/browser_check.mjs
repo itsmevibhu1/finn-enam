@@ -1,6 +1,6 @@
 // Browser integration checks using an installed Chrome and its DevTools protocol.
 import {spawn} from 'node:child_process';
-import {mkdtemp, mkdir, writeFile, access} from 'node:fs/promises';
+import {mkdtemp, mkdir, writeFile, readFile, access} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -75,7 +75,12 @@ try{
  await evaluate(`document.querySelector('[data-ticker="ASTRAL"]').click()`);
  await until(`document.querySelector('#quarter-coverage')?.textContent.includes('partial')`);
  check(await evaluate(`document.querySelector('#quarter-coverage').textContent.includes('Q4 FY2026')`),'Astral explicitly shows the missing earnings quarter instead of counting an analyst meet');
- if(process.env.FINN_TEST_LIVE_RESEARCH==='1'){
+ if(process.env.FINN_TEST_LIVE_RESEARCH==='1'||process.env.FINN_TEST_RECORDED_DRAFT==='1'){
+  if(process.env.FINN_TEST_RECORDED_DRAFT==='1'){
+   const saved=JSON.parse(await readFile(path.join(root,'docs/HOSTED_DEMO_RESULTS.json'),'utf8'));
+   const draft=saved.cases.find(c=>c.ticker==='HCLTECH'&&c.status==='complete').answer;
+   await evaluate(`window.finnOriginalFetch=window.fetch;window.finnDraftRequests=0;window.finnRecordedAnswer=${JSON.stringify(draft)};window.fetch=async(input,options)=>{const url=String(input);if(url==='/api/research'){window.finnDraftRequests++;return new Response(JSON.stringify({job_id:'recorded-draft',status:'queued'}),{status:202})}if(url==='/api/jobs/recorded-draft')return new Response(JSON.stringify({status:'complete',result:{...window.finnRecordedAnswer,cache_hit:window.finnDraftRequests>1}}));return window.finnOriginalFetch(input,options)}`);
+  }
   await evaluate(`document.querySelector('[data-ticker="HCLTECH"]').click()`);
   await until(`document.querySelector('#ai-question-form')`);
   await evaluate(`document.querySelector('#research-scope').value='earnings';document.querySelector('#research-scope').dispatchEvent(new Event('change'));document.querySelector('#research-period').value='latest4';document.querySelector('#research-period').dispatchEvent(new Event('change'));document.querySelector('#ai-question-form').requestSubmit()`);
@@ -86,11 +91,13 @@ try{
   }
   const draftText=await evaluate(`document.querySelector('#ai-answer').textContent`);
   if(!draftText.includes('AI draft'))console.log(JSON.stringify({research_error:draftText}));
-  check(await evaluate(`document.querySelector('#ai-answer').textContent.includes('AI draft') && document.querySelectorAll('#ai-answer .source-row').length>0`),'Live Gemini research renders a checked draft from the interface');
+  check(await evaluate(`document.querySelector('#ai-answer').textContent.includes('AI draft') && document.querySelectorAll('#ai-answer .source-row').length>0`),process.env.FINN_TEST_RECORDED_DRAFT==='1'?'Recorded hosted draft renders correctly in the interface':'Research endpoint renders a checked draft through the interface');
   check(await evaluate(`Array.from(document.querySelectorAll('#ai-answer .source-row a')).every(a=>a.href.startsWith('https://')&&a.href.includes('#page='))`),'AI observations link to primary PDF pages');
   await evaluate(`document.querySelector('#ai-question-form').requestSubmit()`);
   await until(`document.querySelector('#ai-answer').textContent.includes('cached result')`);
   check(true,'Repeated research is served from the validated cache');
+  check(await evaluate(`document.querySelector('#ai-answer').textContent.includes('2.5% to 4%')`),'Displayed quote context preserves the actual guidance range from the source');
+  if(process.env.FINN_TEST_RECORDED_DRAFT==='1')await evaluate(`window.fetch=window.finnOriginalFetch`);
  }
  await evaluate(`location.hash='portfolio'`);await until(`document.querySelectorAll('tbody tr').length===18`);
  check(await evaluate(`document.querySelector('main').textContent.includes('18/18 price sources available')`),'All 18 fetched portfolio prices are displayed');

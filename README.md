@@ -106,6 +106,8 @@ Use the actual document URL and reporting period. Valid kinds are `annual_report
 
 See [demo guide](docs/DEMO_GUIDE.md), [submission checklist](docs/SUBMISSION_CHECKLIST.md), and [draft covering email](docs/COVERING_EMAIL.md). The available actual Codex conversation is exported with credential redaction in [AI build history](docs/AI_BUILD_HISTORY.md); its manifest states coverage and omissions.
 
+See [evaluation report](docs/EVALUATION_REPORT.md) for the actual three-success/two-blocked hosted demo run, observed latency and improvements. Three recorded, source-checked demo drafts are bundled with exact cache keys so free-host restarts do not consume model calls for those same questions.
+
 Run `python3 scripts/evaluate_demo.py` for a model-free calibration check. Its small manually inspected fixture set is used for tuning and regression, not an independent accuracy benchmark.
 
 ## Submission

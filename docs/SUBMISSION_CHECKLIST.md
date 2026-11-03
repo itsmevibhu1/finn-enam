@@ -12,7 +12,7 @@
 ## Required user actions before sending
 
 1. Replace the API key exposed through IDE context if not already replaced. Update both `.env.local` and Render's secret value, and revoke the old key. Do not include keys in conversation exports or screenshots.
-2. Give reviewers source access: the repository is currently private. Either explicitly approve making it public after reviewing the redacted conversation, or arrange access for named reviewer GitHub accounts. Sharing a private repository URL alone does not grant access.
+2. Source access is complete: the repository was made public with explicit user approval, and both the repository and redacted conversation URL returned HTTP 200 without authentication. Review the visible content before sending.
 3. Read the exported conversation and covering email; add other AI conversations if used, and adjust the signature if desired.
 4. Open the public service on a phone and run the short demo. The automated hosted checks do not replace a human phone check.
 5. Confirm ENAM accepts the submission: the brief states November 1, 2026, and the build continued after that date. No extension has been assumed.

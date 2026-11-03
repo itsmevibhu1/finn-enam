@@ -22,7 +22,7 @@ The Render service runs the same UI, Gemini research jobs and primary-PDF collec
 
 ## Free-plan limits
 
-Render free services sleep after fifteen minutes without traffic; waking takes about a minute. Runtime files are ephemeral: newly collected documents, generated caches, the local request counter and in-memory jobs are lost on restart, redeploy or spin-down. The seven bundled indexes survive as deployment assets. The eight-attempt UTC-day application cap is therefore per retained runtime filesystem, not a durable cross-restart billing control. Google's account quota remains the authoritative vendor limit. Keep Google billing disabled if using only the free tier.
+Render free services sleep after fifteen minutes without traffic; waking takes about a minute. Runtime files are ephemeral: newly collected documents, runtime-generated caches, the local request counter and in-memory jobs are lost on restart, redeploy or spin-down. The seven bundled indexes and three corpus-bound recorded demo answers survive as deployment assets. All other runtime-generated answers remain ephemeral. The eight-attempt UTC-day application cap is therefore per retained runtime filesystem, not a durable cross-restart billing control. Google's account quota remains the authoritative vendor limit. Keep Google billing disabled if using only the free tier.
 
 Downloads run one at a time on this service to reduce peak memory. Research is separately serialized, jobs are bounded, and identical concurrent research requests share a job. Live collection does not run automatically at startup. Price and filing data remain dated snapshots until refreshed and redeployed; no automatic scheduler is claimed.
 

@@ -11,7 +11,7 @@ Live prototype: https://finn-enam-l5x9.onrender.com
 5. **Cross-sector examples:** use one or two of the questions below. Inspect the quoted source before treating the interpretation as a finding.
 6. **Honest gap:** select ASTRAL, earnings calls, Q4 FY2026. A missing transcript must produce an evidence gap. TCS's Q3 FY2026 gap is also explicit.
 
-## Five research demo questions
+## Research questions and observed status
 
 | Company | Question | Document scope | Period |
 | --- | --- | --- | --- |
@@ -20,6 +20,8 @@ Live prototype: https://finn-enam-l5x9.onrender.com
 | PERSISTENT | What did management say about operating margins? | Earnings calls | Latest four-quarter window |
 | COFORGE | What did management say about growth guidance? | Earnings calls | Latest four-quarter window |
 | ASTRAL | What are the raw material risks? | Annual reports | All periods |
+
+The live run produced checked drafts for HCLTECH, DIXON and COFORGE. PERSISTENT failed quote validation; ASTRAL was blocked by the application cap. Use the three successful examples for the generated-answer demonstration, and the others for source search and explicit failure behavior. See `EVALUATION_REPORT.md`.
 
 The expected passages are recorded in `config/research_eval.json`. Keyword retrieval is bounded; these questions do not request or establish comprehensive company analysis.
 
@@ -30,7 +32,7 @@ TCS was not among the six initial indexes. The generic hosted collector successf
 ## Demo preparation
 
 - Open the service before presenting. A free Render instance can require a cold start.
-- Use the questions above once to warm the checked cache, within the application cap. Repeated questions avoid model calls while the same runtime and corpus remain available.
+- The three successful exact question/filter combinations have a bundled, source-checked cache and remain available after restart. Other questions consume the bounded model budget. The UI labels cached results.
 - Display the snapshot's session and refresh dates. Current market values are not promised by a saved deployment.
 - Keep `.env.local` closed and avoid credential selections in IDE context or screenshots.
 - Do not claim all eight suggested research views, fully automatic financial extraction, independent semantic verification, scheduled monitoring or complete exchange history.

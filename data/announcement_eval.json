@@ -1,5 +1,5 @@
 {
-  "method": "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate.",
+  "method": "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate. Generic recordings without explicit earnings/conference-call identity remain unclassified rather than assuming a quarterly call.",
   "cases": [
     {
       "issuer": "Hindustan Zinc Limited",
@@ -22,7 +22,7 @@
       "description": "Studds Accessories Limited has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_25886_WebXMLFile_20261103_181506041.xml",
       "published_at": "03-Nov-2026 18:15:07",
-      "expected_category": "earnings_call",
+      "expected_category": "unclassified",
       "baseline_category": "investor_meetings"
     },
     {
@@ -46,7 +46,7 @@
       "description": "GLOBAL SURFACES LIMITED has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_20828_WebXMLFile_20261103_181414272.xml",
       "published_at": "03-Nov-2026 18:14:16",
-      "expected_category": "earnings_call",
+      "expected_category": "unclassified",
       "baseline_category": "investor_meetings"
     },
     {
@@ -70,7 +70,7 @@
       "description": "Eureka Forbes Limited has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
       "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_23900_WebXMLFile_20261103_181346152.xml",
       "published_at": "03-Nov-2026 18:13:47",
-      "expected_category": "earnings_call",
+      "expected_category": "unclassified",
       "baseline_category": "investor_meetings"
     },
     {
@@ -158,7 +158,7 @@
       "description": "Captain Polyplast Limited has informed the Exchange about Link of Recording |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
       "source_url": "https://nsearchives.nseindia.com/corporate/CPL_03112026181106_CAPTAINPOLYPLAST03112026.pdf",
       "published_at": "03-Nov-2026 18:12:12",
-      "expected_category": "earnings_call",
+      "expected_category": "unclassified",
       "baseline_category": "investor_meetings"
     }
   ]

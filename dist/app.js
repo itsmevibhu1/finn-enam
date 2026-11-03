@@ -1,4 +1,4 @@
-import {searchCorpus,filterCorpus} from './retrieval.mjs';
+import {searchCorpus,filterCorpus,sourceContext} from './retrieval.mjs';
 import {prepareFilings} from './filings.mjs';
 import {priceSignal,effectiveFreshness} from './signals.mjs';
 let data;
@@ -63,12 +63,12 @@ function paintAI(){
  if(state.status==='pending'){target.innerHTML='<p role="status" class="small-copy">Reading retrieved evidence… This may take up to a few minutes. Repeated requests for this question share the same job.</p>';return}
  if(state.status==='failed'){target.innerHTML=`<div class="empty"><strong>Research unavailable.</strong>${escape(state.error)}</div>`;return}
  const answer=state.answer;
- target.innerHTML=`<div class="notice"><span><strong>AI draft · ${answer.cache_hit?'cached result':'new result'}</strong> Quotes and source references checked in code. Interpretations need review.</span></div><h3>${escape(answer.headline)}</h3>`+(answer.observations.length?answer.observations.map(o=>{
+ target.innerHTML=`<div class="notice"><span><strong>AI draft · ${answer.cache_hit?'cached result':'new result'}</strong> Source excerpts may extend checked quotes to twenty-five words from the same passage. Interpretations need review.</span></div><h3>${escape(answer.headline)}</h3>`+(answer.observations.length?answer.observations.map(o=>{
   let url;try{url=new URL(o.source.url);if(url.protocol!=='https:')return ''}catch{return ''}
   url.hash='page='+o.source.pdf_page;
-  return `<article class="source-row"><div class="eyebrow">${escape(o.source.title)} · PDF PAGE ${escape(o.source.pdf_page)}</div><p class="source-excerpt">“${escape(o.quote)}”</p><p>${escape(o.interpretation)}</p><a class="text-button" href="${escape(url.href)}" target="_blank" rel="noopener noreferrer">Inspect primary source ↗</a></article>`;
+  return `<article class="source-row"><div class="eyebrow">${escape(o.source.title)} · PDF PAGE ${escape(o.source.pdf_page)}</div><p class="source-excerpt">“${escape(sourceContext(corpusCache.get(selectedTicker),o))}”</p><p>${escape(o.interpretation)}</p><a class="text-button" href="${escape(url.href)}" target="_blank" rel="noopener noreferrer">Inspect primary source ↗</a></article>`;
  }).join(''):'<p class="small-copy">The retrieved evidence does not support an answer. Try another question or inspect the source documents.</p>')+`<p class="small-copy">Next question: ${escape(answer.next_question)}</p><button class="text-button" id="export-ai">Export cited draft ↓</button>`;
- $('#export-ai').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(answer,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='FINN-'+answer.ticker+'-AI-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+ $('#export-ai').onclick=()=>{const expanded={...answer,display_note:'Source excerpts may extend the checked model quote to at most twenty-five words from the same original passage.',observations:answer.observations.map(o=>({...o,source_excerpt:sourceContext(corpusCache.get(selectedTicker),o)}))};const url=URL.createObjectURL(new Blob([JSON.stringify(expanded,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='FINN-'+answer.ticker+'-AI-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 }
 async function generateResearch(event){
  event.preventDefault();aiQuestion=$('#ai-question').value.trim();

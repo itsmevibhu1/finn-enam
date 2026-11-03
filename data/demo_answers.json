@@ -1,0 +1,204 @@
+{
+  "430c9a7702d96f9c005f74e34311868c65d1328a0a2f9eba4b8fa0a1236089ef": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "ticker": "HCLTECH",
+    "question": "What changed in management guidance and operating performance?",
+    "scope": "earnings",
+    "period": "latest4",
+    "corpus_sha256": "6be4ce97bfe77b615618b7c5e7088acdaca084f771554d0ee5b1480ce506eedc",
+    "pipeline_version": "research-v3",
+    "prompt_sha256": "f4ec094e3443e5a3c18e0710ad6f5b6baa732a90a491ba89ace5149feb6700fa",
+    "headline": "Management updates guidance and discusses operational performance trends",
+    "observations": [
+      {
+        "quote": "Discretionary spending contracted in traditional areas",
+        "interpretation": "Management noted that spending in traditional sectors experienced a contraction during the period.",
+        "source": {
+          "source_id": "E2",
+          "document_id": "5f2f4b6c0c96c8d50247644c10ba6edea0c890e6de3fc121ca248894ae60e76e",
+          "title": "Transcript \u00b7 Q4 FY2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48f5d6fd-b499-45da-bc6d-2e0439495ec2.pdf",
+          "pdf_page": 4,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q4 FY2026"
+        }
+      },
+      {
+        "quote": "Our FY27 growth guidance is now",
+        "interpretation": "Management provided updated growth projections for the upcoming full year period.",
+        "source": {
+          "source_id": "E3",
+          "document_id": "baf227e394b6f6be0659c3c482d707ffc62e98c9bfe248d417560d3527af75ed",
+          "title": "Transcript \u00b7 Q2 FY2027",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ccce0001-ff5d-4875-b1e5-5c558669f49c.pdf",
+          "pdf_page": 12,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q2 FY2027"
+        }
+      }
+    ],
+    "next_question": "What are the main drivers behind the revised growth guidance and client spending patterns?",
+    "status": "evidence_checked_draft",
+    "cache_key": "430c9a7702d96f9c005f74e34311868c65d1328a0a2f9eba4b8fa0a1236089ef",
+    "cache_hit": false,
+    "generated_at": "2026-11-03T18:11:55.101671+00:00",
+    "latency_seconds": 61.95,
+    "attempts": 1,
+    "usage": {
+      "promptTokenCount": 2090,
+      "candidatesTokenCount": 123,
+      "totalTokenCount": 2213,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2090
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "validation_note": "Quotes and source IDs checked in code. AI interpretations have not been independently verified.",
+    "model_api_cost_usd": null,
+    "billing_assumption": "Requires a free-tier Google project; actual account billing is managed by Google",
+    "model_version": "gemini-3.5-flash-lite"
+  },
+  "4afe32764adae5d4877333a9ce0a82ef32be8a1537a1b4168727c9028016d615": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "ticker": "DIXON",
+    "question": "What did management say about capex?",
+    "scope": "earnings",
+    "period": "latest4",
+    "corpus_sha256": "0954d6276622f0507dd50057cb64fa4df052b6014961c5ddc0f3e04ecdcdaf19",
+    "pipeline_version": "research-v3",
+    "prompt_sha256": "f4ec094e3443e5a3c18e0710ad6f5b6baa732a90a491ba89ace5149feb6700fa",
+    "headline": "Management remarks regarding capital spending allocations",
+    "observations": [
+      {
+        "quote": "We will be putting capex",
+        "interpretation": "Management stated plans to invest in capital expenditures for upcoming phases.",
+        "source": {
+          "source_id": "E1",
+          "document_id": "377ade8dfd9a7c6b18d099802eed105342c65a48603b9980a75cef217a3ae995",
+          "title": "Transcript \u00b7 Q3 FY2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+          "pdf_page": 19,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q3 FY2026"
+        }
+      },
+      {
+        "quote": "The capex allocation is largely going to be on three things.",
+        "interpretation": "Management explained that capital deployment will concentrate on specific strategic areas.",
+        "source": {
+          "source_id": "E2",
+          "document_id": "c829e8463477c1785ffca258f4bb49f41eb6cbbe0df9713aaccfd0d69b15b965",
+          "title": "Transcript \u00b7 Q4 FY2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+          "pdf_page": 19,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q4 FY2026"
+        }
+      },
+      {
+        "quote": "So our capex has been to the tune",
+        "interpretation": "Management detailed the capital expenditure amount incurred during the period.",
+        "source": {
+          "source_id": "E4",
+          "document_id": "f693ad398dd3f7ce05de2b6eb0e20a4bfd06b690a1c9025c462271f493759504",
+          "title": "Transcript \u00b7 Q1 FY2027",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+          "pdf_page": 8,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q1 FY2027"
+        }
+      }
+    ],
+    "next_question": "What is the expected timeline for completing the planned capital projects?",
+    "status": "evidence_checked_draft",
+    "cache_key": "4afe32764adae5d4877333a9ce0a82ef32be8a1537a1b4168727c9028016d615",
+    "cache_hit": false,
+    "generated_at": "2026-11-03T18:12:44.756557+00:00",
+    "latency_seconds": 47.89,
+    "attempts": 2,
+    "usage": {
+      "promptTokenCount": 2234,
+      "candidatesTokenCount": 205,
+      "totalTokenCount": 2439,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2234
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "validation_note": "Quotes and source IDs checked in code. AI interpretations have not been independently verified.",
+    "model_api_cost_usd": null,
+    "billing_assumption": "Requires a free-tier Google project; actual account billing is managed by Google",
+    "model_version": "gemini-3.5-flash-lite"
+  },
+  "79b104cbb2bbccf16de6c8a60ec77bfba8b03fa5fe32efe97f4dcb980008e960": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "ticker": "COFORGE",
+    "question": "What did management say about growth guidance?",
+    "scope": "earnings",
+    "period": "latest4",
+    "corpus_sha256": "1ce8538d34d65923fd753b078ab006cb5c084d8c53498249a94b8c1c6ac5aec6",
+    "pipeline_version": "research-v3",
+    "prompt_sha256": "f4ec094e3443e5a3c18e0710ad6f5b6baa732a90a491ba89ace5149feb6700fa",
+    "headline": "Management discusses margin and outlook updates during earnings calls",
+    "observations": [
+      {
+        "quote": "Our revenue outlook remains very robust.",
+        "interpretation": "Management stated that the revenue outlook is very robust.",
+        "source": {
+          "source_id": "E1",
+          "document_id": "aaf466c9a68f919de06f95cf5fc1f68cdf5576c1de6d987abcf84e3c1c7495da",
+          "title": "Transcript \u00b7 Q2 FY2027",
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q2FY27-October-23-2026.pdf?hsLang=en",
+          "pdf_page": 10,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q2 FY2027"
+        }
+      },
+      {
+        "quote": "FY27 is shaping up to be an exceptional growth year",
+        "interpretation": "Management expressed that the period is shaping up to be an exceptional growth year.",
+        "source": {
+          "source_id": "E4",
+          "document_id": "7ca81db6d9969283462ead8cc24c8f75b73b4d8f2b57d99409805cf85944cfe3",
+          "title": "Transcript \u00b7 Q1 FY2027",
+          "url": "https://investors.coforge.com/hubfs/Coforge_Q1FY27%20Earnings%20Conference%20Call%20Transcript.pdf",
+          "pdf_page": 10,
+          "event_type": "earnings_call",
+          "call_reporting_period": "Q1 FY2027"
+        }
+      }
+    ],
+    "next_question": "What are the specific revenue growth drivers and projections for the upcoming quarters?",
+    "status": "evidence_checked_draft",
+    "cache_key": "79b104cbb2bbccf16de6c8a60ec77bfba8b03fa5fe32efe97f4dcb980008e960",
+    "cache_hit": false,
+    "generated_at": "2026-11-03T18:13:48.991629+00:00",
+    "latency_seconds": 23.43,
+    "attempts": 1,
+    "usage": {
+      "promptTokenCount": 2281,
+      "candidatesTokenCount": 161,
+      "totalTokenCount": 2442,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2281
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "validation_note": "Quotes and source IDs checked in code. AI interpretations have not been independently verified.",
+    "model_api_cost_usd": null,
+    "billing_assumption": "Requires a free-tier Google project; actual account billing is managed by Google",
+    "model_version": "gemini-3.5-flash-lite"
+  }
+}

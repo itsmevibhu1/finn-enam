@@ -2,6 +2,17 @@
 const stop = new Set('a an and are as at be been by can company did do does for from had has have how i in is it its management of on or our say said should that the their them these this to us was we were what when where which who why will with would you your annual report reports document documents transcript transcripts tell discuss discussed primary evidence about'.split(' '));
 const canonical = term => /^(guide|guided|guidance|outlook)$/.test(term)?'guidance':term.replace(/s$/,'');
 export const tokenize = text => text.toLowerCase().match(/[a-z0-9]+/g) || [];
+export function sourceContext(corpus,observation){
+ const normalize=text=>text.replace(/\s+/g,' ').trim();
+ const quote=normalize(observation.quote);
+ const source=observation.source;
+ for(const passage of corpus?.passages||[]){
+  if(passage.document!==source.document_id||passage.page!==source.pdf_page)continue;
+  const text=normalize(passage.text),start=text.indexOf(quote);
+  if(start>=0)return text.slice(start).split(' ').slice(0,25).join(' ');
+ }
+ return observation.quote;
+}
 export function filterCorpus(corpus,{scope='all',period='all',window=[]}={}){
  return {...corpus,passages:corpus.passages.filter(p=>{
   if(scope==='earnings'&&p.event_type!=='earnings_call')return false;

@@ -944,3 +944,36 @@ I’m also checking actual NSE announcement descriptions, so the final report di
 The checks found five noisy announcement labels: call recordings were being treated as results or investor meetings. Those are fixed. The small inspected set now retrieves all five expected research passages and correctly handles the three no-evidence questions.
 
 These are calibration checks, not an independent accuracy benchmark. I also found the actual local build conversation and exported a redacted copy for the submission.
+
+## Assistant · 2026-11-03T18:09:51.420Z
+
+The demo guide, covering email, checklist, and actual build-history export are packaged. The export contains 99 visible messages from October 30 onward; credential checks passed before upload.
+
+The latest local checks pass: 70 Python tests, the JavaScript suites, and 26 browser checks. I’m checking the five demo questions on the hosted version next.
+
+## User · 2026-11-03T18:09:57.328Z
+
+<send_user_message_question_reply>
+[{"questionItemId":"[\"request_user_input_async\",\"call_eabf017f6eca4c468ded3576e0bfbe49\",0]","question":"Should I make github.com/itsmevibhu1/finn-enam public so ENAM can open the source and redacted build history without an invitation? This makes both visible to anyone.","answer":"Make it public"}]
+</send_user_message_question_reply>
+
+
+## Assistant · 2026-11-03T18:10:19.771Z
+
+I’ll make the repository public as you approved, then verify that the code and redacted history are accessible without signing in. The hosted demo checks will continue while that runs.
+
+## Assistant · 2026-11-03T18:13:58.324Z
+
+The repository and redacted build history are now publicly accessible.
+
+The hosted demo run has produced checked drafts for HCLTECH and DIXON. Persistent’s draft failed the exact-quote checks, so FINN withheld it. I’ll report that failure plainly rather than count it as a successful demo.
+
+## Assistant · 2026-11-03T18:16:56.745Z
+
+The hosted run finished with **three successful generated demos**: HCLTECH, DIXON, and Coforge. Persistent’s draft was rejected by quote validation, and Astral’s request hit the application cap. Astral’s document search still works.
+
+I’ve also added source context around short quotes, so ranges can appear directly from the cited passage without another model call. I’m checking that display now and recording these limits in the final report.
+
+## Assistant · 2026-11-03T18:19:10.989Z
+
+I’m saving the three successful drafts as a source-hash-bound cache. That will keep those demos available after a free-host restart without spending API requests again. They’ll remain labelled as cached; new questions will still use the research pipeline.
