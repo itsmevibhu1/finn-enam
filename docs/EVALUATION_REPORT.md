@@ -47,3 +47,7 @@ The three successful answers are retained in `data/demo_answers.json` as a bundl
 4. Broaden primary-document coverage and close explicit earnings-quarter gaps without treating investor events as quarterly calls.
 
 The implementation intentionally favors inspected evidence and visible failures over claims of comprehensive autonomous financial analysis.
+
+## Final deployment checks
+
+The final source revision `7d7bfe1` was confirmed live. All three successful demo questions returned `cache_source=bundled_verified_demo` after deployment, verifying that their cache survived without new model calls. Thirty-one checks passed against the actual public HTTPS service, including the research endpoint, cached repeat, primary page links, the displayed guidance range and four mobile views. Seventy-three Python tests and the JavaScript suites passed. The GitHub repository and redacted conversation were also fetched without authentication and returned HTTP 200.

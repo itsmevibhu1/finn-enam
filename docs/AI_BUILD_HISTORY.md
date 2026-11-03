@@ -977,3 +977,11 @@ I’ve also added source context around short quotes, so ranges can appear direc
 ## Assistant · 2026-11-03T18:19:10.989Z
 
 I’m saving the three successful drafts as a source-hash-bound cache. That will keep those demos available after a free-host restart without spending API requests again. They’ll remain labelled as cached; new questions will still use the research pipeline.
+
+## Assistant · 2026-11-03T18:24:28.281Z
+
+The final revision is live. I’m checking that the saved demos work after deployment and that source ranges render correctly on mobile. Then I’ll hand over the submission links and email draft.
+
+## Assistant · 2026-11-03T18:26:07.956Z
+
+Final checks passed: all three saved demos survived deployment, and all **31 hosted browser checks** pass. The public repo, redacted build history, evaluation report, demo guide, and covering email are ready for your review. The email has not been sent.
