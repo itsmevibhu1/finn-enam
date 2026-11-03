@@ -27,14 +27,14 @@ The working prototype is implemented, with further local improvements awaiting p
 - Five deterministic comparisons: exceeded earlier guidance, met an intermediate range, missed the latest growth range, met margin guidance, and pending FY27 delivery.
 - Source-page links, revision history, evidence export, a historical digest window, and searchable verified summaries.
 - A reusable ticker pipeline that discovers primary-document links through Screener, downloads exchange/company PDFs, validates basic document identity, and retains page-level text.
-- 35 usable PDFs across INFY, HCLTECH, PERSISTENT, DIXON, ASTRAL, and COFORGE: 3,144 PDF pages. Audio notices and failed links are excluded from the search corpus. Five companies have four consecutive earnings quarters indexed; Astral's Q4 FY2026 gap remains explicit.
+- 41 usable PDFs across INFY, HCLTECH, PERSISTENT, DIXON, ASTRAL, COFORGE, and TCS: 3,657 PDF pages. Audio notices and failed links are excluded from the search corpus. Five companies have four consecutive earnings quarters indexed; Astral's Q4 FY2026 and TCS's Q3 FY2026 gaps remain explicit.
 - Browser-based keyword retrieval over those primary PDFs, one short passage per matching document, with PDF-page links, document hashes, and an exportable evidence pack.
 - Corrected NSE RSS ingestion with persistent observed-filings history, category filters, priority rules, routine-item collapsing, and attachment grouping. The first successful morning snapshot had zero matched portfolio filings; it is not a full historical archive.
 - A local server that can index an unfamiliar ticker on demand, with bounded jobs and visible status.
 - A local PDF importer preserving original bytes, a SHA-256 hash, source metadata, and page-level text.
 - Automated financial-rule tests and browser interaction/mobile-layout checks.
 
-Important limits: curated promise comparisons cover INFY only. Gemini research is connected to the local interface through bounded background jobs. The hosted static site does not yet expose model generation. There is no semantic/vector retrieval, automatic scheduling, or complete filing history. The hosted site searches prebuilt corpora; new-ticker downloads run through the local server/CLI. Direct Infosys downloads returned HTTP 403, but exchange-hosted copies were successfully imported. The NSE API remains blocked; RSS works after fixing its date format and issuer matching. The latest successful local price refresh includes November 3 for all 18 companies. Availability and freshness are checked separately. A live Gemini request has produced a draft with source quotes validated against the indexed passages.
+Important limits: curated promise comparisons cover INFY only. Gemini research is connected to the local interface through bounded background jobs. The Render Python service exposes model generation and new-company collection; the separate static Sites preview does not. Hosted collection was verified with TCS, while hosted Gemini generation initially returned provider HTTP 503. There is no semantic/vector retrieval, automatic scheduling, or complete filing history. The hosted site searches prebuilt corpora; new-ticker downloads run through the local server/CLI. Direct Infosys downloads returned HTTP 403, but exchange-hosted copies were successfully imported. The NSE API remains blocked; RSS works after fixing its date format and issuer matching. The latest successful local price refresh includes November 3 for all 18 companies. Availability and freshness are checked separately. A live Gemini request has produced a draft with source quotes validated against the indexed passages.
 
 ## Hosted model API setup
 
@@ -44,7 +44,7 @@ See `docs/ITERATION_2_REPORT.md` for the earlier deployed results and `docs/PROG
 
 ## Hosted backend
 
-Deploy the Python UI/API service with the included free-plan `render.yaml` and Dockerfile. See [Render deployment](docs/RENDER_DEPLOY.md). Configure `GEMINI_API_KEY` in Render, never in the repository. Free instances sleep on inactivity and discard runtime documents, jobs and caches on restart; bundled indexes remain available. A successful cloud deployment and its public URL must be verified separately.
+Deploy the Python UI/API service with the included free-plan `render.yaml` and Dockerfile. See [Render deployment](docs/RENDER_DEPLOY.md). Configure `GEMINI_API_KEY` in Render, never in the repository. Free instances sleep on inactivity and discard runtime documents, jobs and caches on restart; bundled indexes remain available. The live service is https://finn-enam-l5x9.onrender.com. Health, static data, mobile flows and new-company collection have been verified; hosted generation remains dependent on Gemini availability.
 
 ## Run the prototype
 

@@ -217,5 +217,38 @@
       "complete": true
     },
     "archive_document_count": 0
+  },
+  "TCS": {
+    "ticker": "TCS",
+    "name": "Tata Consultancy Services Ltd",
+    "document_count": 6,
+    "transcripts": 5,
+    "annual_reports": 1,
+    "page_count": 513,
+    "passage_count": 1287,
+    "corpus_url": "corpora/TCS.json",
+    "corpus_sha256": "ec64ecda6ede8b128fe237cd28549a6b9f22797d0bb2c02c80bd2810ef151a9e",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/TCS/consolidated/",
+    "status": "indexed",
+    "quarter_coverage": {
+      "periods": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026"
+      ],
+      "target": 4,
+      "expected_from_latest_available": [
+        "Q2 FY2027",
+        "Q1 FY2027",
+        "Q4 FY2026",
+        "Q3 FY2026"
+      ],
+      "missing": [
+        "Q3 FY2026"
+      ],
+      "complete": false
+    },
+    "archive_document_count": 6
   }
 }

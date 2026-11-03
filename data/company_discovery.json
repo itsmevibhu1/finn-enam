@@ -4723,6 +4723,104 @@
       },
       "unapproved_host_candidates": 9,
       "status": "ok"
+    },
+    "TCS": {
+      "ticker": "TCS",
+      "name": "Tata Consultancy Services Ltd",
+      "status": "ok",
+      "discovery_url": "https://www.screener.in/company/TCS/consolidated/",
+      "documents": [
+        {
+          "ticker": "TCS",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad42e748-d73c-4c79-8c52-bcf1b1399bc1.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/annual_report/d0bdc7fe1ae741b07bb76a158019cae05ab18abd2c2eeda43177d367bef24eb8",
+          "document_id": "d0bdc7fe1ae741b07bb76a158019cae05ab18abd2c2eeda43177d367bef24eb8",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        },
+        {
+          "ticker": "TCS",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7dc14216-f892-46f1-bf82-5c7b387a83b9.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/transcript/13033ccd2b71c7b60da6b53cdb7c80013366725d8bc36c3a17749503aad8c2fe",
+          "document_id": "13033ccd2b71c7b60da6b53cdb7c80013366725d8bc36c3a17749503aad8c2fe",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        },
+        {
+          "ticker": "TCS",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=27523cab-de62-4f78-939a-6d9853bbd060.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/transcript/c47e71290e80f0a46ff3cb9cae57a86ba4d5d5a7322a4f20acbc4640e80b7bfb",
+          "document_id": "c47e71290e80f0a46ff3cb9cae57a86ba4d5d5a7322a4f20acbc4640e80b7bfb",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        },
+        {
+          "ticker": "TCS",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=07ae2d32-1050-4e80-96ff-eb2d98378d4e.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/transcript/5298f07b01814d66ed6bdf9f40dc70116ff7f822ef93d29ffe5721b9fc9222c1",
+          "document_id": "5298f07b01814d66ed6bdf9f40dc70116ff7f822ef93d29ffe5721b9fc9222c1",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        },
+        {
+          "ticker": "TCS",
+          "kind": "transcript",
+          "period": "Dec 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d59af2b6-34c7-4ca1-9455-f4899e5f26cf.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/transcript/f44296d42efd203fc6f0c33ed8a32c951e66f774d7fd17abf77d1a8a2b6a6557",
+          "document_id": "f44296d42efd203fc6f0c33ed8a32c951e66f774d7fd17abf77d1a8a2b6a6557",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        },
+        {
+          "ticker": "TCS",
+          "kind": "transcript",
+          "period": "Nov 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7fa78f01-221c-47fe-a83d-098bc43b0de7.pdf",
+          "discovered_via": "https://www.screener.in/company/TCS/consolidated/",
+          "status": "imported",
+          "directory": "data/documents/TCS/transcript/ae5a7ad164daaafbf5180e976b98820da01b1d920673270eb068723b7ade55bf",
+          "document_id": "ae5a7ad164daaafbf5180e976b98820da01b1d920673270eb068723b7ade55bf",
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification."
+          },
+          "import_location": "Verified hosted collector; original files are ephemeral on Render"
+        }
+      ]
     }
   }
 }

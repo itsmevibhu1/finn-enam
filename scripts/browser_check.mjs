@@ -14,7 +14,9 @@ let staticDir=path.join(root,'dist');
 try{await access(staticDir)}catch{staticDir=path.join(root,'finn-site/dist')}
 const port=18765;
 const debugPort=19225;
-const server=spawn('python3',[path.join(root,'scripts/serve.py'),'--port',String(port)],{stdio:'ignore'});
+const baseUrl=process.env.FINN_TEST_BASE_URL||`http://127.0.0.1:${port}`;
+if(process.env.FINN_TEST_BASE_URL&&!baseUrl.startsWith('https://'))throw Error('Remote browser checks require HTTPS');
+const server=process.env.FINN_TEST_BASE_URL?null:spawn('python3',[path.join(root,'scripts/serve.py'),'--port',String(port)],{stdio:'ignore'});
 const chrome=spawn('/opt/google/chrome/chrome',['--headless','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--no-default-browser-check',`--user-data-dir=${profile}`,`--remote-debugging-port=${debugPort}`,'about:blank'],{stdio:'ignore'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 let socket;
@@ -37,7 +39,7 @@ try{
  const until=async expression=>{for(let i=0;i<60;i++){if(await evaluate(expression))return;await sleep(100)}throw Error('Timed out: '+expression)};
  const check=(condition,message)=>{assert(condition,message);results.push(message)};
  await call('Runtime.enable');await call('Page.enable');
- await call('Page.navigate',{url:`http://127.0.0.1:${port}/`});
+ await call('Page.navigate',{url:baseUrl+'/'});
  await until(`document.querySelector('h1')?.textContent==='Your attention, directed.'`);
  check(await evaluate(`document.querySelector('.notice').textContent.includes('Current snapshot') && document.querySelector('#window').value==='1'`),'Briefing defaults to the current 24-hour window');
  check(await evaluate(`document.querySelector('#exchange-feed').textContent.includes('Exchange feed reachable')`),'Reachable exchange feed displays its actual coverage');
@@ -57,7 +59,7 @@ try{
  check(await evaluate(`document.querySelector('dialog').open && document.querySelector('dialog a').href.endsWith('#page=7')`),'Evidence inspector links to the correct original PDF page');
  await evaluate(`document.querySelector('#close-evidence').click();document.querySelector('#ticker').value='UNSEEN';document.querySelector('#ticker-form').requestSubmit()`);
  check(await evaluate(`document.querySelector('.empty').textContent.includes('No verified research indexed for UNSEEN')`),'Unsupported ticker produces a coverage gap instead of invented research');
- check(await evaluate(`!!document.querySelector('#collect-company')`),'Local research mode offers on-demand source collection for an unindexed ticker');
+ check(await evaluate(`!!document.querySelector('#collect-company')`),'Backend-enabled research offers on-demand source collection for an unindexed ticker');
  await evaluate(`document.querySelector('[data-ticker="HCLTECH"]').click()`);
  await until(`document.querySelectorAll('#retrieval-results .source-row').length>0`);
  check(await evaluate(`document.querySelector('#document-research').textContent.includes('HCL Technologies')`),'Non-Infosys company loads its independently collected primary documents');
@@ -117,5 +119,5 @@ try{
  await writeFile(path.join(artifacts,'browser-check.json'),JSON.stringify({passed:results.length,checks:results,exceptions},null,2)+'\n');
  console.log(JSON.stringify({passed:results.length,checks:results},null,2));
 }finally{
- socket?.close();chrome.kill('SIGTERM');server.kill('SIGTERM');
+ socket?.close();chrome.kill('SIGTERM');server?.kill('SIGTERM');
 }

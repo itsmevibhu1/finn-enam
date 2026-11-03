@@ -73,7 +73,7 @@ class Handler(SimpleHTTPRequestHandler):
         if path=='/healthz':
             return self.json({'status':'ok'})
         if path=='/api/capabilities':
-            return self.json({'on_demand_ingestion':True,'model_generation':available()})
+            return self.json({'on_demand_ingestion':True,'model_generation':available(),'server_revision':os.environ.get('RENDER_GIT_COMMIT')})
         if path.startswith('/api/jobs/'):
             with LOCK:
                 job=JOBS.get(path.rsplit('/',1)[-1])

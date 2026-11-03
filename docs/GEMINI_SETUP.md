@@ -25,3 +25,5 @@ Sources:
 - https://ai.google.dev/gemini-api/docs/api-key
 - https://ai.google.dev/gemini-api/docs/pricing#gemini-3.5-flash-lite
 - https://ai.google.dev/api/generate-content
+
+Temporary Gemini HTTP 503 overload receives one retry after two seconds. Each outbound attempt counts against the application cap. Authentication and quota failures are not retried automatically. A model-output validation correction can also require another completion; no paid-model fallback is used.

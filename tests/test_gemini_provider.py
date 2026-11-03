@@ -88,6 +88,32 @@ class GeminiProviderTest(unittest.TestCase):
                 self.assertNotIn('test-secret',str(raised.exception))
                 self.assertEqual(request.call_count,1)
 
+    def test_temporary_overload_retries_once_and_counts_both_attempts(self):
+        self.configure()
+        error=HTTPError('https://generativelanguage.googleapis.com',503,'busy',{},io.BytesIO(b'test-secret-never-log'))
+        response=io.BytesIO(json.dumps({'candidates':[{'finishReason':'STOP','content':{'parts':[{'text':'{}'}]}}]}).encode())
+        with patch.object(provider,'urlopen',side_effect=[error,response]) as request,patch.object(provider.time,'sleep') as sleep:
+            provider.complete([{'role':'user','content':'public evidence'}],{})
+        self.assertEqual(request.call_count,2)
+        sleep.assert_called_once_with(2)
+        self.assertEqual(json.loads((self.root/'data/model_cache/gemini_usage.json').read_text())['attempts'],2)
+
+    def test_repeated_overload_stops_after_one_retry(self):
+        self.configure()
+        errors=[HTTPError('https://generativelanguage.googleapis.com',503,'busy',{},io.BytesIO()) for _ in range(2)]
+        with patch.object(provider,'urlopen',side_effect=errors) as request,patch.object(provider.time,'sleep'):
+            with self.assertRaisesRegex(ValueError,'temporarily busy'):
+                provider.complete([{'role':'user','content':'public evidence'}],{})
+        self.assertEqual(request.call_count,2)
+
+    def test_retry_cannot_bypass_daily_cap(self):
+        self.configure(FINN_GEMINI_DAILY_REQUEST_LIMIT='1')
+        error=HTTPError('https://generativelanguage.googleapis.com',503,'busy',{},io.BytesIO())
+        with patch.object(provider,'urlopen',side_effect=error) as request,patch.object(provider.time,'sleep'):
+            with self.assertRaisesRegex(ValueError,'daily Gemini request cap'):
+                provider.complete([{'role':'user','content':'public evidence'}],{})
+        self.assertEqual(request.call_count,1)
+
 
 class EvidenceValidationTest(unittest.TestCase):
     def setUp(self):

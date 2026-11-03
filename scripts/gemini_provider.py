@@ -4,6 +4,7 @@ from datetime import datetime,timezone
 import fcntl
 import json
 import os
+import time
 from pathlib import Path
 from urllib.error import HTTPError,URLError
 from urllib.request import Request,urlopen
@@ -86,17 +87,24 @@ def complete(messages,schema):
     system='\n'.join(m['content'] for m in messages if m['role']=='system')
     contents=[{'role':'model' if m['role']=='assistant' else 'user','parts':[{'text':m['content']}]} for m in messages if m['role']!='system']
     body={'systemInstruction':{'parts':[{'text':system}]},'contents':contents,'generationConfig':{'temperature':0.1,'maxOutputTokens':1536,'responseMimeType':'application/json','responseJsonSchema':schema}}
-    reserve_request(config)
     url=f'https://generativelanguage.googleapis.com/v1beta/models/{config.model}:generateContent'
     request=Request(url,data=json.dumps(body).encode(),headers={'Content-Type':'application/json','x-goog-api-key':config.api_key},method='POST')
-    try:
-        with urlopen(request,timeout=90) as response:
-            result=json.load(response)
-    except HTTPError as exc:
-        messages={400:'Gemini rejected the request format or model configuration.',401:'Gemini API key was not accepted.',403:'Gemini API access is not enabled for this key or project.',429:'Gemini rate limit or free-tier quota was reached; no paid fallback was attempted.'}
-        raise ValueError(messages.get(exc.code,f'Gemini request failed with HTTP {exc.code}; no paid fallback was attempted.')) from None
-    except (URLError,TimeoutError):
-        raise ValueError('Could not reach Gemini or the request timed out. Authentication is unverified; no paid fallback was attempted.') from None
+    for attempt in range(2):
+        reserve_request(config)
+        try:
+            with urlopen(request,timeout=90) as response:
+                result=json.load(response)
+            break
+        except HTTPError as exc:
+            code=exc.code
+            exc.close()
+            if code==503 and attempt==0:
+                time.sleep(2)
+                continue
+            errors={400:'Gemini rejected the request format or model configuration.',401:'Gemini API key was not accepted.',403:'Gemini API access is not enabled for this key or project.',429:'Gemini rate limit or free-tier quota was reached; no paid fallback was attempted.',503:'Gemini is temporarily busy. One retry was attempted; try again later. Document search remains available.'}
+            raise ValueError(errors.get(code,f'Gemini request failed with HTTP {code}; no paid fallback was attempted.')) from None
+        except (URLError,TimeoutError):
+            raise ValueError('Could not reach Gemini or the request timed out. Authentication is unverified; no paid fallback was attempted.') from None
     candidates=result.get('candidates',[])
     if not candidates or candidates[0].get('finishReason') not in (None,'STOP'):
         raise ValueError('Gemini did not return a complete answer; no research draft was published.')
