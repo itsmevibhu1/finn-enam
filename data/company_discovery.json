@@ -1,0 +1,2880 @@
+{
+  "companies": {
+    "HCLTECH": {
+      "ticker": "HCLTECH",
+      "name": "HCL Technologies Ltd",
+      "website_host": "www.hcltech.com",
+      "discovery_url": "https://www.screener.in/company/HCLTECH/consolidated/",
+      "discovered_at": "2026-11-03T01:33:32.625087+00:00",
+      "candidates": [
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4bc45f66-7fb5-4fab-a87a-b32321b63059.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ddf08009-d43c-4949-b149-643731211e1d.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ea5d9753-2bef-4e01-a344-51e7f5506153.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/e7b8d757-92a5-423c-a450-3d4fb68e6b6e.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/73863532281.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/69289532281.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/66229532281.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810319.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810318.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2017",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810317.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2016",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810316.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2015",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810615.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2014",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810614.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://archives.nseindia.com/annual_reports/AR_3028_HCLTECH_2012_2013_28112013164621.zip",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532281/5322810613.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ccce0001-ff5d-4875-b1e5-5c558669f49c.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=11be9fba-0308-4756-a474-e4f2903fdaac.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48f5d6fd-b499-45da-bc6d-2e0439495ec2.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=08d64f75-ab38-4158-8b8a-0d933bc007d3.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=172ac7e9-7ce4-4c53-9e40-8b70187da3f9.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=70e8e2f8-36ca-4816-9bce-5587cead0c23.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d64686fb-2ee7-40fc-a0ae-93ecd0dcc725.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=62047a72-1071-449c-8e13-47d3054a4c7e.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=46f61135-2423-40d8-bfa5-ff77582862c1.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.hcltech.com/sites/default/files/document/open/call-trans/2024-10/HCLTech-Earnings-Oct14-2024-Transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9580879e-92fc-4300-986f-703d22467eb0.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d36f5024-d8df-4418-b028-91c7910de794.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe121e18-9bbb-4c86-ab03-4be3bfdb8d8e.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bc34d91a-ac99-4f6d-877e-b2a9d7e2ced9.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=42571c99-4dd4-438b-a3a1-d5fc36058c35.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c037df4d-c831-49d4-a905-18ab176a1921.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5f0287de-49c5-4052-b840-6ecef4dfd633.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f9a43851-3d9c-41eb-a9c5-e4f74020536d.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1d69bfa0-b234-4faa-81ee-1d7256d1923f.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "May 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=dbf04c1b-7bbb-4387-834f-c0accd0eb946.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=dd3f3c40-21d9-4b0c-85f7-f16fbf3510d1.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2021",
+          "url": "https://www.hcltech.com/sites/default/files/hcl-earnings-_call_transcript_19-7-2021q1fy22.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2021",
+          "url": "https://www.hcltech.com/sites/default/files/q4fy21_eanings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2021",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q3_2021_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2020",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q2_2021_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2020",
+          "url": "https://www.hcltech.com/sites/default/files/hcltech_q1_fy21_earnings_call_transcript_jul17_2020.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "May 2020",
+          "url": "https://www.hcltech.com/sites/default/files/hcltech-earnings-may07-2020-_new.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2020",
+          "url": "https://www.hcltech.com/sites/default/files/q3_fy20_earnings_call_transcript22jan.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2019",
+          "url": "https://www.hcltech.com/sites/default/files/q2fy20_earnings_conference_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Aug 2019",
+          "url": "https://www.hcltech.com/sites/default/files/q1_analyst_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "May 2019",
+          "url": "https://www.hcltech.com/sites/default/files/q419_earnings_conference_call_transcript-20-05-19.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2019",
+          "url": "https://www.hcltech.com/sites/default/files/q319_earnings_conference_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2018",
+          "url": "https://www.hcltech.com/sites/default/files/q219_earnings_conference_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2018",
+          "url": "https://www.hcltech.com/sites/default/files/q119_earnings_conference_call_transcriptupdated.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2018",
+          "url": "https://www.hcltech.com/sites/default/files/q418_earnings_conference_call_transcript_new.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2018",
+          "url": "https://www.hcltech.com/sites/default/files/q318_earnings_conference_call_transcript_new.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2017",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q2_2018_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2017",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q1_2018_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "May 2017",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q4_2017_earnings_call_transcript_0.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2017",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q3_2017_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2016",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q2_2017_earnings_call_transcript_0.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2016",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q1_fy17_-_earnings_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2016",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q3_2016_transcript_1.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2016",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_technologies_q216_earnings_conference_call_transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2015",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_tech_q1_fy16_transcript_19th_oct.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Aug 2015",
+          "url": "https://www.hcltech.com/sites/default/files/hcl_technologies_limited_q4_annual_results_fy_2015_-_analyst_call.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "HCLTECH",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4bc45f66-7fb5-4fab-a87a-b32321b63059.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.hcltech.com",
+          "status": "imported",
+          "directory": "data/documents/HCLTECH/annual_report/aebe94916d38b46f2425688756d8ccebf73b0460803daa7af07cf72c928ca96e",
+          "document_id": "aebe94916d38b46f2425688756d8ccebf73b0460803daa7af07cf72c928ca96e",
+          "pages": 485,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 485,
+            "words": 210706
+          }
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ccce0001-ff5d-4875-b1e5-5c558669f49c.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.hcltech.com",
+          "status": "imported",
+          "directory": "data/documents/HCLTECH/transcript/baf227e394b6f6be0659c3c482d707ffc62e98c9bfe248d417560d3527af75ed",
+          "document_id": "baf227e394b6f6be0659c3c482d707ffc62e98c9bfe248d417560d3527af75ed",
+          "pages": 26,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 26,
+            "words": 7569
+          }
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=11be9fba-0308-4756-a474-e4f2903fdaac.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.hcltech.com",
+          "status": "imported",
+          "directory": "data/documents/HCLTECH/transcript/dac08c9eb661454215e2a4d96378c33d194cfda874b11bc4ee7bd663ca213a7a",
+          "document_id": "dac08c9eb661454215e2a4d96378c33d194cfda874b11bc4ee7bd663ca213a7a",
+          "pages": 29,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 29,
+            "words": 7804
+          }
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48f5d6fd-b499-45da-bc6d-2e0439495ec2.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.hcltech.com",
+          "status": "imported",
+          "directory": "data/documents/HCLTECH/transcript/5f2f4b6c0c96c8d50247644c10ba6edea0c890e6de3fc121ca248894ae60e76e",
+          "document_id": "5f2f4b6c0c96c8d50247644c10ba6edea0c890e6de3fc121ca248894ae60e76e",
+          "pages": 25,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 25,
+            "words": 7351
+          }
+        },
+        {
+          "ticker": "HCLTECH",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=08d64f75-ab38-4158-8b8a-0d933bc007d3.pdf",
+          "discovered_via": "https://www.screener.in/company/HCLTECH/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.hcltech.com",
+          "status": "imported",
+          "directory": "data/documents/HCLTECH/transcript/9ddccba7f5707de4f1d068241d0e2c2c235c1f6a56766f3d2cc0ba0a2444fdb8",
+          "document_id": "9ddccba7f5707de4f1d068241d0e2c2c235c1f6a56766f3d2cc0ba0a2444fdb8",
+          "pages": 22,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 22,
+            "words": 7220
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "PERSISTENT": {
+      "ticker": "PERSISTENT",
+      "name": "Persistent Systems Ltd",
+      "website_host": "www.persistent.com",
+      "discovery_url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+      "discovered_at": "2026-11-03T01:33:36.553800+00:00",
+      "candidates": [
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/2aa02df7-243d-4455-afba-6c149c763f01.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/659e0149-a77e-46a1-adab-05e676fe9996.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8419d162-e08b-450a-b37b-660fe25e7e7b.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/65a9cb2d-d65d-4c9e-8e62-ed47cfea9b8f.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/73286533179_13_07_22.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/68618533179.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790320.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790319.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790318.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2017",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790317.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2016",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790316.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2015",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790315.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2014",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790314.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/533179/5331790313.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://archives.nseindia.com/annual_reports/AR_832_PERSISTENT_2012_2013_31072013141442.zip",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=524eadda-3966-4f4f-8888-bfaf2cb0d69e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Aug 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b1c49752-0908-4750-9177-398a60654630.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b68ef2b0-b285-4696-8c08-e3bb58039b0e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f38819d8-e17e-417b-960f-c192b4d17af5.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=35397e08-8726-451b-aa02-a838a82bd45e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6ff389fb-4326-4ddd-a072-0589f6034743.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8328b82d-a8f0-4816-a6ec-82bcc209780f.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5f8f1553-68e9-4e36-8731-cd9ddd4cf043.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=415b3640-c3d9-49ec-863b-e523805521c0.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=12fa9dad-c0b9-4de7-b1ff-6206b03e95e0.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2024",
+          "url": "https://www.persistent.com/wp-content/uploads/2024/01/Analyst-Call-Transcript-Q3FY24.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=40b984ee-d89f-4cab-8400-1984b4a4d335.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1432cd28-c5c4-444d-900b-cf95ad58cb91.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=078a3f82-1e78-4dfd-bef9-63e5dbdc424d.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cac8db3c-1d39-4c1f-82fd-409b93396f6b.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9ad4a79d-b37c-4af1-b5c2-b4e6be0eb93b.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e03d4e2b-8fa8-4394-825c-902dd409ba4e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "May 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=efeee00c-5b26-46cf-9c67-d919ffdb0510.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2021",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6aed8004-67f2-4b23-81d7-5919ed077ba7.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2021",
+          "url": "https://www.persistent.com/wp-content/uploads/2021/05/analyst-Call-transcript-q4-fy21.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2021",
+          "url": "https://www.persistent.com/wp-content/uploads/2021/02/Analyst-Call-Transcript-Q3FY21.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2020",
+          "url": "https://www.persistent.com/wp-content/uploads/2020/11/analyst-call-transcript-q2fy21.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2020",
+          "url": "https://www.persistent.com/wp-content/uploads/2020/09/analyst-call-transcript-q1-fy21.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "May 2020",
+          "url": "https://www.persistent.com/wp-content/uploads/2020/05/analyst-call-transcript-q4fy20.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2020",
+          "url": "https://www.persistent.com/wp-content/uploads/2020/02/analyst-call-transcript-q3fy20.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Dec 2019",
+          "url": "https://www.persistent.com/wp-content/uploads/2019/11/analyst-call-transcript-q2fy20.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jul 2019",
+          "url": "https://www.persistent.com/wp-content/uploads/2020/10/analyst-call-transcript-q1fy20.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2019",
+          "url": "https://www.persistent.com/wp-content/uploads/2019/05/analyst-call-transcript-q4-fy19.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2019",
+          "url": "https://www.persistent.com/wp-content/uploads/2019/07/analyst-call-transcript-q3fy19.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Nov 2018",
+          "url": "https://www.persistent.com/wp-content/uploads/2018/10/analyst-call-transcript-q2fy19.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Aug 2018",
+          "url": "https://www.persistent.com/wp-content/uploads/2018/08/analyst-call-transcript-q1fy19.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2018",
+          "url": "https://www.persistent.com/wp-content/uploads/2018/05/Analyst-Call-Transcript-Q4FY18.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2018",
+          "url": "https://www.persistent.com/wp-content/uploads/2018/02/Analyst-Call-Transcript-Q3FY18.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "PERSISTENT",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/2aa02df7-243d-4455-afba-6c149c763f01.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.persistent.com",
+          "status": "imported",
+          "directory": "data/documents/PERSISTENT/annual_report/2638a90f6fde5618828ca1e39a9d07dabb0fe5696962a72224768f7b217b4b0b",
+          "document_id": "2638a90f6fde5618828ca1e39a9d07dabb0fe5696962a72224768f7b217b4b0b",
+          "pages": 500,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 500,
+            "words": 197166
+          }
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=524eadda-3966-4f4f-8888-bfaf2cb0d69e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.persistent.com",
+          "status": "imported",
+          "directory": "data/documents/PERSISTENT/transcript/ef0001fed05d9e452cb0312f13eac4928f509af382610282c43e94b5722981ba",
+          "document_id": "ef0001fed05d9e452cb0312f13eac4928f509af382610282c43e94b5722981ba",
+          "pages": 26,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 26,
+            "words": 9973
+          }
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Aug 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b1c49752-0908-4750-9177-398a60654630.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.persistent.com",
+          "status": "imported",
+          "directory": "data/documents/PERSISTENT/transcript/edf2395b289dce308ab7c4d5585147750cb8ce2dd57a3c1e9c574901c905dae3",
+          "document_id": "edf2395b289dce308ab7c4d5585147750cb8ce2dd57a3c1e9c574901c905dae3",
+          "pages": 29,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 29,
+            "words": 11821
+          }
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.persistent.com",
+          "status": "imported",
+          "directory": "data/documents/PERSISTENT/transcript/2345ab9ab1fcd5d7c13e1aa22d65e3fac4a563c149d55cefe9e899fd6d093e6e",
+          "document_id": "2345ab9ab1fcd5d7c13e1aa22d65e3fac4a563c149d55cefe9e899fd6d093e6e",
+          "pages": 26,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 26,
+            "words": 9277
+          }
+        },
+        {
+          "ticker": "PERSISTENT",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b68ef2b0-b285-4696-8c08-e3bb58039b0e.pdf",
+          "discovered_via": "https://www.screener.in/company/PERSISTENT/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.persistent.com",
+          "status": "imported",
+          "directory": "data/documents/PERSISTENT/transcript/fc8b2bc5f35e7ff0f3694a7b1c6c32ae35c24fd6e4bcc6559887dfd18fbf4091",
+          "document_id": "fc8b2bc5f35e7ff0f3694a7b1c6c32ae35c24fd6e4bcc6559887dfd18fbf4091",
+          "pages": 28,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 28,
+            "words": 9553
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "DIXON": {
+      "ticker": "DIXON",
+      "name": "Dixon Technologies (India) Ltd",
+      "website_host": "www.dixoninfo.com",
+      "discovery_url": "https://www.screener.in/company/DIXON/consolidated/",
+      "discovered_at": "2026-11-03T01:33:39.361483+00:00",
+      "candidates": [
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5ef88e3c-352d-4223-a8ec-bdd7d3aa31c1.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7eabc370-b827-435c-9dd2-8a70553a8062.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/44312065-295c-4d01-ac79-338efd2f98f7.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3d13c3c7-03c7-4af2-b0b6-2a6a1af5d417.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/540699/74024540699.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/540699/71112540699.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/540699/65908540699.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/540699/5406990319.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/540699/5406990318.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95dbb3ac-5662-4cd9-a145-78effb6c373c.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jul 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe83e870-4ca3-462a-addd-5c85ec513959.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=55e495a0-7626-4311-9f59-0a1b21076ca8.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jan 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=16fce1a1-2a47-4cb2-9e27-89d412bb064b.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4c18ee5b-b6f4-4b8a-97b6-519950a55216.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=50d490e3-9a86-4edd-ae2e-a276c9a9ea9a.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=85178a76-e388-468a-8142-27d125947680.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Feb 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=50403c8f-77c5-4ed0-98d9-b449744a7f4d.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fe59f81-da6c-4088-9bc4-c6d7e9876f45.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0e297428-5887-4547-a084-60f843b9b38a.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=da60673a-fa9b-445a-b2cd-f8d813ef99ca.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jan 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6fb439ac-3295-417f-964c-d7afaf11e932.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ef44c44a-ac97-4e29-8245-06f8d59f0a2a.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=da19cbe4-cc4c-4795-b84e-52c10245bd08.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jun 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1204ccfc-334c-4919-91f8-1b47fe7065bd.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jan 2022",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Emkay-DixonTechnologiesIndia-Jan282022.docx.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2021",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Transcription%20of%20Dixon%20Technologies%20call%20held%20on%2029.10.21.%20final.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jul 2021",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst%20Call%20Transcript%20Q1%20FY%202021-22.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2021",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Earning%20Call%20Transcript%20Q4FY%202020-21.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Feb 2021",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/AmbitCap-DixonTech-Feb02-2021_edited.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Nov 2020",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Q2-FY2020-Earnings-Conference-Call.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2020",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst%20Call%20Transcript%20Q2%20FY%202020-21.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2020",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst%20Call%20Transcript%20Q1%20FY%202020-21.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jun 2020",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Ambit-DixonTechnologies-June11-2020.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jan 2020",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Q3-FY2020-Earnings-Conference-Call.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2019",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/IDFC-DixonTech-Aug13-2019.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2019",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/DixonTechnologies-IDFCSecurities-May24-2019.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Jan 2019",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst-Call-Transcript-Q3-FY-2019-30.01.2019.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Nov 2018",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/IDFC-Dixon-01Nov-2018-converted.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2018",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst-Call-Transcript-Q1-FY2019_August-2018.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2018",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst-Call-Transcript-Q4-FY-2018-Date-28.05.2018.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Feb 2018",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst-Call-Transcript-Q3-FY-2018-Date-Feb-2018.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Nov 2017",
+          "url": "https://dixoninfo.com/json/dixon/Earning-call/Analyst-Call_Transcript-Q2H1-FY-2018_15.11.2017.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "DIXON",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5ef88e3c-352d-4223-a8ec-bdd7d3aa31c1.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.dixoninfo.com",
+          "status": "imported",
+          "directory": "data/documents/DIXON/annual_report/1394a9282c64e116e12d82a5668dce0f78ccad78c4a496a6064f58e1494bded3",
+          "document_id": "1394a9282c64e116e12d82a5668dce0f78ccad78c4a496a6064f58e1494bded3",
+          "pages": 520,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 520,
+            "words": 212270
+          }
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Aug 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.dixoninfo.com",
+          "status": "imported",
+          "directory": "data/documents/DIXON/transcript/f693ad398dd3f7ce05de2b6eb0e20a4bfd06b690a1c9025c462271f493759504",
+          "document_id": "f693ad398dd3f7ce05de2b6eb0e20a4bfd06b690a1c9025c462271f493759504",
+          "pages": 21,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 21,
+            "words": 9622
+          }
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "May 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.dixoninfo.com",
+          "status": "imported",
+          "directory": "data/documents/DIXON/transcript/c829e8463477c1785ffca258f4bb49f41eb6cbbe0df9713aaccfd0d69b15b965",
+          "document_id": "c829e8463477c1785ffca258f4bb49f41eb6cbbe0df9713aaccfd0d69b15b965",
+          "pages": 21,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 21,
+            "words": 8934
+          }
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.dixoninfo.com",
+          "status": "imported",
+          "directory": "data/documents/DIXON/transcript/377ade8dfd9a7c6b18d099802eed105342c65a48603b9980a75cef217a3ae995",
+          "document_id": "377ade8dfd9a7c6b18d099802eed105342c65a48603b9980a75cef217a3ae995",
+          "pages": 21,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 21,
+            "words": 9537
+          }
+        },
+        {
+          "ticker": "DIXON",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95dbb3ac-5662-4cd9-a145-78effb6c373c.pdf",
+          "discovered_via": "https://www.screener.in/company/DIXON/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.dixoninfo.com",
+          "status": "imported",
+          "directory": "data/documents/DIXON/transcript/3eb64ae01c28627c2afbd121b90c576b6bf6dceb763fdb22898197c691303d15",
+          "document_id": "3eb64ae01c28627c2afbd121b90c576b6bf6dceb763fdb22898197c691303d15",
+          "pages": 21,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 21,
+            "words": 9392
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "ASTRAL": {
+      "ticker": "ASTRAL",
+      "name": "Astral Ltd",
+      "website_host": "www.astralpipes.com",
+      "discovery_url": "https://www.screener.in/company/ASTRAL/consolidated/",
+      "discovered_at": "2026-11-03T01:34:03.027384+00:00",
+      "candidates": [
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5772a6ee-bd33-47d5-bbd1-85b269bd26c3.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/78a2a99f-5d2e-4692-b054-43192a2fc329.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/455e935e-98ba-4ef9-bd54-c293a46bab7c.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aa9741a9-f026-474d-9169-5be6f7a1a073.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/74164532830.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/69371532830.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300320.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300319.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300318.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2017",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300317.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2016",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300316.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2015",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300315.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2014",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300314.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532830/5328300313.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://archives.nseindia.com/annual_reports/AR_388_ASTRAL_2012_2013_08072013113936.zip",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://nsearchives.nseindia.com/corporate/ASTRAL_05022026201047_Earning_Call.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2023",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1676291321_transcript_-_earning_call_08.02.2023.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1668486940_transcript_-_earning_call__-_11.11.2022.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1660714645_ambitcap-astralltd-aug12-2022.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "May 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1654423055_astral_analysts_meet_may_2022.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1644328430_ambitcap-astral-feb04-2022_final.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2021",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1636972102_sparkcap-astraltd-11.11.2021.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2021",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1628945427_transcript_%E2%80%93_earnings_call-_09.08.2021.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "May 2021",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1621867401_transcript_%E2%80%93_earnings_call-_19.05.2021.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2021",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1612859071_transcript_%E2%80%93_earnings_call-_03.02.2021.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2020",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1605162154_transcript_%E2%80%93_earnings_call-_06.11.2020.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2020",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1597047178_transcript_%E2%80%93_earnings_call-_05.08.2020.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2020",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1582000578_transcript_-_earnings_call-_12.02.2020.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Oct 2019",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1572504507_transcript_-_earnings_call-_25.10.2019.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2019",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1555064378_457_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2018",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1555064263_438_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2018",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538746499_375_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Jul 2018",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538746515_364_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2018",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989229_337_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2017",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989336_324_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2017",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989415_295_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2017",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989616_230_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2016",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989687_204_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2016",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989726_183_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2016",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1538989828_151_l.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "ASTRAL",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5772a6ee-bd33-47d5-bbd1-85b269bd26c3.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.astralpipes.com",
+          "status": "imported",
+          "directory": "data/documents/ASTRAL/annual_report/34f6ee4a749b90fd7b0d0772030e252217baa210ece789457e4597909d669429",
+          "document_id": "34f6ee4a749b90fd7b0d0772030e252217baa210ece789457e4597909d669429",
+          "pages": 247,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 247,
+            "words": 123008
+          }
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://nsearchives.nseindia.com/corporate/ASTRAL_05022026201047_Earning_Call.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.astralpipes.com",
+          "status": "imported",
+          "directory": "data/documents/ASTRAL/transcript/acf66527342cc4bae425dd77c36354e500f50bca773cf0ec48eb77e8edd1bd25",
+          "document_id": "acf66527342cc4bae425dd77c36354e500f50bca773cf0ec48eb77e8edd1bd25",
+          "pages": 1,
+          "quality": {
+            "usable": false,
+            "reason": "Not a substantive transcript; may be an audio-recording notice or cover letter."
+          }
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Feb 2023",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1676291321_transcript_-_earning_call_08.02.2023.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.astralpipes.com",
+          "status": "failed",
+          "error": "HTTP Error 404: Not Found",
+          "quality": {
+            "usable": false,
+            "reason": "HTTP Error 404: Not Found"
+          }
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Nov 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1668486940_transcript_-_earning_call__-_11.11.2022.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.astralpipes.com",
+          "status": "failed",
+          "error": "HTTP Error 404: Not Found",
+          "quality": {
+            "usable": false,
+            "reason": "HTTP Error 404: Not Found"
+          }
+        },
+        {
+          "ticker": "ASTRAL",
+          "kind": "transcript",
+          "period": "Aug 2022",
+          "url": "https://www.astralpipes.com/uploads/investor_broucher/1660714645_ambitcap-astralltd-aug12-2022.pdf",
+          "discovered_via": "https://www.screener.in/company/ASTRAL/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.astralpipes.com",
+          "status": "failed",
+          "error": "HTTP Error 404: Not Found",
+          "quality": {
+            "usable": false,
+            "reason": "HTTP Error 404: Not Found"
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "INFY": {
+      "ticker": "INFY",
+      "name": "Infosys Ltd",
+      "website_host": "www.infosys.com",
+      "discovery_url": "https://www.screener.in/company/INFY/consolidated/",
+      "discovered_at": "2026-11-03T01:37:22.796346+00:00",
+      "candidates": [
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4527f4d2-dac4-4528-a1dc-5070fd9e140d.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/25cc7fbc-154b-4463-928d-c95f2d8c5c9c.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3ba3c011-0411-49ba-a250-f746a5b9d940.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/73015500209_29_06_22.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-21.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/68476500209_09_06_21.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090320.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090319.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090318.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2017",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090317.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2016",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090316.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2015",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090315.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2014",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090314.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/500209/5002090313.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=10c91fa1-f133-476d-ada3-0143acdd9846.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8c8bbc00-087d-4d75-9171-d37a3f83a170.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2025",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ba0eb28e-bc2c-46d4-b945-9f4c67091850.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=166a1b43-d9c7-48a5-b93a-201cd0c324b6.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=25353afa-0919-47a5-bd94-d149fef7d700.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77f16d60-73b2-4877-80fb-c641f2529a70.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2024",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3c3e2ca9-f0a0-4aa3-a03f-01864f720f74.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5bbf010d-5cd7-4d88-a75f-28e72e22c6ab.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=318c3091-9847-46ea-b9ae-1a54441e99e6.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e7de8466-119e-4bdc-b3c4-bd706d87f104.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c94d45c5-a44a-49d9-89af-6ef6532c4a30.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2023",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=01712d63-9662-4355-8b54-0534f66678d8.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48580c91-e22d-4d3c-aa9f-56c255914c14.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=55d91053-dd92-4ca3-bd1d-4e419043f37a.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c07b78e8-687e-47ef-a212-41f9057b81ea.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=28eec8d6-de9e-4e4d-92d8-beff066c9b25.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Aug 2021",
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2021-2022/q1/documents/transcripts/press-conference.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2021",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4351d41-294f-4958-918d-8aadbe7d85fa.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2021",
+          "url": "https://www.infosys.com/investors/reports-filings/quarterly-results/2020-2021/q3/documents/transcripts/earningscall.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2021",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d098032-b341-4fb0-afdd-ef1f4c7a2993.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2020",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1186b66a-e330-4893-85d3-e0d1cf3651d7.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2020",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=51df047f-a5f4-433e-9590-85f7e4eb3e1e.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2020",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=099b31b8-af67-4383-abaf-57f0586a9fc9.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2019",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f4f9e6fe-28aa-4c0e-a8c9-391529bb8470.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2019",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f22533cc-2858-4970-87e5-d73ee33be876.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2019",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d248deb8-646e-421e-98a9-19786e4b5e7c.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jan 2019",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f39ce20f-2791-447f-8b82-6bf8cb2d824a.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2018",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=47dce35f-9841-4e10-a7b7-873a36b66c96.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jun 2018",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d55691d6-ecda-4bef-8154-e9f900d04ff6.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2018",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9b397865-58d5-471b-b18b-7334bc82b8f8.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Feb 2017",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=06638C47_0BFD_4015_976A_B02AAF0995E0_153112.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Sep 2016",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=B2AA21F4_3755_4750_82B7_15DDF1FDA788_174755.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "INFY",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.infosys.com",
+          "status": "imported",
+          "directory": "data/documents/INFY/annual_report/889ee382d055a528a645ae28017b17df9da306328997dfc1d14d9b98757d88c2",
+          "document_id": "889ee382d055a528a645ae28017b17df9da306328997dfc1d14d9b98757d88c2",
+          "pages": 383,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 383,
+            "words": 193225
+          }
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.infosys.com",
+          "status": "imported",
+          "directory": "data/documents/INFY/transcript/b8e9a931ed54ee49a23fb36a7d6a37f15ab72c2f3bbd14d1e92d706b471f30e2",
+          "document_id": "b8e9a931ed54ee49a23fb36a7d6a37f15ab72c2f3bbd14d1e92d706b471f30e2",
+          "pages": 48,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 48,
+            "words": 18181
+          }
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.infosys.com",
+          "status": "imported",
+          "directory": "data/documents/INFY/transcript/bdc83ce116f1336145a1529a91e62203e9e76023145772281dffc0919e98ab4f",
+          "document_id": "bdc83ce116f1336145a1529a91e62203e9e76023145772281dffc0919e98ab4f",
+          "pages": 48,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 48,
+            "words": 17773
+          }
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Apr 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.infosys.com",
+          "status": "imported",
+          "directory": "data/documents/INFY/transcript/4ac29aca97bbdc1fb2f6d4ac56358054f1d507046eef039c2178dfa969b0b42b",
+          "document_id": "4ac29aca97bbdc1fb2f6d4ac56358054f1d507046eef039c2178dfa969b0b42b",
+          "pages": 46,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 46,
+            "words": 17340
+          }
+        },
+        {
+          "ticker": "INFY",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+          "discovered_via": "https://www.screener.in/company/INFY/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.infosys.com",
+          "status": "imported",
+          "directory": "data/documents/INFY/transcript/e1d969bc5afd09fa6955961ddee7c152a59285a76f1baf6d4b40a55b9a6564c9",
+          "document_id": "e1d969bc5afd09fa6955961ddee7c152a59285a76f1baf6d4b40a55b9a6564c9",
+          "pages": 64,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 64,
+            "words": 28721
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "COFORGE": {
+      "ticker": "COFORGE",
+      "name": "Coforge Ltd",
+      "website_host": "www.coforge.com",
+      "discovery_url": "https://www.screener.in/company/COFORGE/consolidated/",
+      "discovered_at": "2026-11-03T01:37:26.252005+00:00",
+      "candidates": [
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/b6778798-69aa-4fea-b818-8182497957b3.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2025",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/092cb657-c836-432f-8802-1fa337f1806e.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2024",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4a9f4e43-9ca2-4956-8d5f-053e45e7a0ef.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2023",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7255f3ee-e102-4dca-ac7d-4b279447b296.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2022",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/74004532541.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2021",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/68802532541.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2020",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410320.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2019",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410319.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2018",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410318.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2017",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410317.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2016",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410316.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2015",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410315.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2014",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410314.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2013",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410313.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2012",
+          "url": "https://www.bseindia.com/bseplus/AnnualReport/532541/5325410312.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q2FY27-October-23-2026.pdf?hsLang=en",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge_Q1FY27%20Earnings%20Conference%20Call%20Transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "May 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q4FY26%20_AJ.pdf?hsLang=en",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q3-FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jan 2026",
+          "url": "https://www.coforge.com/hubfs/Transcript-Coforge-Encora-Acquisition-Conference-Call.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2025",
+          "url": "https://www.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q2-FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jul 2025",
+          "url": "https://www.coforge.com/hubfs/Coforge%20Earnings%20Conference%20Call%20Transcript%20Q1FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "May 2025",
+          "url": "https://www.coforge.com/hubfs/Earnings-Conference-Call-Transcript-Q4FY25.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jan 2025",
+          "url": "https://www.coforge.com/hubfs/Earnings-Conference-Call-Transcript-Q3FY25.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2024",
+          "url": "https://www.coforge.com/hubfs/Transcript-of-Earnings-Conference-Call-Q2-FY25pdf.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jul 2024",
+          "url": "https://www.coforge.com/hubfs/Q1FY25-earnings-call-transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "May 2024",
+          "url": "https://www.coforge.com/hubfs/Coforge-Q4FY24-Earnings-call-Transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jan 2024",
+          "url": "https://www.coforge.com/hubfs/Coforge-Q3FY24-earnings-call-transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2023",
+          "url": "https://www.coforge.com/hubfs/Coforge-Q2FY24%20Earnings%20call%20Transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jul 2023",
+          "url": "https://www.coforge.com/hubfs/Earnings-call-Transcript-Q1FY24.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Feb 2022",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8059230a-0f0f-462e-a0ef-39974c178207.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2021",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c622a151-d760-4f9f-95b0-e2daf66970bf.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Aug 2021",
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=23c8c6c1-96d0-4020-b18a-43ddadbf8dcb.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review"
+        }
+      ],
+      "documents": [
+        {
+          "ticker": "COFORGE",
+          "kind": "annual_report",
+          "period": "FY2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/b6778798-69aa-4fea-b818-8182497957b3.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.coforge.com",
+          "status": "imported",
+          "directory": "data/documents/COFORGE/annual_report/fca9a73d9a39e7f80e3ca5d1288619afdd2f9c57f9a3771507df27e1ade23569",
+          "document_id": "fca9a73d9a39e7f80e3ca5d1288619afdd2f9c57f9a3771507df27e1ade23569",
+          "pages": 182,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 182,
+            "words": 197323
+          }
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Oct 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q2FY27-October-23-2026.pdf?hsLang=en",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.coforge.com",
+          "status": "imported",
+          "directory": "data/documents/COFORGE/transcript/aaf466c9a68f919de06f95cf5fc1f68cdf5576c1de6d987abcf84e3c1c7495da",
+          "document_id": "aaf466c9a68f919de06f95cf5fc1f68cdf5576c1de6d987abcf84e3c1c7495da",
+          "pages": 23,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 23,
+            "words": 8756
+          }
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Jul 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge_Q1FY27%20Earnings%20Conference%20Call%20Transcript.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.coforge.com",
+          "status": "imported",
+          "directory": "data/documents/COFORGE/transcript/7ca81db6d9969283462ead8cc24c8f75b73b4d8f2b57d99409805cf85944cfe3",
+          "document_id": "7ca81db6d9969283462ead8cc24c8f75b73b4d8f2b57d99409805cf85944cfe3",
+          "pages": 25,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 25,
+            "words": 9785
+          }
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "May 2026",
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q4FY26%20_AJ.pdf?hsLang=en",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.coforge.com",
+          "status": "imported",
+          "directory": "data/documents/COFORGE/transcript/d98e9bf3c1e41e5698840e05fb509bf66f515c01a22a0d9b3844c879ddf08d78",
+          "document_id": "d98e9bf3c1e41e5698840e05fb509bf66f515c01a22a0d9b3844c879ddf08d78",
+          "pages": 27,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 27,
+            "words": 8558
+          }
+        },
+        {
+          "ticker": "COFORGE",
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "url": "https://www.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q3-FY26.pdf",
+          "discovered_via": "https://www.screener.in/company/COFORGE/consolidated/",
+          "publisher_status": "Exchange-hosted or company-domain link; document identity still needs review",
+          "website_host": "www.coforge.com",
+          "status": "imported",
+          "directory": "data/documents/COFORGE/transcript/357f8b63793d603fb6eee784b950ab281f4e5e1c5df8f6e00cede5111e2c7c11",
+          "document_id": "357f8b63793d603fb6eee784b950ab281f4e5e1c5df8f6e00cede5111e2c7c11",
+          "pages": 21,
+          "quality": {
+            "usable": true,
+            "reason": "PDF content matches expected document type and a company-name token; extracted claims still require verification.",
+            "pages": 21,
+            "words": 9742
+          }
+        }
+      ],
+      "status": "ok"
+    }
+  }
+}

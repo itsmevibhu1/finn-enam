@@ -1,5 +1,7 @@
 # First prototype report — October 30, 2026
 
+Historical report. See `ITERATION_2_REPORT.md` for current status. Correction established November 3: the NSE API was HTTP-blocked, but RSS failed because of an unsupported date format; the original statement that both paths returned HTTP 403 was inaccurate.
+
 ## Delivered
 
 A functional responsive web prototype with four views: a dated briefing, management-guidance research, an 18-company portfolio, and primary-source references.

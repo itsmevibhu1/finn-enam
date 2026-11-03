@@ -1,0 +1,107 @@
+{
+  "HCLTECH": {
+    "ticker": "HCLTECH",
+    "name": "HCL Technologies Ltd",
+    "document_count": 5,
+    "transcripts": 4,
+    "annual_reports": 1,
+    "page_count": 587,
+    "passage_count": 1531,
+    "corpus_url": "corpora/HCLTECH.json",
+    "corpus_sha256": "e3a9ce70e8755dc1873565b69c74db06109f49ee9cbc9b9dc3ebbabb54eac883",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/HCLTECH/consolidated/",
+    "status": "indexed"
+  },
+  "PERSISTENT": {
+    "ticker": "PERSISTENT",
+    "name": "Persistent Systems Ltd",
+    "document_count": 5,
+    "transcripts": 4,
+    "annual_reports": 1,
+    "page_count": 609,
+    "passage_count": 1481,
+    "corpus_url": "corpora/PERSISTENT.json",
+    "corpus_sha256": "021426ac6a63ddc058f2ef020338d62443d4f47e9b39b34a30ef2791b6a70750",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+    "status": "indexed"
+  },
+  "DIXON": {
+    "ticker": "DIXON",
+    "name": "Dixon Technologies (India) Ltd",
+    "document_count": 5,
+    "transcripts": 4,
+    "annual_reports": 1,
+    "page_count": 604,
+    "passage_count": 1565,
+    "corpus_url": "corpora/DIXON.json",
+    "corpus_sha256": "2a4595b9e6c473975e46b480bcd62e0eb5301003582a6b39f43d4bbb44ad524c",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/DIXON/consolidated/",
+    "status": "indexed"
+  },
+  "ASTRAL": {
+    "ticker": "ASTRAL",
+    "name": "Astral Ltd",
+    "document_count": 1,
+    "transcripts": 0,
+    "annual_reports": 1,
+    "page_count": 247,
+    "passage_count": 747,
+    "corpus_url": "corpora/ASTRAL.json",
+    "corpus_sha256": "fca312d8147af0e59713d61e9a75d00445eac213294f2343ad8d8ab6fffc8041",
+    "rejected": [
+      {
+        "kind": "transcript",
+        "period": "Feb 2026",
+        "reason": "Not a substantive transcript; may be an audio-recording notice or cover letter."
+      },
+      {
+        "kind": "transcript",
+        "period": "Feb 2023",
+        "reason": "HTTP Error 404: Not Found"
+      },
+      {
+        "kind": "transcript",
+        "period": "Nov 2022",
+        "reason": "HTTP Error 404: Not Found"
+      },
+      {
+        "kind": "transcript",
+        "period": "Aug 2022",
+        "reason": "HTTP Error 404: Not Found"
+      }
+    ],
+    "discovery_url": "https://www.screener.in/company/ASTRAL/consolidated/",
+    "status": "indexed"
+  },
+  "INFY": {
+    "ticker": "INFY",
+    "name": "Infosys Ltd",
+    "document_count": 5,
+    "transcripts": 4,
+    "annual_reports": 1,
+    "page_count": 589,
+    "passage_count": 1627,
+    "corpus_url": "corpora/INFY.json",
+    "corpus_sha256": "6bd96bf18b07357abcf75297d4907f001b8893a028732c2594a5c7ec98710805",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/INFY/consolidated/",
+    "status": "indexed"
+  },
+  "COFORGE": {
+    "ticker": "COFORGE",
+    "name": "Coforge Ltd",
+    "document_count": 5,
+    "transcripts": 4,
+    "annual_reports": 1,
+    "page_count": 278,
+    "passage_count": 1354,
+    "corpus_url": "corpora/COFORGE.json",
+    "corpus_sha256": "465edc7c1bb74c8b375a557cc185cef1a87494d512fa246857b623e2e419a68f",
+    "rejected": [],
+    "discovery_url": "https://www.screener.in/company/COFORGE/consolidated/",
+    "status": "indexed"
+  }
+}

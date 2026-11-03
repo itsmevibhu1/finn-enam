@@ -3,13 +3,17 @@ from datetime import datetime, timezone
 import json
 from pathlib import Path
 import shutil
+from zoneinfo import ZoneInfo
 from engine import assess
+from build_corpus import build as build_corpus
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def build():
     research = json.loads((ROOT / 'data/research.json').read_text())
+    research['as_of'] = datetime.now(timezone.utc).astimezone(ZoneInfo('Asia/Kolkata')).date().isoformat()
+    research['research_coverage'] = build_corpus()
     for company in research['companies'].values():
         source_map = {s['id']: s for s in company['sources']}
         for promise in company['promises']:
@@ -28,10 +32,13 @@ def build():
     research['announcements'] = json.loads(announcement_path.read_text()) if announcement_path.exists() else {'status':'not_connected', 'records':[]}
     dest = ROOT / 'dist' if (ROOT / '.openai/hosting.json').exists() else ROOT / 'finn-site/dist'
     dest.mkdir(parents=True, exist_ok=True)
-    (dest / 'snapshot.json').write_text(json.dumps(research, indent=2) + '\n')
+    temporary=dest/'snapshot.json.tmp'
+    temporary.write_text(json.dumps(research, indent=2) + '\n')
+    temporary.replace(dest/'snapshot.json')
     portfolio = ROOT / 'config/portfolio.json'
     shutil.copyfile(portfolio, dest / 'portfolio.json')
-    print(f'Built snapshot: {len(research["companies"])} researched company, 5 comparisons, 18 portfolio companies')
+    comparisons=sum(len(c['promises']) for c in research['companies'].values())
+    print(f'Built snapshot: {len(research["companies"])} curated company, {len(research["research_coverage"])} document corpora, {comparisons} comparisons, {len(research["portfolio"])} portfolio companies')
 
 
 if __name__ == '__main__':

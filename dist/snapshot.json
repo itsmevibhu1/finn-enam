@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-30",
+  "as_of": "2026-11-03",
   "research_mode": "Manually verified primary-source case study; no model-generated claims",
   "companies": {
     "INFY": {
@@ -183,6 +183,113 @@
       ]
     }
   },
+  "research_coverage": {
+    "HCLTECH": {
+      "ticker": "HCLTECH",
+      "name": "HCL Technologies Ltd",
+      "document_count": 5,
+      "transcripts": 4,
+      "annual_reports": 1,
+      "page_count": 587,
+      "passage_count": 1531,
+      "corpus_url": "corpora/HCLTECH.json",
+      "corpus_sha256": "e3a9ce70e8755dc1873565b69c74db06109f49ee9cbc9b9dc3ebbabb54eac883",
+      "rejected": [],
+      "discovery_url": "https://www.screener.in/company/HCLTECH/consolidated/",
+      "status": "indexed"
+    },
+    "PERSISTENT": {
+      "ticker": "PERSISTENT",
+      "name": "Persistent Systems Ltd",
+      "document_count": 5,
+      "transcripts": 4,
+      "annual_reports": 1,
+      "page_count": 609,
+      "passage_count": 1481,
+      "corpus_url": "corpora/PERSISTENT.json",
+      "corpus_sha256": "021426ac6a63ddc058f2ef020338d62443d4f47e9b39b34a30ef2791b6a70750",
+      "rejected": [],
+      "discovery_url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+      "status": "indexed"
+    },
+    "DIXON": {
+      "ticker": "DIXON",
+      "name": "Dixon Technologies (India) Ltd",
+      "document_count": 5,
+      "transcripts": 4,
+      "annual_reports": 1,
+      "page_count": 604,
+      "passage_count": 1565,
+      "corpus_url": "corpora/DIXON.json",
+      "corpus_sha256": "2a4595b9e6c473975e46b480bcd62e0eb5301003582a6b39f43d4bbb44ad524c",
+      "rejected": [],
+      "discovery_url": "https://www.screener.in/company/DIXON/consolidated/",
+      "status": "indexed"
+    },
+    "ASTRAL": {
+      "ticker": "ASTRAL",
+      "name": "Astral Ltd",
+      "document_count": 1,
+      "transcripts": 0,
+      "annual_reports": 1,
+      "page_count": 247,
+      "passage_count": 747,
+      "corpus_url": "corpora/ASTRAL.json",
+      "corpus_sha256": "fca312d8147af0e59713d61e9a75d00445eac213294f2343ad8d8ab6fffc8041",
+      "rejected": [
+        {
+          "kind": "transcript",
+          "period": "Feb 2026",
+          "reason": "Not a substantive transcript; may be an audio-recording notice or cover letter."
+        },
+        {
+          "kind": "transcript",
+          "period": "Feb 2023",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "kind": "transcript",
+          "period": "Nov 2022",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "kind": "transcript",
+          "period": "Aug 2022",
+          "reason": "HTTP Error 404: Not Found"
+        }
+      ],
+      "discovery_url": "https://www.screener.in/company/ASTRAL/consolidated/",
+      "status": "indexed"
+    },
+    "INFY": {
+      "ticker": "INFY",
+      "name": "Infosys Ltd",
+      "document_count": 5,
+      "transcripts": 4,
+      "annual_reports": 1,
+      "page_count": 589,
+      "passage_count": 1627,
+      "corpus_url": "corpora/INFY.json",
+      "corpus_sha256": "6bd96bf18b07357abcf75297d4907f001b8893a028732c2594a5c7ec98710805",
+      "rejected": [],
+      "discovery_url": "https://www.screener.in/company/INFY/consolidated/",
+      "status": "indexed"
+    },
+    "COFORGE": {
+      "ticker": "COFORGE",
+      "name": "Coforge Ltd",
+      "document_count": 5,
+      "transcripts": 4,
+      "annual_reports": 1,
+      "page_count": 278,
+      "passage_count": 1354,
+      "corpus_url": "corpora/COFORGE.json",
+      "corpus_sha256": "465edc7c1bb74c8b375a557cc185cef1a87494d512fa246857b623e2e419a68f",
+      "rejected": [],
+      "discovery_url": "https://www.screener.in/company/COFORGE/consolidated/",
+      "status": "indexed"
+    }
+  },
   "portfolio": [
     {
       "ticker": "RELIANCE",
@@ -257,20 +364,20 @@
       "sector": "Consumer goods"
     }
   ],
-  "built_at": "2026-10-30T15:16:43.936997+00:00",
+  "built_at": "2026-11-03T02:59:05.188158+00:00",
   "market": {
-    "refreshed_at": "2026-10-30T14:27:12.291957+00:00",
+    "refreshed_at": "2026-11-03T01:55:47.326519+00:00",
     "note": "Completed daily sessions; price change uses close-to-close prices. Corporate actions may cause mechanical price alerts.",
     "records": [
       {
         "ticker": "RELIANCE",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:07.409082+00:00",
+        "fetched_at": "2026-11-03T01:55:44.049665+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RELIANCE.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1164.9,
-        "volume": 14722247,
+        "volume": 14753650,
         "currency": "INR",
         "history": [
           {
@@ -376,13 +483,13 @@
           {
             "date": "2026-10-30",
             "close": 1164.9000244140625,
-            "volume": 14722247
+            "volume": 14753650
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": -0.2142,
-          "volume_multiple": 0.9695,
+          "volume_multiple": 0.9716,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -391,12 +498,12 @@
       {
         "ticker": "TCS",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:07.410064+00:00",
+        "fetched_at": "2026-11-03T01:55:44.050632+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TCS.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 2502.6,
-        "volume": 3016270,
+        "volume": 3016983,
         "currency": "INR",
         "history": [
           {
@@ -502,13 +609,13 @@
           {
             "date": "2026-10-30",
             "close": 2502.60009765625,
-            "volume": 3016270
+            "volume": 3016983
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.9927,
-          "volume_multiple": 0.502,
+          "volume_multiple": 0.5021,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -517,12 +624,12 @@
       {
         "ticker": "INFY",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:07.410825+00:00",
+        "fetched_at": "2026-11-03T01:55:44.051209+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/INFY.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1185.0,
-        "volume": 13029753,
+        "volume": 13030713,
         "currency": "INR",
         "history": [
           {
@@ -628,13 +735,13 @@
           {
             "date": "2026-10-30",
             "close": 1185.0,
-            "volume": 13029753
+            "volume": 13030713
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 3.358,
-          "volume_multiple": 0.7731,
+          "volume_multiple": 0.7732,
           "price_triggered": true,
           "volume_triggered": false,
           "lookback": 20
@@ -643,12 +750,12 @@
       {
         "ticker": "HDFCBANK",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:07.412116+00:00",
+        "fetched_at": "2026-11-03T01:55:44.051707+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HDFCBANK.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 692.8,
-        "volume": 21292736,
+        "volume": 21296902,
         "currency": "INR",
         "history": [
           {
@@ -754,13 +861,13 @@
           {
             "date": "2026-10-30",
             "close": 692.7999877929688,
-            "volume": 21292736
+            "volume": 21296902
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 1.3903,
-          "volume_multiple": 0.6704,
+          "volume_multiple": 0.6705,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -769,12 +876,12 @@
       {
         "ticker": "ICICIBANK",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.131031+00:00",
+        "fetched_at": "2026-11-03T01:55:44.808916+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ICICIBANK.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1398.0,
-        "volume": 10522673,
+        "volume": 10523907,
         "currency": "INR",
         "history": [
           {
@@ -880,13 +987,13 @@
           {
             "date": "2026-10-30",
             "close": 1398.0,
-            "volume": 10522673
+            "volume": 10523907
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.8222,
-          "volume_multiple": 0.8256,
+          "volume_multiple": 0.8257,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -895,12 +1002,12 @@
       {
         "ticker": "ITC",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.188234+00:00",
+        "fetched_at": "2026-11-03T01:55:44.809718+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ITC.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 265.6,
-        "volume": 16292770,
+        "volume": 16297263,
         "currency": "INR",
         "history": [
           {
@@ -1006,13 +1113,13 @@
           {
             "date": "2026-10-30",
             "close": 265.6000061035156,
-            "volume": 16292770
+            "volume": 16297263
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.2264,
-          "volume_multiple": 0.6987,
+          "volume_multiple": 0.6989,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1021,12 +1128,12 @@
       {
         "ticker": "HINDUNILVR",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.255829+00:00",
+        "fetched_at": "2026-11-03T01:55:44.810774+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HINDUNILVR.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1864.6,
-        "volume": 1597099,
+        "volume": 1597400,
         "currency": "INR",
         "history": [
           {
@@ -1132,13 +1239,13 @@
           {
             "date": "2026-10-30",
             "close": 1864.5999755859375,
-            "volume": 1597099
+            "volume": 1597400
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.3444,
-          "volume_multiple": 0.948,
+          "volume_multiple": 0.9482,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1147,12 +1254,12 @@
       {
         "ticker": "SUNPHARMA",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.335996+00:00",
+        "fetched_at": "2026-11-03T01:55:44.811847+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SUNPHARMA.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1777.7,
-        "volume": 5125487,
+        "volume": 5130218,
         "currency": "INR",
         "history": [
           {
@@ -1258,13 +1365,13 @@
           {
             "date": "2026-10-30",
             "close": 1777.699951171875,
-            "volume": 5125487
+            "volume": 5130218
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.9483,
-          "volume_multiple": 3.4225,
+          "volume_multiple": 3.4256,
           "price_triggered": false,
           "volume_triggered": true,
           "lookback": 20
@@ -1273,12 +1380,12 @@
       {
         "ticker": "CIPLA",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.837600+00:00",
+        "fetched_at": "2026-11-03T01:55:45.450661+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CIPLA.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1378.9,
-        "volume": 1436439,
+        "volume": 1436661,
         "currency": "INR",
         "history": [
           {
@@ -1384,13 +1491,13 @@
           {
             "date": "2026-10-30",
             "close": 1378.9000244140625,
-            "volume": 1436439
+            "volume": 1436661
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 1.539,
-          "volume_multiple": 1.2817,
+          "volume_multiple": 1.2819,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1399,12 +1506,12 @@
       {
         "ticker": "MARUTI",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:08.862282+00:00",
+        "fetched_at": "2026-11-03T01:55:45.457720+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MARUTI.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 11397.0,
-        "volume": 280426,
+        "volume": 280448,
         "currency": "INR",
         "history": [
           {
@@ -1510,7 +1617,7 @@
           {
             "date": "2026-10-30",
             "close": 11397.0,
-            "volume": 280426
+            "volume": 280448
           }
         ],
         "alert": {
@@ -1525,12 +1632,12 @@
       {
         "ticker": "EICHERMOT",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:09.060298+00:00",
+        "fetched_at": "2026-11-03T01:55:45.464371+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EICHERMOT.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 7220.0,
-        "volume": 387656,
+        "volume": 387958,
         "currency": "INR",
         "history": [
           {
@@ -1636,13 +1743,13 @@
           {
             "date": "2026-10-30",
             "close": 7220.0,
-            "volume": 387656
+            "volume": 387958
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": -0.2487,
-          "volume_multiple": 0.9466,
+          "volume_multiple": 0.9474,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1651,12 +1758,12 @@
       {
         "ticker": "LT",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:10.032711+00:00",
+        "fetched_at": "2026-11-03T01:55:45.473983+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/LT.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 3871.7,
-        "volume": 1761610,
+        "volume": 1765873,
         "currency": "INR",
         "history": [
           {
@@ -1762,13 +1869,13 @@
           {
             "date": "2026-10-30",
             "close": 3871.699951171875,
-            "volume": 1761610
+            "volume": 1765873
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.9017,
-          "volume_multiple": 0.8265,
+          "volume_multiple": 0.8285,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1777,12 +1884,12 @@
       {
         "ticker": "TITAN",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:10.374852+00:00",
+        "fetched_at": "2026-11-03T01:55:46.057127+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TITAN.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 4436.5,
-        "volume": 1137347,
+        "volume": 1143254,
         "currency": "INR",
         "history": [
           {
@@ -1888,13 +1995,13 @@
           {
             "date": "2026-10-30",
             "close": 4436.5,
-            "volume": 1137347
+            "volume": 1143254
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.0564,
-          "volume_multiple": 1.4304,
+          "volume_multiple": 1.4378,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -1903,12 +2010,12 @@
       {
         "ticker": "PIDILITIND",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:10.552383+00:00",
+        "fetched_at": "2026-11-03T01:55:46.070283+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PIDILITIND.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 1461.6,
-        "volume": 795990,
+        "volume": 796221,
         "currency": "INR",
         "history": [
           {
@@ -2014,13 +2121,13 @@
           {
             "date": "2026-10-30",
             "close": 1461.5999755859375,
-            "volume": 795990
+            "volume": 796221
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 2.7848,
-          "volume_multiple": 1.0182,
+          "volume_multiple": 1.0185,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -2029,12 +2136,12 @@
       {
         "ticker": "POLYCAB",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:10.710072+00:00",
+        "fetched_at": "2026-11-03T01:55:46.127444+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/POLYCAB.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 7787.0,
-        "volume": 346328,
+        "volume": 346386,
         "currency": "INR",
         "history": [
           {
@@ -2140,13 +2247,13 @@
           {
             "date": "2026-10-30",
             "close": 7787.0,
-            "volume": 346328
+            "volume": 346386
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": 0.5423,
-          "volume_multiple": 0.7497,
+          "volume_multiple": 0.7498,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -2155,12 +2262,12 @@
       {
         "ticker": "APLAPOLLO",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:11.010613+00:00",
+        "fetched_at": "2026-11-03T01:55:46.169646+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APLAPOLLO.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 2165.1,
-        "volume": 1101722,
+        "volume": 1101756,
         "currency": "INR",
         "history": [
           {
@@ -2266,13 +2373,13 @@
           {
             "date": "2026-10-30",
             "close": 2165.10009765625,
-            "volume": 1101722
+            "volume": 1101756
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": -1.3622,
-          "volume_multiple": 1.6103,
+          "volume_multiple": 1.6104,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -2281,12 +2388,12 @@
       {
         "ticker": "CERA",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:11.179221+00:00",
+        "fetched_at": "2026-11-03T01:55:46.617244+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CERA.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 4406.0,
-        "volume": 7485,
+        "volume": 7486,
         "currency": "INR",
         "history": [
           {
@@ -2392,13 +2499,13 @@
           {
             "date": "2026-10-30",
             "close": 4406.0,
-            "volume": 7485
+            "volume": 7486
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": -0.7434,
-          "volume_multiple": 0.7772,
+          "volume_multiple": 0.7773,
           "price_triggered": false,
           "volume_triggered": false,
           "lookback": 20
@@ -2407,12 +2514,12 @@
       {
         "ticker": "VSTIND",
         "status": "ok",
-        "fetched_at": "2026-10-30T14:27:11.503827+00:00",
+        "fetched_at": "2026-11-03T01:55:46.677150+00:00",
         "provider": "Yahoo Finance",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/VSTIND.NS?range=3mo&interval=1d",
         "session_date": "2026-10-30",
         "close": 185.5,
-        "volume": 273799,
+        "volume": 273988,
         "currency": "INR",
         "history": [
           {
@@ -2518,13 +2625,13 @@
           {
             "date": "2026-10-30",
             "close": 185.5,
-            "volume": 273799
+            "volume": 273988
           }
         ],
         "alert": {
           "status": "ok",
           "price_change_pct": -2.0643,
-          "volume_multiple": 2.2907,
+          "volume_multiple": 2.2923,
           "price_triggered": false,
           "volume_triggered": true,
           "lookback": 20
@@ -2533,13 +2640,16 @@
     ]
   },
   "announcements": {
-    "fetched_at": "2026-10-30T15:02:15.938868+00:00",
-    "source_url": "https://www.nseindia.com/api/corporate-announcements?index=equities&from_date=23-10-2026&to_date=30-10-2026",
-    "coverage_start": "2026-10-23",
-    "coverage_end": "2026-10-30",
+    "fetched_at": "2026-11-03T01:32:16.256868+00:00",
+    "source_url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
+    "coverage_start": "2026-11-03T00:00:02+05:30",
+    "coverage_end": "2026-11-03T07:00:00+05:30",
     "records": [],
-    "status": "failed",
-    "error": "HTTP Error 403: Forbidden",
-    "rss_error": "Invalid date value or format \"30-OCT-2026 20:28\""
+    "status": "ok",
+    "provider": "NSE RSS",
+    "coverage_note": "Observed filings accumulated from rolling snapshots; gaps between refreshes may be missing.",
+    "api_error": "HTTP Error 403: Forbidden",
+    "skipped_dates": 0,
+    "total_exchange_rows": 185
   }
 }
