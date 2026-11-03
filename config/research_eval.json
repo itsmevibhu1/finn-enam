@@ -1,0 +1,70 @@
+{
+  "method": "Small manually inspected primary-text calibration set, not an independent accuracy benchmark. A pass means the expected source passage is in the four passages supplied to the model, not that its generated interpretation is correct.",
+  "cases": [
+    {
+      "ticker": "HCLTECH",
+      "question": "What changed in management guidance and operating performance?",
+      "scope": "earnings",
+      "period": "latest4",
+      "document_id": "baf227e394b6f6be0659c3c482d707ffc62e98c9bfe248d417560d3527af75ed",
+      "page": 12,
+      "anchor": "Our FY27 growth guidance is now"
+    },
+    {
+      "ticker": "DIXON",
+      "question": "What did management say about capex?",
+      "scope": "earnings",
+      "period": "latest4",
+      "document_id": "377ade8dfd9a7c6b18d099802eed105342c65a48603b9980a75cef217a3ae995",
+      "page": 19,
+      "anchor": "We will be putting capex"
+    },
+    {
+      "ticker": "PERSISTENT",
+      "question": "What did management say about operating margins?",
+      "scope": "earnings",
+      "period": "latest4",
+      "document_id": "ef0001fed05d9e452cb0312f13eac4928f509af382610282c43e94b5722981ba",
+      "page": 8,
+      "anchor": "100 basis point quarter-on-quarter decline"
+    },
+    {
+      "ticker": "COFORGE",
+      "question": "What did management say about growth guidance?",
+      "scope": "earnings",
+      "period": "latest4",
+      "document_id": "aaf466c9a68f919de06f95cf5fc1f68cdf5576c1de6d987abcf84e3c1c7495da",
+      "page": 10,
+      "anchor": "we are upgrading our FY2027 consolidated EBIT margin guidance"
+    },
+    {
+      "ticker": "ASTRAL",
+      "question": "What are the raw material risks?",
+      "scope": "annual",
+      "period": "all",
+      "document_id": "34f6ee4a749b90fd7b0d0772030e252217baa210ece789457e4597909d669429",
+      "page": 16,
+      "anchor": "diversify sourcing channels"
+    }
+  ],
+  "negative_cases": [
+    {
+      "ticker": "ASTRAL",
+      "question": "growth guidance",
+      "scope": "earnings",
+      "period": "Q4 FY2026"
+    },
+    {
+      "ticker": "HCLTECH",
+      "question": "zzzzzzzzzz",
+      "scope": "earnings",
+      "period": "latest4"
+    },
+    {
+      "ticker": "ASTRAL",
+      "question": "What does the annual report say?",
+      "scope": "annual",
+      "period": "all"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ if root==site or not site.exists():
 for directory in ('scripts','tests','config','docs'):
     shutil.copytree(root/directory,site/directory,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__'))
 (site/'data').mkdir(exist_ok=True)
-for name in ('research.json','market.json','announcements.json','announcement_archive.json','source_index.json','company_discovery.json','research_coverage.json'):
+for name in ('research.json','market.json','announcements.json','announcement_archive.json','source_index.json','company_discovery.json','research_coverage.json','announcement_eval.json'):
     if (root/'data'/name).exists():
         if name=='company_discovery.json':
             discovery=json.loads((root/'data'/name).read_text())

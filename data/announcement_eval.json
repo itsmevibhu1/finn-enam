@@ -1,0 +1,165 @@
+{
+  "method": "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate.",
+  "cases": [
+    {
+      "issuer": "Hindustan Zinc Limited",
+      "description": "Hindustan Zinc Limited has informed the Exchange regarding a press release dated November 03, 2026, titled \"Hindustan Zinc Expands Value-Added Zinc Product Offerings with Next-Gen Alloys  VedAZ  and  VedAyush  for the Galvanizing Industry \". |SUBJECT: Press Release",
+      "source_url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_03112026181504_SEintimationproduct.pdf",
+      "published_at": "03-Nov-2026 18:15:19",
+      "expected_category": "press_release",
+      "baseline_category": "press_release"
+    },
+    {
+      "issuer": "Ajmera Realty & Infra India Limited",
+      "description": "Earnings Call Audio Recording of the Un-audited Standalone and Consolidated Financial Results for the quarter and half year ended September 30, 2026 |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AJMERA_03112026181427_Intimation_sd.pdf",
+      "published_at": "03-Nov-2026 18:15:07",
+      "expected_category": "earnings_call",
+      "baseline_category": "results"
+    },
+    {
+      "issuer": "Studds Accessories Limited",
+      "description": "Studds Accessories Limited has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_25886_WebXMLFile_20261103_181506041.xml",
+      "published_at": "03-Nov-2026 18:15:07",
+      "expected_category": "earnings_call",
+      "baseline_category": "investor_meetings"
+    },
+    {
+      "issuer": "Amrutanjan Health Care Limited",
+      "description": "Amrutanjan Health Care Limited has informed the Exchange that Board of Directors at its meeting held on November 03, 2026, declared Interim Dividend of Re. 1 per equity share. |SUBJECT: Dividend",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AMRUTANJAN_03112026181418_Outcome_of_Bm_Sd.pdf",
+      "published_at": "03-Nov-2026 18:14:43",
+      "expected_category": "dividend",
+      "baseline_category": "dividend"
+    },
+    {
+      "issuer": "TV Vision Limited",
+      "description": "TV Vision Limited has informed the Exchange about Corporate Insolvency Resolution Process |SUBJECT: Corporate Insolvency Resolution Process",
+      "source_url": "https://nsearchives.nseindia.com/corporate/TVVISION_03112026181410_Outcome_of_3rd_CoC_Meeting_sd.pdf",
+      "published_at": "03-Nov-2026 18:14:26",
+      "expected_category": "litigation",
+      "baseline_category": "litigation"
+    },
+    {
+      "issuer": "Global Surfaces Limited",
+      "description": "GLOBAL SURFACES LIMITED has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_20828_WebXMLFile_20261103_181414272.xml",
+      "published_at": "03-Nov-2026 18:14:16",
+      "expected_category": "earnings_call",
+      "baseline_category": "investor_meetings"
+    },
+    {
+      "issuer": "Arvind Fashions Limited",
+      "description": "Arvind Fashions Limited has informed the exchange about Copy of Newspaper Publication. |SUBJECT: Copy of Newspaper Publication",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ARVINDFASN_03112026180752_NPIntimation.pdf",
+      "published_at": "03-Nov-2026 18:14:04",
+      "expected_category": "routine",
+      "baseline_category": "routine"
+    },
+    {
+      "issuer": "Clay Craft India Limited",
+      "description": "Clay Craft India Limited has informed the Exchange regarding 'Intimation regarding Change in the Corporate Office of the Registrar and Share Transfer Agent of the Company '. |SUBJECT: Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CLAYCRAFT_03112026181304_IntimationofCorpOfficeofRTA03112026.pdf",
+      "published_at": "03-Nov-2026 18:13:48",
+      "expected_category": "unclassified",
+      "baseline_category": "unclassified"
+    },
+    {
+      "issuer": "Eureka Forbes Limited",
+      "description": "Eureka Forbes Limited has informed the Exchange about Audio Recording/Video Recording |SUBJECT: Analyst/Investor Meet Para A-XBRL",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_23900_WebXMLFile_20261103_181346152.xml",
+      "published_at": "03-Nov-2026 18:13:47",
+      "expected_category": "earnings_call",
+      "baseline_category": "investor_meetings"
+    },
+    {
+      "issuer": "GIC Housing Finance Limited",
+      "description": "GIC HOUSING FINANCE LIMITED has informed the Exchange about Change in Directors/KMP/SMP/Auditor/RTA |SUBJECT: Change in Directors/KMP/SMP/Auditor/RTA",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_949_WebXMLFile_20261103_181337361.xml",
+      "published_at": "03-Nov-2026 18:13:38",
+      "expected_category": "unclassified",
+      "baseline_category": "unclassified"
+    },
+    {
+      "issuer": "Voltas Limited",
+      "description": "VOLTAS LIMITED has informed the Exchange about Schedule of Analysts or Institutional Investors Meet |SUBJECT: Analyst/Investor Meet Para A-XBRL",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_231_WebXMLFile_20261103_181323108.xml",
+      "published_at": "03-Nov-2026 18:13:24",
+      "expected_category": "routine",
+      "baseline_category": "routine"
+    },
+    {
+      "issuer": "Krsnaa Diagnostics Limited",
+      "description": "Krsnaa Diagnostics Limited has informed the Exchange about General Updates |SUBJECT: General Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/KRSNAA_03112026181307_543328.pdf",
+      "published_at": "03-Nov-2026 18:13:23",
+      "expected_category": "unclassified",
+      "baseline_category": "unclassified"
+    },
+    {
+      "issuer": "Northern Arc Capital Limited",
+      "description": "Northern Arc Capital Limited has informed the Exchange about Investor Presentation |SUBJECT: Investor Presentation",
+      "source_url": "https://nsearchives.nseindia.com/corporate/NACL2020_03112026181123_Investor_presentation_1.pdf",
+      "published_at": "03-Nov-2026 18:13:11",
+      "expected_category": "unclassified",
+      "baseline_category": "unclassified"
+    },
+    {
+      "issuer": "Sandur Manganese & Iron Ores Limited",
+      "description": "Sandur Manganese & Iron Ores Limited has informed the Exchange about Unaudited Standalone and Consolidated Financial Results for the quarter and half year ended30 September 2026 |SUBJECT: General Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/SANDUR_03112026180848_Ltr2SEsFinancialResultsSigned.pdf",
+      "published_at": "03-Nov-2026 18:13:10",
+      "expected_category": "results",
+      "baseline_category": "results"
+    },
+    {
+      "issuer": "BMW Ventures Limited",
+      "description": "BMW Ventures Limited has informed the Exchange that Record date for the purpose of Dividend  is 13-Nov-2026. |SUBJECT: Record Date",
+      "source_url": "https://nsearchives.nseindia.com/corporate/BMWVENTURES2024_03112026181245_Financials_merged.pdf",
+      "published_at": "03-Nov-2026 18:13:02",
+      "expected_category": "dividend",
+      "baseline_category": "dividend"
+    },
+    {
+      "issuer": "ReNew Akshay Urja Limited",
+      "description": "Resignation |SUBJECT: Resignation",
+      "source_url": "https://nsearchives.nseindia.com/content/debt/WDM/RAUPL_03112026181201_51_2_.pdf",
+      "published_at": "03-Nov-2026 18:12:57",
+      "expected_category": "management_change",
+      "baseline_category": "management_change"
+    },
+    {
+      "issuer": "Amrutanjan Health Care Limited",
+      "description": "Amrutanjan Health Care Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AMRUTANJAN_03112026180931_Outcome_of_Bm_Sd.pdf",
+      "published_at": "03-Nov-2026 18:12:47",
+      "expected_category": "results",
+      "baseline_category": "results"
+    },
+    {
+      "issuer": "Vascon Engineers Limited",
+      "description": "Statement of deviation or variation in the use of proceeds |SUBJECT: General Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/VASCONEQ_03112026181223_Statement_of_Deviation_Sd.pdf",
+      "published_at": "03-Nov-2026 18:12:37",
+      "expected_category": "unclassified",
+      "baseline_category": "unclassified"
+    },
+    {
+      "issuer": "Shalby Limited",
+      "description": "Shalby Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+      "source_url": "https://nsearchives.nseindia.com/corporate/SHALBYLTD_03112026181002_66BMOutcome1.pdf",
+      "published_at": "03-Nov-2026 18:12:30",
+      "expected_category": "results",
+      "baseline_category": "results"
+    },
+    {
+      "issuer": "Captain Polyplast Limited",
+      "description": "Captain Polyplast Limited has informed the Exchange about Link of Recording |SUBJECT: Analysts/Institutional Investor Meet/Con. Call Updates",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CPL_03112026181106_CAPTAINPOLYPLAST03112026.pdf",
+      "published_at": "03-Nov-2026 18:12:12",
+      "expected_category": "earnings_call",
+      "baseline_category": "investor_meetings"
+    }
+  ]
+}

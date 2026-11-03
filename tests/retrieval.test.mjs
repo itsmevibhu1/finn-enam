@@ -24,6 +24,10 @@ test('stopword-only questions produce no invented result',()=>{
 test('unknown terms produce an evidence gap',()=>{
  assert.deepEqual(searchCorpus(corpus,'zzzzzzzz'),[]);
 });
+test('document-wrapper words cannot outrank working-capital evidence with a cover page',()=>{
+ const annual={documents:[{id:'ar'}],passages:[{document:'ar',page:2,text:'Growth with Discipline ANNUAL REPORT'},{document:'ar',page:163,text:'Net working capital turnover ratio is disclosed with receivables and payables.'}]};
+ assert.equal(searchCorpus(annual,'What does the annual report say about working capital?')[0].page,163);
+});
 test('excerpts stay within 25 words per document',()=>{
  for(const result of searchCorpus(corpus,'guidance cash'))assert(result.snippet.split(/\s+/).length<=25);
 });

@@ -102,6 +102,12 @@ python3 scripts/import_document.py /path/to/report.pdf \
 
 Use the actual document URL and reporting period. Valid kinds are `annual_report`, `transcript`, and `results`. Imported documents live under `data/documents/` and are excluded from version control. The importer does not verify publisher identity or financial claims; those are separate checks.
 
+## Demo and evaluation
+
+See [demo guide](docs/DEMO_GUIDE.md), [submission checklist](docs/SUBMISSION_CHECKLIST.md), and [draft covering email](docs/COVERING_EMAIL.md). The available actual Codex conversation is exported with credential redaction in [AI build history](docs/AI_BUILD_HISTORY.md); its manifest states coverage and omissions.
+
+Run `python3 scripts/evaluate_demo.py` for a model-free calibration check. Its small manually inspected fixture set is used for tuning and regression, not an independent accuracy benchmark.
+
 ## Submission
 
 Deadline: November 1, 2026; no time or timezone specified in the brief.

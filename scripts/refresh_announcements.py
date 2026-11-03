@@ -33,6 +33,8 @@ RULES = [
 def classify(text):
     if re.search(r'newspaper|trading window|duplicate share|loss of share|compliance certificate|schedule.*(analyst|investor)|intimation.*board meeting', text, re.I):
         return 'routine', 5
+    if re.search(r'\btranscript\b|(?:audio|video|link of)\s*recording',text,re.I):
+        return 'earnings_call',50
     if re.search(r'allotment of securities',text,re.I) and not re.search(r'rights issue|qip|preferential|buy.?back|commercial paper|debentur',text,re.I):
         return 'unclassified',30
     for category, priority, pattern in RULES:

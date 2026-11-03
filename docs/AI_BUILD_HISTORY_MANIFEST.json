@@ -1,0 +1,22 @@
+{
+  "exported_at": "2026-11-03T18:06:53.707870+00:00",
+  "source": "Local project-scoped Codex JSONL sessions",
+  "sources": [
+    {
+      "filename": "rollout-2026-10-30T19-31-59-01a18d1e-0e97-7812-9840-436fa436446d.jsonl",
+      "sha256": "ca59ff5f27d50e63c9c36feafd4de5d834f7f2026c1670586c6dbff1b825e236",
+      "visible_message_count": 99
+    }
+  ],
+  "message_count": 99,
+  "first_message": "2026-10-30T14:02:02.046Z",
+  "last_message": "2026-11-03T18:03:19.380Z",
+  "redacted": true,
+  "omissions": [
+    "Credentials and credential-file selections",
+    "Images",
+    "Tool arguments and outputs",
+    "Internal reasoning and runtime metadata"
+  ],
+  "export_sha256": "138ccfc12322570e77521fc044890457c9dfe891dc513be83b62e13a3eb19e6c"
+}

@@ -1,5 +1,5 @@
 // Browser/local keyword retrieval over primary-document passages. No model calls.
-const stop = new Set('a an and are as at be been by can company did do does for from had has have how i in is it its management of on or our say said should that the their them these this to us was we were what when where which who why will with would you your'.split(' '));
+const stop = new Set('a an and are as at be been by can company did do does for from had has have how i in is it its management of on or our say said should that the their them these this to us was we were what when where which who why will with would you your annual report reports document documents transcript transcripts tell discuss discussed primary evidence about'.split(' '));
 const canonical = term => /^(guide|guided|guidance|outlook)$/.test(term)?'guidance':term.replace(/s$/,'');
 export const tokenize = text => text.toLowerCase().match(/[a-z0-9]+/g) || [];
 export function filterCorpus(corpus,{scope='all',period='all',window=[]}={}){

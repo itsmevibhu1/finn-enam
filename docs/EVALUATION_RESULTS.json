@@ -1,0 +1,376 @@
+{
+  "generated_at": "2026-11-03T18:06:53.468068+00:00",
+  "model_calls": 0,
+  "limitations": [
+    "Small manually inspected primary-text calibration set, not an independent accuracy benchmark. A pass means the expected source passage is in the four passages supplied to the model, not that its generated interpretation is correct.",
+    "Twenty consecutive records from captured official NSE RSS, annotated from description text only; no PDF materiality judgement. Ambiguous descriptions remain unclassified. Not a random holdout or full-feed accuracy estimate.",
+    "Comparison checks reproduce the curated case in code; they are not automatic financial extraction."
+  ],
+  "summary": {
+    "research_passages": {
+      "passed": 5,
+      "total": 5
+    },
+    "negative_questions": {
+      "passed": 3,
+      "total": 3
+    },
+    "announcement_description_labels": {
+      "baseline_correct": 15,
+      "current_correct": 20,
+      "total": 20
+    },
+    "false_issuer_matches_rejected": 3,
+    "curated_comparisons": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "research_cases": [
+    {
+      "ticker": "HCLTECH",
+      "question": "What changed in management guidance and operating performance?",
+      "scope": "earnings",
+      "period": "latest4",
+      "expected": "source_passage",
+      "passed": true,
+      "retrieved": [
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=11be9fba-0308-4756-a474-e4f2903fdaac.pdf",
+          "pdf_page": 25,
+          "reporting_period": "Q1 FY2027"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48f5d6fd-b499-45da-bc6d-2e0439495ec2.pdf",
+          "pdf_page": 4,
+          "reporting_period": "Q4 FY2026"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ccce0001-ff5d-4875-b1e5-5c558669f49c.pdf",
+          "pdf_page": 12,
+          "reporting_period": "Q2 FY2027"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=08d64f75-ab38-4158-8b8a-0d933bc007d3.pdf",
+          "pdf_page": 14,
+          "reporting_period": "Q3 FY2026"
+        }
+      ]
+    },
+    {
+      "ticker": "DIXON",
+      "question": "What did management say about capex?",
+      "scope": "earnings",
+      "period": "latest4",
+      "expected": "source_passage",
+      "passed": true,
+      "retrieved": [
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+          "pdf_page": 19,
+          "reporting_period": "Q3 FY2026"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+          "pdf_page": 19,
+          "reporting_period": "Q4 FY2026"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95dbb3ac-5662-4cd9-a145-78effb6c373c.pdf",
+          "pdf_page": 11,
+          "reporting_period": "Q2 FY2026"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+          "pdf_page": 8,
+          "reporting_period": "Q1 FY2027"
+        }
+      ]
+    },
+    {
+      "ticker": "PERSISTENT",
+      "question": "What did management say about operating margins?",
+      "scope": "earnings",
+      "period": "latest4",
+      "expected": "source_passage",
+      "passed": true,
+      "retrieved": [
+        {
+          "url": "https://www.persistent.com/wp-content/uploads/2026/04/Analyst-Call-Transcript-Q4FY26.pdf",
+          "pdf_page": 8,
+          "reporting_period": "Q4 FY2026"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=524eadda-3966-4f4f-8888-bfaf2cb0d69e.pdf",
+          "pdf_page": 8,
+          "reporting_period": "Q2 FY2027"
+        },
+        {
+          "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b68ef2b0-b285-4696-8c08-e3bb58039b0e.pdf",
+          "pdf_page": 7,
+          "reporting_period": "Q3 FY2026"
+        },
+        {
+          "url": "https://www.persistent.com/wp-content/uploads/2026/08/Analyst-Call-Transcript-Q1FY27.pdf",
+          "pdf_page": 8,
+          "reporting_period": "Q1 FY2027"
+        }
+      ]
+    },
+    {
+      "ticker": "COFORGE",
+      "question": "What did management say about growth guidance?",
+      "scope": "earnings",
+      "period": "latest4",
+      "expected": "source_passage",
+      "passed": true,
+      "retrieved": [
+        {
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q2FY27-October-23-2026.pdf?hsLang=en",
+          "pdf_page": 10,
+          "reporting_period": "Q2 FY2027"
+        },
+        {
+          "url": "https://www.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q3-FY26.pdf",
+          "pdf_page": 2,
+          "reporting_period": "Q3 FY2026"
+        },
+        {
+          "url": "https://investors.coforge.com/hubfs/Coforge-Limited-Earnings-Call-Transcript-Q4FY26%20_AJ.pdf?hsLang=en",
+          "pdf_page": 3,
+          "reporting_period": "Q4 FY2026"
+        },
+        {
+          "url": "https://investors.coforge.com/hubfs/Coforge_Q1FY27%20Earnings%20Conference%20Call%20Transcript.pdf",
+          "pdf_page": 10,
+          "reporting_period": "Q1 FY2027"
+        }
+      ]
+    },
+    {
+      "ticker": "ASTRAL",
+      "question": "What are the raw material risks?",
+      "scope": "annual",
+      "period": "all",
+      "expected": "source_passage",
+      "passed": true,
+      "retrieved": [
+        {
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5772a6ee-bd33-47d5-bbd1-85b269bd26c3.pdf",
+          "pdf_page": 16,
+          "reporting_period": "FY2026"
+        }
+      ]
+    },
+    {
+      "ticker": "ASTRAL",
+      "question": "growth guidance",
+      "scope": "earnings",
+      "period": "Q4 FY2026",
+      "expected": "no_evidence",
+      "passed": true,
+      "retrieved": []
+    },
+    {
+      "ticker": "HCLTECH",
+      "question": "zzzzzzzzzz",
+      "scope": "earnings",
+      "period": "latest4",
+      "expected": "no_evidence",
+      "passed": true,
+      "retrieved": []
+    },
+    {
+      "ticker": "ASTRAL",
+      "question": "What does the annual report say?",
+      "scope": "annual",
+      "period": "all",
+      "expected": "no_evidence",
+      "passed": true,
+      "retrieved": []
+    }
+  ],
+  "announcements": [
+    {
+      "issuer": "Hindustan Zinc Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_03112026181504_SEintimationproduct.pdf",
+      "expected": "press_release",
+      "actual": "press_release",
+      "baseline": "press_release"
+    },
+    {
+      "issuer": "Ajmera Realty & Infra India Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AJMERA_03112026181427_Intimation_sd.pdf",
+      "expected": "earnings_call",
+      "actual": "earnings_call",
+      "baseline": "results"
+    },
+    {
+      "issuer": "Studds Accessories Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_25886_WebXMLFile_20261103_181506041.xml",
+      "expected": "earnings_call",
+      "actual": "earnings_call",
+      "baseline": "investor_meetings"
+    },
+    {
+      "issuer": "Amrutanjan Health Care Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AMRUTANJAN_03112026181418_Outcome_of_Bm_Sd.pdf",
+      "expected": "dividend",
+      "actual": "dividend",
+      "baseline": "dividend"
+    },
+    {
+      "issuer": "TV Vision Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/TVVISION_03112026181410_Outcome_of_3rd_CoC_Meeting_sd.pdf",
+      "expected": "litigation",
+      "actual": "litigation",
+      "baseline": "litigation"
+    },
+    {
+      "issuer": "Global Surfaces Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_20828_WebXMLFile_20261103_181414272.xml",
+      "expected": "earnings_call",
+      "actual": "earnings_call",
+      "baseline": "investor_meetings"
+    },
+    {
+      "issuer": "Arvind Fashions Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/ARVINDFASN_03112026180752_NPIntimation.pdf",
+      "expected": "routine",
+      "actual": "routine",
+      "baseline": "routine"
+    },
+    {
+      "issuer": "Clay Craft India Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CLAYCRAFT_03112026181304_IntimationofCorpOfficeofRTA03112026.pdf",
+      "expected": "unclassified",
+      "actual": "unclassified",
+      "baseline": "unclassified"
+    },
+    {
+      "issuer": "Eureka Forbes Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_23900_WebXMLFile_20261103_181346152.xml",
+      "expected": "earnings_call",
+      "actual": "earnings_call",
+      "baseline": "investor_meetings"
+    },
+    {
+      "issuer": "GIC Housing Finance Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/CIM_949_WebXMLFile_20261103_181337361.xml",
+      "expected": "unclassified",
+      "actual": "unclassified",
+      "baseline": "unclassified"
+    },
+    {
+      "issuer": "Voltas Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/xbrl/SAIIM_231_WebXMLFile_20261103_181323108.xml",
+      "expected": "routine",
+      "actual": "routine",
+      "baseline": "routine"
+    },
+    {
+      "issuer": "Krsnaa Diagnostics Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/KRSNAA_03112026181307_543328.pdf",
+      "expected": "unclassified",
+      "actual": "unclassified",
+      "baseline": "unclassified"
+    },
+    {
+      "issuer": "Northern Arc Capital Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/NACL2020_03112026181123_Investor_presentation_1.pdf",
+      "expected": "unclassified",
+      "actual": "unclassified",
+      "baseline": "unclassified"
+    },
+    {
+      "issuer": "Sandur Manganese & Iron Ores Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/SANDUR_03112026180848_Ltr2SEsFinancialResultsSigned.pdf",
+      "expected": "results",
+      "actual": "results",
+      "baseline": "results"
+    },
+    {
+      "issuer": "BMW Ventures Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/BMWVENTURES2024_03112026181245_Financials_merged.pdf",
+      "expected": "dividend",
+      "actual": "dividend",
+      "baseline": "dividend"
+    },
+    {
+      "issuer": "ReNew Akshay Urja Limited",
+      "source_url": "https://nsearchives.nseindia.com/content/debt/WDM/RAUPL_03112026181201_51_2_.pdf",
+      "expected": "management_change",
+      "actual": "management_change",
+      "baseline": "management_change"
+    },
+    {
+      "issuer": "Amrutanjan Health Care Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/AMRUTANJAN_03112026180931_Outcome_of_Bm_Sd.pdf",
+      "expected": "results",
+      "actual": "results",
+      "baseline": "results"
+    },
+    {
+      "issuer": "Vascon Engineers Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/VASCONEQ_03112026181223_Statement_of_Deviation_Sd.pdf",
+      "expected": "unclassified",
+      "actual": "unclassified",
+      "baseline": "unclassified"
+    },
+    {
+      "issuer": "Shalby Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/SHALBYLTD_03112026181002_66BMOutcome1.pdf",
+      "expected": "results",
+      "actual": "results",
+      "baseline": "results"
+    },
+    {
+      "issuer": "Captain Polyplast Limited",
+      "source_url": "https://nsearchives.nseindia.com/corporate/CPL_03112026181106_CAPTAINPOLYPLAST03112026.pdf",
+      "expected": "earnings_call",
+      "actual": "earnings_call",
+      "baseline": "investor_meetings"
+    }
+  ],
+  "issuer_checks": [
+    {
+      "issuer": "Slone Infosystems Limited",
+      "passed": true
+    },
+    {
+      "issuer": "Reliance Mutual Fund",
+      "passed": true
+    },
+    {
+      "issuer": "HDFC Asset Management Company Limited",
+      "passed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "growth_q1",
+      "expected": "exceeded",
+      "actual": "exceeded"
+    },
+    {
+      "id": "growth_q2",
+      "expected": "met",
+      "actual": "met"
+    },
+    {
+      "id": "growth_q3",
+      "expected": "missed",
+      "actual": "missed"
+    },
+    {
+      "id": "margin_q3",
+      "expected": "met",
+      "actual": "met"
+    },
+    {
+      "id": "growth_fy27",
+      "expected": "pending",
+      "actual": "pending"
+    }
+  ]
+}
